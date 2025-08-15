@@ -10,7 +10,8 @@ interface Option {
 interface Game {
   id: string;
   name: string;
-  image: string;
+  src: string;
+  subtitle: string;
 }
 
 interface FormData {
@@ -54,6 +55,44 @@ interface FormFileUploadProps {
   onChange?: (e: ChangeEvent<HTMLInputElement>) => void;
   maxSize?: string;
 }
+
+// AmanitaCard Component
+const AmanitaCard: React.FC<{
+  src: string;
+  title: string;
+  subtitle: string;
+  isSelected?: boolean;
+  onClick?: () => void;
+}> = ({ src, title, subtitle, isSelected = false, onClick }) => {
+  return (
+    <div 
+      className={`relative cursor-pointer transition-all duration-300 rounded-lg overflow-hidden ${
+        isSelected 
+          ? 'ring-2 ring-yellow-400 border-2 border-yellow-400 shadow-lg shadow-yellow-400/20' 
+          : 'border-2 border-gray-600 hover:border-gray-500 hover:shadow-md'
+      }`}
+      onClick={onClick}
+    >
+      <div className="aspect-[3/2] relative overflow-hidden">
+        <img 
+          src={src} 
+          alt={title}
+          className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
+        <div className="absolute bottom-0 left-0 right-0 p-3">
+          <h3 className="text-white font-semibold text-sm mb-1 line-clamp-1">{title}</h3>
+          <p className="text-gray-300 text-xs line-clamp-2">{subtitle}</p>
+        </div>
+      </div>
+      {isSelected && (
+        <div className="absolute top-2 right-2 w-6 h-6 bg-yellow-400 rounded-full flex items-center justify-center shadow-lg">
+          <div className="w-3 h-3 bg-gray-900 rounded-full"></div>
+        </div>
+      )}
+    </div>
+  );
+};
 
 // Reusable Input Component
 const FormInput: React.FC<FormInputProps> = ({ 
@@ -176,15 +215,60 @@ const ContactForm: React.FC = () => {
   });
 
   const games: Game[] = [
-    { id: 'happy-game', name: 'Happy Game', image: '/api/placeholder/150/80' },
-    { id: 'creaks', name: 'Creaks', image: '/api/placeholder/150/80' },
-    { id: 'pilgrims', name: 'Pilgrims', image: '/api/placeholder/150/80' },
-    { id: 'chuchel', name: 'Chuchel', image: '/api/placeholder/150/80' },
-    { id: 'samorost3', name: 'Samorost 3', image: '/api/placeholder/150/80' },
-    { id: 'botanicula', name: 'Botanicula', image: '/api/placeholder/150/80' },
-    { id: 'machinarium', name: 'Machinarium', image: '/api/placeholder/150/80' },
-    { id: 'kooky', name: 'Kooky', image: '/api/placeholder/150/80' },
-    { id: 'samorost-1-2', name: 'Samorost 1&2', image: '/api/placeholder/150/80' }
+    { 
+      id: 'happy-game', 
+      name: 'Happy Game', 
+      src: '/img1.jpg',
+      subtitle: 'Out now on PC / Mac, Nintendo Switch and mobile'
+    },
+    { 
+      id: 'creaks', 
+      name: 'Creaks', 
+      src: '/img2.jpg',
+      subtitle: 'A hand-crafted adventure game'
+    },
+    { 
+      id: 'pilgrims', 
+      name: 'Pilgrims', 
+      src: '/img3.jpg',
+      subtitle: 'Now available on App Store and Google Play'
+    },
+    { 
+      id: 'chuchel', 
+      name: 'Chuchel', 
+      src: '/img4.jpg',
+      subtitle: 'A hilarious adventure game'
+    },
+    { 
+      id: 'samorost3', 
+      name: 'Samorost 3', 
+      src: '/img1.jpg',
+      subtitle: 'An exploration adventure and puzzle game'
+    },
+    { 
+      id: 'botanicula', 
+      name: 'Botanicula', 
+      src: '/img2.jpg',
+      subtitle: 'A relaxing adventure game'
+    },
+    { 
+      id: 'machinarium', 
+      name: 'Machinarium', 
+      src: '/img3.jpg',
+      subtitle: 'Award-winning independent adventure game'
+    },
+    { 
+      id: 'kooky', 
+      name: 'Kooky', 
+      src: '/img4.jpg',
+      subtitle: 'A surreal adventure experience'
+    },
+    { 
+      id: 'samorost-1-2', 
+      name: 'Samorost 1&2', 
+      src: '/img1.jpg',
+      subtitle: 'Play the enhanced versions on PC / Mac and mobile'
+    }
   ];
 
   const platformOptions: Option[] = [
@@ -235,8 +319,8 @@ const ContactForm: React.FC = () => {
     setSelectedStore('');
   };
 
-  const handleGameChange = (e: ChangeEvent<HTMLInputElement>) => {
-    setSelectedGame(e.target.value);
+  const handleGameSelection = (gameId: string) => {
+    setSelectedGame(gameId);
     // Reset dependent selections when game changes
     setSelectedPlatform('');
     setSelectedStore('');
@@ -272,7 +356,7 @@ const ContactForm: React.FC = () => {
 
   return (
     <div className=" text-white p-6 min-h-screen">
-      <div className="max-w-4xl mx-auto">
+      <div className="max-w-6xl mx-auto">
         <div className="mb-8">
           <h1 className="text-2xl font-bold mb-2">Contact</h1>
           <p className="text-gray-400 mb-4">You can contact us through the contact form below</p>
@@ -303,33 +387,17 @@ const ContactForm: React.FC = () => {
           {/* Game Selection for Customer Support */}
           {selectedEnquiry === 'customer-support-games' && (
             <div className="mb-8">
-              <h3 className="text-xl mb-4">Which game is causing you trouble?</h3>
-              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 mb-6">
+              <h3 className="text-xl mb-6">Which game is causing you trouble?</h3>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
                 {games.map(game => (
-                  <label key={game.id} className="cursor-pointer">
-                    <input
-                      type="radio"
-                      name="game"
-                      value={game.id}
-                      checked={selectedGame === game.id}
-                      onChange={handleGameChange}
-                      className="sr-only"
-                    />
-                    <div className={`relative rounded-lg overflow-hidden border-2 transition-all ${
-                      selectedGame === game.id 
-                        ? 'border-yellow-400 ring-2 ring-yellow-400' 
-                        : 'border-gray-600 hover:border-gray-500'
-                    }`}>
-                      <div className=" h-20 flex items-center justify-center text-sm font-medium text-center p-2">
-                        {game.name}
-                      </div>
-                      {selectedGame === game.id && (
-                        <div className="absolute top-2 right-2 w-4 h-4 bg-yellow-400 rounded-full flex items-center justify-center">
-                          <div className="w-2 h-2 bg-gray-900 rounded-full"></div>
-                        </div>
-                      )}
-                    </div>
-                  </label>
+                  <AmanitaCard
+                    key={game.id}
+                    src={game.src}
+                    title={game.name}
+                    subtitle={game.subtitle}
+                    isSelected={selectedGame === game.id}
+                    onClick={() => handleGameSelection(game.id)}
+                  />
                 ))}
               </div>
 
@@ -361,7 +429,7 @@ const ContactForm: React.FC = () => {
 
               {/* Customer Support Form */}
               {selectedStore && (
-                <div className="p-6 rounded-lg">
+                <div className=" p-6 rounded-lg">
                   <div className="mb-4">
                     <p className="text-yellow-400 text-sm mb-2">
                       ⚠️ Click the Apple menu icon at the top left corner of your screen, and then select 'About This Mac'
@@ -371,7 +439,7 @@ const ContactForm: React.FC = () => {
                       <em>Big Sur + MacBook Air 13.3" + M1 + 8GB RAM</em>
                     </div>
                     <p className="text-sm text-gray-400 mb-4">
-                      Please check our <span className="text-blue-400">Troubleshooting Guidelines</span> addressing most common problems first.
+                      Please check our <span className="text-blue-400 cursor-pointer hover:underline">Troubleshooting Guidelines</span> addressing most common problems first.
                     </p>
                   </div>
 
