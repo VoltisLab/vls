@@ -26,7 +26,7 @@ export default function AmanitaCard({ src, title, subtitle }: Props) {
       </div>
 
       {/* Text */}
-      <div className="mt-4 text-center">
+      <div className="mt-4 text-center border-t border-b pb-6 pt-2 border-[#2b2b2b]">
         <h3 className="text-base font-semibold leading-tight text-white">
           {title}
         </h3>
@@ -37,8 +37,7 @@ export default function AmanitaCard({ src, title, subtitle }: Props) {
         )}
       </div>
 
-      {/* Subtle divider like the screenshot */}
-      <div className="mt-5 h-[0.5px] w-full bg-neutral-800/80" />
+      
     </article>
   );
 }
