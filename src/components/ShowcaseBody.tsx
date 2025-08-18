@@ -5,7 +5,7 @@ export default function ShowcaseBody() {
     { src: "/spinner.png", caption: "Creaks Box" },
     { src: "/image.png", caption: "Phonopolis" },
     { src: "/image1.png", caption: "Pilgrims" },
-    { src: "/img4.jpg", caption: "Happy Game" },
+    // { src: "/img4.jpg", caption: "Happy Game" },
   ];
 
   return (
