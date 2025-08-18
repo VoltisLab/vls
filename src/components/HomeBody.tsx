@@ -3,18 +3,18 @@ import AmanitaCard from "@/components/AmanitaCard";
 export default function HomeBody() {
   const cards = [
     {
-      src: "/img1.jpg",
-      title: "Pilgrims: Curious Adventures",
-      subtitle: "A new family-friendly board game",
+      src: "/spin.png",
+      title: "Spinnersonic",
+      subtitle: "A fidget spinner based game",
     },
     {
-      src: "/img2.jpg",
-      title: "Phonopolis",
-      subtitle: "A hand-crafted adventure game",
+      src: "/spell.png",
+      title: "Spellcheck",
+      subtitle: "A fast-paced spelling game",
     },
     {
-      src: "/img3.jpg",
-      title: "Pilgrims",
+      src: "/doom.png",
+      title: "Doomlane",
       subtitle: "Now available on App Store and Google Play",
     },
     {

@@ -5,8 +5,8 @@ import { FaCookieBite } from "react-icons/fa";
 
 export default function Footer() {
   const links = [
-    { label: "Privacy Policy", href: "#" },
-    { label: "Video Policy", href: "#" },
+    { label: "Privacy Policy", href: "/privacy" },
+    { label: "Cookie Policy", href: "/cookies" },
     { label: "Facebook", href: "#" },
     { label: "Instagram", href: "#" },
     { label: "X", href: "#" },
@@ -20,7 +20,7 @@ export default function Footer() {
       <div className="flex max-w-full text-xs flex-col items-center justify-end px-4 gap-3 text-neutral-400 md:flex-row md:gap-28">
         {/* Left */}
         <div className="flex items-center gap-1">
-          <span>Copyright © Amanita Design</span>
+          <span>Copyright © Volits Labs Games</span>
           <span>|</span>
           <span>All Rights Reserved.</span>
         </div>
