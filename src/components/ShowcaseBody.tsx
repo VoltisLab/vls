@@ -9,7 +9,7 @@ export default function ShowcaseBody() {
   ];
 
   return (
-    <div className="min-h-fit flex items-center justify-center w-full  ">
+    <div className="min-h-fit flex items-center justify-center w-full ">
       <ShowcaseSlider slides={slides} intervalMs={3000} />
     </div>
   );

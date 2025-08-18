@@ -43,7 +43,7 @@ export default function ShowcaseSlider({ slides, intervalMs = 3000 }: Props) {
 
   return (
     <section
-      className="w-[70%]  px-2 py-2 md:px-3 md:py-3   "
+      className="w-full xl:w-[70%] px-2 py-2 md:px-3 md:py-3   "
       onMouseEnter={stop}
       onMouseLeave={start}
       aria-roledescription="carousel"
