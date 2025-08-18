@@ -3,8 +3,8 @@ import ShowcaseSlider from "@/components/ShowcaseSlider";
 export default function ShowcaseBody() {
   const slides = [
     { src: "/spinner.png", caption: "Creaks Box" },
-    { src: "/img2.jpg", caption: "Phonopolis" },
-    { src: "/img3.jpg", caption: "Pilgrims" },
+    { src: "/image.png", caption: "Phonopolis" },
+    { src: "/image1.png", caption: "Pilgrims" },
     { src: "/img4.jpg", caption: "Happy Game" },
   ];
 
