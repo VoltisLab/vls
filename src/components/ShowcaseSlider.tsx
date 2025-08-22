@@ -321,9 +321,36 @@ export default function ShowcaseSlider({ slides, intervalMs = 3000 }: Props) {
                   priority
                 />
               </motion.div>
-              
+
+              {/* Download Button - Mobile Only */}
+              <motion.div
+                className="absolute inset-0 flex items-center justify-center"
+                initial={{ opacity: 0, scale: 0.8 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ 
+                  delay: 0.8, 
+                  duration: 0.6,
+                  ease: [0.22, 1, 0.36, 1]
+                }}
+              >
+                <motion.button
+                  className="bg-black/80 backdrop-blur-md text-white px-8 py-3 rounded-full text-sm font-medium tracking-wide shadow-2xl border border-white/10"
+                  whileHover={{
+                    scale: 1.05,
+                    backgroundColor: "rgba(0, 0, 0, 0.9)",
+                    transition: { duration: 0.2 }
+                  }}
+                  whileTap={{
+                    scale: 0.95,
+                    transition: { duration: 0.1 }
+                  }}
+                >
+                  Download
+                </motion.button>
+              </motion.div>
+
               {/* Enhanced caption animation */}
-              <AnimatePresence>
+              {/* <AnimatePresence>
                 {slides[index].caption && (
                   <motion.div
                     className="absolute bottom-6 left-6 bg-black/80 backdrop-blur-md px-5 py-3 rounded-xl text-white shadow-2xl border border-white/10"
@@ -346,7 +373,33 @@ export default function ShowcaseSlider({ slides, intervalMs = 3000 }: Props) {
                     </motion.p>
                   </motion.div>
                 )}
-              </AnimatePresence>
+              </AnimatePresence> */}
+              
+              {/* Enhanced caption animation */}
+              {/* <AnimatePresence>
+                {slides[index].caption && (
+                  <motion.div
+                    className="absolute bottom-6 left-6 bg-black/80 backdrop-blur-md px-5 py-3 rounded-xl text-white shadow-2xl border border-white/10"
+                    variants={captionVariants}
+                    initial="hidden"
+                    animate="visible"
+                    exit="exit"
+                  >
+                    <motion.p
+                      className="text-sm font-medium tracking-wide"
+                      initial={{ opacity: 0 }}
+                      animate={{ opacity: 1 }}
+                      transition={{ 
+                        delay: 0.8, 
+                        duration: 0.5,
+                        ease: [0.22, 1, 0.36, 1]
+                      }}
+                    >
+                      {slides[index].caption}
+                    </motion.p>
+                  </motion.div>
+                )}
+              </AnimatePresence> */}
             </motion.div>
           </AnimatePresence>
         </div>
@@ -374,7 +427,7 @@ export default function ShowcaseSlider({ slides, intervalMs = 3000 }: Props) {
               }}
             >
               <motion.span
-                className="block h-2.5 w-2.5 rounded-full shadow-lg"
+                className="block md:h-2.5 md:w-2.5 w-1.5 h-1.5 rounded-full shadow-lg"
                 variants={dotVariants}
                 animate={active ? "active" : "inactive"}
                 whileHover={!active ? "hover" : undefined}
