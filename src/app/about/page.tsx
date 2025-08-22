@@ -6,14 +6,18 @@ const page = () => {
   return (
     <div >
         <AboutBody2
-      leftTitle="About Amanita Design"
+      leftTitle="About Voltis Labs Games"
       paragraphs={[
-        "Amanita Design is a Czech indie game developer. The studio was founded in 2003 by designer, artist and animator Jakub Dvorský, and is known for its emphasis on surreal worlds, light-hearted humour, hand-crafted appeal and audiovisual experience.",
-        "Amanita is currently operating in several small teams, working on a bunch of new games for various platforms.",
+        `Voltis Labs Games is the game development arm of **Voltis Labs**,  built to push the boundaries of play, creativity, and interactive storytelling.
+        We craft unique, addictive, and visually striking experiences that merge fun with imagination. From high-speed racers like Spinnersonic to experimental titles still in the lab, our mission is simple: to make games that feel good to play and hard to put down.
+We believe in player-first design, ADHD-friendly features, and building global communities around our titles - all from a remote, creative-first studio culture that thrives on innovation.`,
+        `Our games are not just for entertainment. They’re ecosystems, challenges, and canvases built with care, purpose, and the same experimental energy that defines Voltis Labs.`,
+`Whether you’re here to race, build, explore, or collaborate, welcome to the new era of gaming.`,
+`Welcome to Voltis Labs Games`
       ]}
-      rightTitle="Amanita Crew"
-      imgSrc="/img3.jpg" // or any of: /img1.jpg /img2.jpg /img3.jpg /img4.jpg
-      imgAlt="Amanita Crew"
+      rightTitle="Dooms Lane"
+      imgSrc="/doom.png" // or any of: /img1.jpg /img2.jpg /img3.jpg /img4.jpg
+      imgAlt="Dooms Lane"
     />
         <AboutBody/>
     </div>

@@ -26,7 +26,7 @@ export default function Header() {
   return (
     <>
       <header className="sticky top-0 z-50 w-full bg-[#0B0B0B] flex items-center">
-        <div className="mx-auto flex h-16 md:max-w-6xl items-center justify-between px-4 md:h-20 md:gap-24">
+        <div className="mx-auto flex h-16  items-center justify-between px-5 md:h-20 md:gap-24">
           {/* Left: Logo + Brand */}
           <Link href="/" className="flex items-center gap-3 relative">
             <Image

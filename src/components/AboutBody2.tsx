@@ -19,11 +19,11 @@ export default function AboutBody2({
 }: Props) {
   return (
     <section className="w-full ">
-      <div className="mx-auto max-w-[60%] px-4 py-10 md:py-14">
+      <div className="px-4 py-10 md:py-14">
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 md:gap-12">
           {/* Left: text */}
           <div>
-            <h2 className="text-[22px]  text-white md:text-base">
+            <h2 className="text-[22px] text-white md:text-base">
               {leftTitle}
             </h2>
             <div className="mt-5 space-y-5 text-sm leading-7 text-neutral-300">

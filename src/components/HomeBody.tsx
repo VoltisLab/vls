@@ -17,43 +17,6 @@ export default function HomeBody() {
       title: "Doomlane",
       subtitle: "Now available on App Store and Google Play",
     },
-    {
-      src: "/img4.jpg",
-      title: "Happy Game",
-      subtitle: "Out now on PC / Mac, Nintendo Switch and mobile",
-    },
-    {
-      src: "/img2.jpg",
-      title: "Order Creaks Collector’s Box",
-      subtitle: "Limited to 1000 units",
-    },
-    {
-      src: "/img3.jpg",
-      title: "Samorost 1",
-      subtitle: "Play the new enhanced version on PC / Mac and mobile",
-    },
-      {
-      src: "/img3.jpg",
-      title: "Pilgrims",
-      subtitle: "Now available on App Store and Google Play",
-    },
-    // {
-    //   src: "/img4.jpg",
-    //   title: "Happy Game",
-    //   subtitle: "Out now on PC / Mac, Nintendo Switch and mobile",
-    // },
-    // {
-    //   src: "/img2.jpg",
-    //   title: "Order Creaks Collector’s Box",
-    //   subtitle: "Limited to 1000 units",
-    // },
-    // {
-    //   src: "/img3.jpg",
-    //   title: "Samorost 1",
-    //   subtitle: "Play the new enhanced version on PC / Mac and mobile",
-    // },
-    
-    
   ];
 
   return (

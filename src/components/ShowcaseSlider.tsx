@@ -59,12 +59,7 @@ export default function ShowcaseSlider({ slides, intervalMs = 3000 }: Props) {
             className="object-cover"
             priority
           />
-          {/* Caption bottom-left */}
-          {/* {slides[index].caption && (
-            <div className="absolute bottom-3 left-3 rounded bg-black/30 px-3 py-2 text-sm text-white md:bottom-4 md:left-4 md:text-base">
-              {slides[index].caption}
-            </div>
-          )} */}
+
         </div>
       </div>
 
