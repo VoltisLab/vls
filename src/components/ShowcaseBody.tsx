@@ -17,7 +17,7 @@ export default function ShowcaseBody() {
 
   return (
     <div className="min-h-fit flex w-full md:px-5">
-      <div className="w-full md-block hidden">
+      <div className="w-full md:block hidden">
         <ShowcaseSlider slides={slides} intervalMs={3000} />
       </div>
 
