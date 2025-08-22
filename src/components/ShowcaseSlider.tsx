@@ -434,7 +434,7 @@ export default function ShowcaseSlider({ slides, intervalMs = 3000 }: Props) {
               />
               
               {/* Enhanced ripple effect */}
-              <AnimatePresence>
+              {/* <AnimatePresence>
                 {active && (
                   <motion.span
                     className="absolute inset-0 rounded-full bg-white/20 border border-white/30"
@@ -451,7 +451,7 @@ export default function ShowcaseSlider({ slides, intervalMs = 3000 }: Props) {
                     }}
                   />
                 )}
-              </AnimatePresence>
+              </AnimatePresence> */}
             </motion.button>
           );
         })}
