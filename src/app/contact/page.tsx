@@ -216,59 +216,41 @@ const ContactForm: React.FC = () => {
 
   const games: Game[] = [
     { 
-      id: 'happy-game', 
-      name: 'Happy Game', 
-      src: '/img1.jpg',
-      subtitle: 'Out now on PC / Mac, Nintendo Switch and mobile'
+      id: 'spinnersonic', 
+      name: 'Spinnersonic', 
+      src: '/spin.png',
+      subtitle: 'Out now on App Store and Google Play'
     },
     { 
-      id: 'creaks', 
-      name: 'Creaks', 
-      src: '/img2.jpg',
-      subtitle: 'A hand-crafted adventure game'
+      id: 'spellcheck', 
+      name: 'Spell Check', 
+      src: '/spell.png',
+      subtitle: 'A fast-paced spelling game'
     },
     { 
-      id: 'pilgrims', 
-      name: 'Pilgrims', 
-      src: '/img3.jpg',
+      id: 'doomlane', 
+      name: 'Doomlane', 
+      src: '/doom.png',
       subtitle: 'Now available on App Store and Google Play'
     },
     { 
-      id: 'chuchel', 
-      name: 'Chuchel', 
-      src: '/img4.jpg',
-      subtitle: 'A hilarious adventure game'
+      id: '8ballspool', 
+      name: '8 Balls Pool', 
+      src: '/spin.png',
+      subtitle: 'Play the classic pool game with friends'
     },
     { 
-      id: 'samorost3', 
-      name: 'Samorost 3', 
-      src: '/img1.jpg',
-      subtitle: 'An exploration adventure and puzzle game'
+      id: 'TriangleChess', 
+      name: 'Triangle Chess', 
+      src: '/triangle.png',
+      subtitle: 'A strategic twist on chess'
     },
     { 
-      id: 'botanicula', 
-      name: 'Botanicula', 
-      src: '/img2.jpg',
-      subtitle: 'A relaxing adventure game'
+      id: 'penaltyshootout', 
+      name: 'Penalty Shootout', 
+      src: '/doom.png',
+      subtitle: 'Test your skills in a thrilling football'
     },
-    { 
-      id: 'machinarium', 
-      name: 'Machinarium', 
-      src: '/img3.jpg',
-      subtitle: 'Award-winning independent adventure game'
-    },
-    { 
-      id: 'kooky', 
-      name: 'Kooky', 
-      src: '/img4.jpg',
-      subtitle: 'A surreal adventure experience'
-    },
-    { 
-      id: 'samorost-1-2', 
-      name: 'Samorost 1&2', 
-      src: '/img1.jpg',
-      subtitle: 'Play the enhanced versions on PC / Mac and mobile'
-    }
   ];
 
   const platformOptions: Option[] = [

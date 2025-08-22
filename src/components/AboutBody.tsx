@@ -17,6 +17,21 @@ export default function AboutBody() {
       title: "Doomlane",
       subtitle: "Now available on App Store and Google Play",
     },
+    {
+      src: "/spin.png",
+      title: "8 Balls Pool",
+      subtitle: "Play the classic pool game with friends or online opponents.",
+    },
+    {
+      src: "/triangle.png",
+      title: "Triangle Chess",
+      subtitle: "A strategic twist on chess played on a triangular board.",
+    },
+    {
+      src: "/doom.png",
+      title: "Penalty Shootout",
+      subtitle: "Test your skills in a thrilling football penalty shootout.",
+    },
   ];
 
   return (

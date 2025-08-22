@@ -2,9 +2,9 @@
 import Image from "next/image";
 
 type Props = {
-  src: string; // e.g. "/img1.jpg"
-  title: string; // e.g. "Phonopolis"
-  subtitle?: string; // e.g. "A hand-crafted adventure game"
+  src: string; 
+  title: string; 
+  subtitle?: string; 
 };
 
 export default function AmanitaCard({ src, title, subtitle }: Props) {

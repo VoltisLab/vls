@@ -16,7 +16,7 @@ We believe in player-first design, ADHD-friendly features, and building global c
 `Welcome to Voltis Labs Games`
       ]}
       rightTitle="Dooms Lane"
-      imgSrc="/doom.png" // or any of: /img1.jpg /img2.jpg /img3.jpg /img4.jpg
+      imgSrc="/doom.png" 
       imgAlt="Dooms Lane"
     />
         <AboutBody/>
