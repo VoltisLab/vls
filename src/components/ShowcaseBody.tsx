@@ -5,14 +5,14 @@ export default function ShowcaseBody() {
     { src: "/spinner.png", caption: "Spinnersonic" },
     { src: "/image.png", caption: "Spell Check" },
     { src: "/image1.png", caption: "Doom Lane" },
-    { src: "/triangle.png", caption: "Triangle Chess" },
+    // { src: "/triangle.png", caption: "Triangle Chess" },
   ];
 
    const slides1 = [
     { src: "/spinnerMobile.png", caption: "Spinnersonic" },
-    { src: "/image.png", caption: "Spell Check" },
-    { src: "/image1.png", caption: "Doom Lane" },
-    { src: "/triangle.png", caption: "Triangle Chess" },
+    { src: "/spellMobile.png", caption: "Spell Check" },
+    { src: "/doomMobile.png", caption: "Doom Lane" },
+    // { src: "/triangle.png", caption: "Triangle Chess" },
   ];
 
   return (
