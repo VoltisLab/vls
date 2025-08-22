@@ -18,7 +18,7 @@ export default function AboutBody2({
   imgAlt = rightTitle,
 }: Props) {
   return (
-    <section className="w-full ">
+    <section className="w-full">
       <div className="px-4 py-10 md:py-14">
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 md:gap-12">
           {/* Left: text */}

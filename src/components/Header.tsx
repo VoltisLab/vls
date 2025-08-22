@@ -26,7 +26,7 @@ export default function Header() {
 
   return (
     <div className="w-full bg-[#0B0B0B] sticky top-0 z-50">
-      <header className="w-full max-w-[90vw] md:px-5 mx-auto">
+      <header className="w-full max-w-[75vw] md:px-5 mx-auto">
         <div className="flex h-16 items-center justify-between md:h-20 md:gap-24">
           {/* Left: Logo + Brand */}
           <Link href="/" className="flex items-center gap-3 relative">

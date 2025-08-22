@@ -37,7 +37,7 @@ export default function HomeBody() {
   return (
     <div className="min-h-screen w-full px-5">
       <div className="w-full md:py-8">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-4 sm:gap-5 lg:gap-6 w-full">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-5 lg:gap-6 w-full">
           {cards.map((card, index) => (
             <AmanitaCard
               key={index}
