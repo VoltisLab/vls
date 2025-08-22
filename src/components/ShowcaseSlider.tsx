@@ -354,7 +354,7 @@ export default function ShowcaseSlider({ slides, intervalMs = 3000 }: Props) {
 
       {/* Premium animated dots */}
       <motion.div
-        className="mx-auto mt-6 flex w-full max-w-[1200px] items-center justify-center gap-4 pb-4"
+        className="mx-auto md:mt-6 mt-4 flex w-full max-w-[1200px] items-center justify-center gap-4 pb-4"
         variants={dotsContainerVariants}
         initial="hidden"
         animate="visible"

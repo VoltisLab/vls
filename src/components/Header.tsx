@@ -9,6 +9,7 @@ import { useState } from 'react';
 // React Icons imports
 import { FaFacebookF, FaInstagram, FaXTwitter, FaDiscord, FaYoutube } from "react-icons/fa6";
 import { GiButterfly } from "react-icons/gi";
+import { IoClose } from "react-icons/io5";
 
 const NAV = [
   { label: "Home", href: "/" },
@@ -106,54 +107,66 @@ export default function Header() {
 
       {/* Mobile Menu Overlay */}
       <div className={cn(
-        "fixed inset-0 z-40 bg-[#0B0B0B] transition-all duration-300 md:hidden",
+        "fixed inset-0 z-40 bg-black/50 transition-all duration-300 md:hidden",
         isMenuOpen ? "opacity-100 visible" : "opacity-0 invisible"
       )}>
-        <div className="flex flex-col items-center justify-center h-full gap-8">
-          {/* Mobile Navigation */}
-          <nav className="flex flex-col items-center gap-6">
-            {NAV.map((item) => {
-              const active =
-                pathname === item.href ||
-                (item.href !== "/" && pathname.startsWith(item.href));
-              return (
-                <Link
-                  key={item.href}
-                  href={item.href}
-                  onClick={toggleMenu}
-                  className={cn(
-                    "text-2xl font-semibold transition",
-                    active
-                      ? "text-white"
-                      : "text-neutral-400 hover:text-white"
-                  )}
-                >
-                  {item.label}
-                </Link>
-              );
-            })}
-          </nav>
+        {/* Mobile Menu Panel - 70% width */}
+        <div className={cn(
+          "fixed top-0 right-0 h-full w-[70%] bg-[#0B0B0B] shadow-xl transition-transform duration-300",
+          isMenuOpen ? "translate-x-0" : "translate-x-full"
+        )}>
+          {/* Close Button */}
+          <div className="flex justify-end p-4">
+            <button
+              onClick={toggleMenu}
+              className="p-2 rounded-full hover:bg-neutral-800 transition"
+              aria-label="Close menu"
+            >
+              <IoClose className="h-6 w-6 text-neutral-400 hover:text-white" />
+            </button>
+          </div>
 
-          {/* Mobile Social Icons */}
-          <div className="flex items-center gap-6 mt-8">
-            <Social href="#" label="Facebook" onClick={toggleMenu}>
-              <FaFacebookF className="h-6 w-6 text-neutral-400 transition hover:text-white" />
-            </Social>
-            <Social href="https://instagram.com/voltislabsgames" label="Instagram" onClick={toggleMenu}>
-              <FaInstagram className="h-6 w-6 text-neutral-400 transition hover:text-white" />
-            </Social>
-            <Social href="#" label="X" onClick={toggleMenu}>
-              <FaXTwitter className="h-6 w-6 text-neutral-400 transition hover:text-white" />
-            </Social>
-            <Social href="#" label="Butterfly" onClick={toggleMenu}>
-              <GiButterfly className="h-6 w-6 text-neutral-400 transition hover:text-white" />
-            </Social>
-            <Social href="#" label="Discord" onClick={toggleMenu}>
-              <FaDiscord className="h-6 w-6 text-neutral-400 transition hover:text-white" />
-            </Social>
-            <Social href="#" label="YouTube" onClick={toggleMenu}>
-              <FaYoutube className="h-6 w-6 text-neutral-400 transition hover:text-white" />
-            </Social>
+          {/* Menu Content */}
+          <div className="flex flex-col items-center justify-center h-full gap-8 pb-20">
+            {/* Mobile Navigation */}
+            <nav className="flex flex-col items-center gap-6">
+              {NAV.map((item) => {
+                const active =
+                  pathname === item.href ||
+                  (item.href !== "/" && pathname.startsWith(item.href));
+                return (
+                  <Link
+                    key={item.href}
+                    href={item.href}
+                    onClick={toggleMenu}
+                    className={cn(
+                      "text-2xl font-semibold transition",
+                      active
+                        ? "text-white"
+                        : "text-neutral-400 hover:text-white"
+                    )}
+                  >
+                    {item.label}
+                  </Link>
+                );
+              })}
+            </nav>
+
+            {/* Mobile Social Icons */}
+            <div className="flex items-center gap-6 mt-8">
+              <Social href="#" label="Facebook" onClick={toggleMenu}>
+                <FaFacebookF className="h-6 w-6 text-neutral-400 transition hover:text-white" />
+              </Social>
+              <Social href="https://instagram.com/voltislabsgames" label="Instagram" onClick={toggleMenu}>
+                <FaInstagram className="h-6 w-6 text-neutral-400 transition hover:text-white" />
+              </Social>
+              <Social href="#" label="Discord" onClick={toggleMenu}>
+                <FaDiscord className="h-6 w-6 text-neutral-400 transition hover:text-white" />
+              </Social>
+              <Social href="#" label="YouTube" onClick={toggleMenu}>
+                <FaYoutube className="h-6 w-6 text-neutral-400 transition hover:text-white" />
+              </Social>
+            </div>
           </div>
         </div>
       </div>

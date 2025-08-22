@@ -4,7 +4,7 @@ import React from 'react'
 
 const page = () => {
   return (
-    <div className='max-w-[90vw] mx-auto'>
+    <div className='md:max-w-[90vw] mx-auto'>
       <ShowcaseBody/>
       <HomeBody/>
     </div>
