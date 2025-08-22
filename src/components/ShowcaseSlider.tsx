@@ -210,7 +210,7 @@ export default function ShowcaseSlider({ slides, intervalMs = 3000 }: Props) {
       animate="visible"
     >
       {/* Desktop container */}
-      <div className="relative mx-auto aspect-[21/9] w-full max-w-full overflow-hidden  hidden md:block">
+      <div className="relative mx-auto aspect-[21/9] w-full max-w-full overflow-hidden hidden md:block">
         {/* Premium background glow effect */}
         <motion.div
           className="absolute inset-0 bg-gradient-to-br from-orange-500/15 via-red-500/8 to-orange-600/12 rounded-sm"
