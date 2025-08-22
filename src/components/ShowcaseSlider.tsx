@@ -421,10 +421,10 @@ export default function ShowcaseSlider({ slides, intervalMs = 3000 }: Props) {
               aria-label={`Go to slide ${i + 1}`}
               className="group relative p-2"
               variants={dotItemVariants}
-              whileTap={{ 
-                scale: 0.85,
-                transition: { duration: 0.1 }
-              }}
+              // whileTap={{ 
+              //   scale: 0.85,
+              //   transition: { duration: 0.1 }
+              // }}
             >
               <motion.span
                 className="block md:h-2.5 md:w-2.5 w-1.5 h-1.5 rounded-full shadow-lg"
