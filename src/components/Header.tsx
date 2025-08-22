@@ -24,9 +24,9 @@ export default function Header() {
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
   return (
-    <>
-      <header className="sticky top-0 z-50 w-full bg-[#0B0B0B] flex items-center">
-        <div className="mx-auto flex h-16  items-center justify-between px-5 md:h-20 md:gap-24">
+    <div className="w-full bg-[#0B0B0B] sticky top-0 z-50">
+      <header className="w-full max-w-[90vw] md:px-5 mx-auto">
+        <div className="flex h-16 items-center justify-between md:h-20 md:gap-24">
           {/* Left: Logo + Brand */}
           <Link href="/" className="flex items-center gap-3 relative">
             <Image
@@ -139,7 +139,7 @@ export default function Header() {
             <Social href="#" label="Facebook" onClick={toggleMenu}>
               <FaFacebookF className="h-6 w-6 text-neutral-400 transition hover:text-white" />
             </Social>
-            <Social href="#" label="Instagram" onClick={toggleMenu}>
+            <Social href="https://instagram.com/voltislabsgames" label="Instagram" onClick={toggleMenu}>
               <FaInstagram className="h-6 w-6 text-neutral-400 transition hover:text-white" />
             </Social>
             <Social href="#" label="X" onClick={toggleMenu}>
@@ -157,7 +157,7 @@ export default function Header() {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 
@@ -181,32 +181,5 @@ function Social({
     >
       {children}
     </Link>
-  );
-}
-
-/* ---------- Mushroom Logo (SVG) ---------- */
-function MushroomLogo({ className = "" }: { className?: string }) {
-  return (
-    <svg
-      viewBox="0 0 48 48"
-      className={className}
-      aria-label="Amanita logo"
-      role="img"
-    >
-      {/* red cap */}
-      <path d="M7 20c3.5-9 30.5-9 34 0" fill="#ff3b30" />
-      {/* white dots */}
-      <circle cx="16" cy="16" r="2.4" fill="white" />
-      <circle cx="23" cy="13.5" r="2" fill="white" />
-      <circle cx="30" cy="16" r="2.2" fill="white" />
-      {/* cap shading */}
-      <path d="M7 20c3.5-9 30.5-9 34 0" fill="none" stroke="black" strokeOpacity=".08" />
-      {/* stem */}
-      <rect x="21" y="20" width="6" height="10" rx="2.5" fill="#f7f7f7" />
-      {/* base shadow */}
-      <ellipse cx="24" cy="33" rx="7" ry="2.2" fill="black" opacity=".18" />
-      {/* outline circle */}
-      <circle cx="24" cy="24" r="23.5" fill="none" stroke="black" opacity=".08" />
-    </svg>
   );
 }

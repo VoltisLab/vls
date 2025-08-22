@@ -7,10 +7,7 @@ export default function Footer() {
   const links = [
     { label: "Privacy Policy", href: "/privacy" },
     { label: "Cookie Policy", href: "/cookies" },
-    { label: "Facebook", href: "#" },
     { label: "Instagram", href: "#" },
-    { label: "X", href: "#" },
-    { label: "Bluesky", href: "#" },
     { label: "Discord", href: "#" },
     { label: "YouTube", href: "#" },
   ];

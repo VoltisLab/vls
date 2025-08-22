@@ -17,22 +17,34 @@ export default function HomeBody() {
       title: "Doomlane",
       subtitle: "Now available on App Store and Google Play",
     },
+    {
+      src: "/spin.png",
+      title: "8 Balls Pool",
+      subtitle: "Play the classic pool game with friends or online opponents.",
+    },
+    {
+      src: "/triangle.png",
+      title: "Triangle Chess",
+      subtitle: "A strategic twist on chess played on a triangular board.",
+    },
+    {
+      src: "/doom.png",
+      title: "Penalty Shootout",
+      subtitle: "Test your skills in a thrilling football penalty shootout.",
+    },
   ];
 
   return (
-    <div className="min-h-screen px-5  md:px-8 lg:px-10">
-      <div className="mx-auto max-w-full flex items-center justify-center">
-        <div className="grid grid-cols-1 gap-x- gap-y-2 md:grid-cols-2 lg:grid-cols-3 xl:w-[70%] w-full gap-x-4">
+    <div className="min-h-screen w-full md:px-5">
+      <div className="w-full py-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-4 sm:gap-5 lg:gap-6 w-full">
           {cards.map((card, index) => (
-            <div className="w-full">
-                <AmanitaCard
-                  key={index}
-                  src={card.src}
-                  title={card.title}
-                  subtitle={card.subtitle}
-                />
-
-            </div>
+            <AmanitaCard
+              key={index}
+              src={card.src}
+              title={card.title}
+              subtitle={card.subtitle}
+            />
           ))}
         </div>
       </div>

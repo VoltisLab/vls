@@ -1,14 +1,18 @@
 "use client";
-
 import Image from "next/image";
 
 type Props = {
-  src: string;            // e.g. "/img1.jpg"
-  title: string;          // e.g. "Phonopolis"
-  subtitle?: string;      // e.g. "A hand-crafted adventure game"
+  src: string; // e.g. "/img1.jpg"
+  title: string; // e.g. "Phonopolis"
+  subtitle?: string; // e.g. "A hand-crafted adventure game"
 };
 
 export default function AmanitaCard({ src, title, subtitle }: Props) {
+  const truncateText = (text: string, maxLength: number): string => {
+    if (text.length <= maxLength) return text;
+    return text.slice(0, maxLength).trim() + "...";
+  };
+
   return (
     <article className="group">
       {/* Image */}
@@ -24,7 +28,6 @@ export default function AmanitaCard({ src, title, subtitle }: Props) {
           />
         </div>
       </div>
-
       {/* Text */}
       <div className="mt-4 text-center border-t border-b pb-6 pt-2 border-[#2b2b2b]">
         <h3 className="text-base font-semibold leading-tight text-white">
@@ -32,12 +35,10 @@ export default function AmanitaCard({ src, title, subtitle }: Props) {
         </h3>
         {subtitle && (
           <p className="mt-2 text-xs leading-snug text-neutral-400">
-            {subtitle}
+            {truncateText(subtitle, 40)}
           </p>
         )}
       </div>
-
-      
     </article>
   );
 }
