@@ -334,7 +334,7 @@ export default function ShowcaseSlider({ slides, intervalMs = 3000 }: Props) {
                 }}
               >
                 <motion.button
-                  className="bg-black/80 backdrop-blur-md text-white px-8 py-3 rounded-full text-sm font-medium tracking-wide shadow-2xl border border-white/10"
+                  className="bg-black/80 backdrop-blur-md text-white px-6 py-2 font-semibold rounded-full text-sm tracking-wide shadow-2xl border border-white/10"
                   whileHover={{
                     scale: 1.05,
                     backgroundColor: "rgba(0, 0, 0, 0.9)",

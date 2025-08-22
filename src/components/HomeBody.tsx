@@ -10,12 +10,12 @@ export default function HomeBody() {
     {
       src: "/spell.png",
       title: "Spellcheck",
-      subtitle: "A fast-paced spelling game",
+      subtitle: "A fast-paced British spelling challenge.",
     },
     {
       src: "/doom.png",
       title: "Doomlane",
-      subtitle: "Now available on App Store and Google Play",
+      subtitle: "Smash zombies, dodge chaos, win XP.",
     },
     {
       src: "/spin.png",
