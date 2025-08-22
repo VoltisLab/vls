@@ -46,12 +46,12 @@ export default function Header() {
             <Social href="#" label="Instagram">
               <FaInstagram className="h-5 w-5 text-neutral-400 transition hover:text-white" />
             </Social>
-            <Social href="#" label="X">
+            {/* <Social href="#" label="X">
               <FaXTwitter className="h-5 w-5 text-neutral-400 transition hover:text-white" />
             </Social>
             <Social href="#" label="Butterfly">
               <GiButterfly className="h-5 w-5 text-neutral-400 transition hover:text-white" />
-            </Social>
+            </Social> */}
             <Social href="#" label="Discord">
               <FaDiscord className="h-5 w-5 text-neutral-400 transition hover:text-white" />
             </Social>
