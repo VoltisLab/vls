@@ -8,7 +8,6 @@ import { useState } from 'react';
 
 // React Icons imports
 import { FaFacebookF, FaInstagram, FaXTwitter, FaDiscord, FaYoutube } from "react-icons/fa6";
-import { GiButterfly } from "react-icons/gi";
 import { IoClose } from "react-icons/io5";
 
 const NAV = [
@@ -33,8 +32,8 @@ export default function Header() {
             <Image
               src='/logo.png'
               alt='Logo'
-              width={30}
-              height={30}
+              width={80}
+              height={50}
             />
           </Link>
 
@@ -46,12 +45,6 @@ export default function Header() {
             <Social href="#" label="Instagram">
               <FaInstagram className="h-5 w-5 text-neutral-400 transition hover:text-white" />
             </Social>
-            {/* <Social href="#" label="X">
-              <FaXTwitter className="h-5 w-5 text-neutral-400 transition hover:text-white" />
-            </Social>
-            <Social href="#" label="Butterfly">
-              <GiButterfly className="h-5 w-5 text-neutral-400 transition hover:text-white" />
-            </Social> */}
             <Social href="#" label="Discord">
               <FaDiscord className="h-5 w-5 text-neutral-400 transition hover:text-white" />
             </Social>
