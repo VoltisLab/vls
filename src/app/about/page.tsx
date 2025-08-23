@@ -4,7 +4,7 @@ import React from 'react'
 
 const page = () => {
   return (
-    <div className='max-w-[75vw] mx-auto'>
+    <div className='max-w-[75vw] mx-auto w-full'>
         <AboutBody2
       leftTitle="About Voltis Labs Games"
       paragraphs={[
