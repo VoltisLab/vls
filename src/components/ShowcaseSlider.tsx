@@ -43,42 +43,25 @@ export default function ShowcaseSlider({ slides, intervalMs = 3000 }: Props) {
     setIndex(newIndex);
   };
 
-  // Type-safe variants
+  // Simplified fade-only variants
   const slideVariants: Variants = {
-    enter: (direction: number) => ({
+    enter: {
       opacity: 0,
-      scale: 0.95,
-      rotateY: direction > 0 ? 15 : -15,
-      x: direction > 0 ? 50 : -50,
-      filter: "blur(1px)",
-    }),
+    },
     center: {
       opacity: 1,
-      scale: 1,
-      rotateY: 0,
-      x: 0,
-      filter: "blur(0px)",
       transition: {
-        duration: 1.2,
-        ease: [0.22, 1, 0.36, 1], // Premium easing curve
-        opacity: { duration: 0.8 },
-        scale: { duration: 1.0, delay: 0.1 },
-        filter: { duration: 0.7, delay: 0.2 },
-        x: { duration: 0.9 },
-        rotateY: { duration: 1.0 },
+        duration: 1.0,
+        ease: [0.22, 1, 0.36, 1],
       },
     },
-    exit: (direction: number) => ({
+    exit: {
       opacity: 0,
-      scale: 1.05,
-      rotateY: direction > 0 ? -15 : 15,
-      x: direction > 0 ? -50 : 50,
-      filter: "blur(1px)",
       transition: {
-        duration: 0.8,
-        ease: [0.76, 0, 0.24, 1], // Sleek exit curve
+        duration: 0.6,
+        ease: [0.76, 0, 0.24, 1],
       },
-    }),
+    },
   };
 
   const dotVariants: Variants = {
@@ -160,14 +143,10 @@ export default function ShowcaseSlider({ slides, intervalMs = 3000 }: Props) {
 
   const captionVariants: Variants = {
     hidden: { 
-      opacity: 0, 
-      x: -30, 
-      y: 10 
+      opacity: 0,
     },
     visible: { 
-      opacity: 1, 
-      x: 0, 
-      y: 0,
+      opacity: 1,
       transition: {
         delay: 0.6,
         duration: 0.7,
@@ -175,9 +154,7 @@ export default function ShowcaseSlider({ slides, intervalMs = 3000 }: Props) {
       },
     },
     exit: { 
-      opacity: 0, 
-      x: 30, 
-      y: -10,
+      opacity: 0,
       transition: {
         duration: 0.4,
         ease: [0.76, 0, 0.24, 1],
@@ -211,14 +188,8 @@ export default function ShowcaseSlider({ slides, intervalMs = 3000 }: Props) {
     >
       {/* Desktop container */}
       <div className="relative mx-auto aspect-[21/9] w-full max-w-full overflow-hidden hidden md:block">
-        {/* Premium background glow effect */}
-        <motion.div
-          className="absolute inset-0 bg-gradient-to-br from-orange-500/15 via-red-500/8 to-orange-600/12 rounded-sm"
-          variants={backgroundGlowVariants}
-          animate="animate"
-        />
         
-        {/* Slides with enhanced AnimatePresence */}
+        {/* Slides with fade-only animation */}
         <div className="relative h-full w-full">
           <AnimatePresence mode="wait" custom={direction}>
             <motion.div
@@ -229,7 +200,6 @@ export default function ShowcaseSlider({ slides, intervalMs = 3000 }: Props) {
               animate="center"
               exit="exit"
               className="absolute inset-0"
-              style={{ perspective: 1000 }}
             >
               <motion.div
                 whileHover={{
@@ -283,13 +253,9 @@ export default function ShowcaseSlider({ slides, intervalMs = 3000 }: Props) {
       {/* Mobile container */}
       <div className="relative w-full h-[489px] overflow-hidden md:hidden block">
         {/* Premium background glow effect */}
-        <motion.div
-          className="absolute inset-0 bg-gradient-to-br from-orange-500/15 via-red-500/8 to-orange-600/12 rounded-sm"
-          variants={backgroundGlowVariants}
-          animate="animate"
-        />
+      
         
-        {/* Slides with enhanced AnimatePresence */}
+        {/* Slides with fade-only animation */}
         <div className="relative h-full w-full">
           <AnimatePresence mode="wait" custom={direction}>
             <motion.div
@@ -300,7 +266,6 @@ export default function ShowcaseSlider({ slides, intervalMs = 3000 }: Props) {
               animate="center"
               exit="exit"
               className="absolute inset-0"
-              style={{ perspective: 1000 }}
             >
               <motion.div
                 whileHover={{
@@ -348,58 +313,6 @@ export default function ShowcaseSlider({ slides, intervalMs = 3000 }: Props) {
                   Download
                 </motion.button>
               </motion.div>
-
-              {/* Enhanced caption animation */}
-              {/* <AnimatePresence>
-                {slides[index].caption && (
-                  <motion.div
-                    className="absolute bottom-6 left-6 bg-black/80 backdrop-blur-md px-5 py-3 rounded-xl text-white shadow-2xl border border-white/10"
-                    variants={captionVariants}
-                    initial="hidden"
-                    animate="visible"
-                    exit="exit"
-                  >
-                    <motion.p
-                      className="text-sm font-medium tracking-wide"
-                      initial={{ opacity: 0 }}
-                      animate={{ opacity: 1 }}
-                      transition={{ 
-                        delay: 0.8, 
-                        duration: 0.5,
-                        ease: [0.22, 1, 0.36, 1]
-                      }}
-                    >
-                      {slides[index].caption}
-                    </motion.p>
-                  </motion.div>
-                )}
-              </AnimatePresence> */}
-              
-              {/* Enhanced caption animation */}
-              {/* <AnimatePresence>
-                {slides[index].caption && (
-                  <motion.div
-                    className="absolute bottom-6 left-6 bg-black/80 backdrop-blur-md px-5 py-3 rounded-xl text-white shadow-2xl border border-white/10"
-                    variants={captionVariants}
-                    initial="hidden"
-                    animate="visible"
-                    exit="exit"
-                  >
-                    <motion.p
-                      className="text-sm font-medium tracking-wide"
-                      initial={{ opacity: 0 }}
-                      animate={{ opacity: 1 }}
-                      transition={{ 
-                        delay: 0.8, 
-                        duration: 0.5,
-                        ease: [0.22, 1, 0.36, 1]
-                      }}
-                    >
-                      {slides[index].caption}
-                    </motion.p>
-                  </motion.div>
-                )}
-              </AnimatePresence> */}
             </motion.div>
           </AnimatePresence>
         </div>
@@ -421,10 +334,6 @@ export default function ShowcaseSlider({ slides, intervalMs = 3000 }: Props) {
               aria-label={`Go to slide ${i + 1}`}
               className="group relative p-2"
               variants={dotItemVariants}
-              // whileTap={{ 
-              //   scale: 0.85,
-              //   transition: { duration: 0.1 }
-              // }}
             >
               <motion.span
                 className="block md:h-2.5 md:w-2.5 w-1.5 h-1.5 rounded-full shadow-lg"
@@ -432,26 +341,6 @@ export default function ShowcaseSlider({ slides, intervalMs = 3000 }: Props) {
                 animate={active ? "active" : "inactive"}
                 whileHover={!active ? "hover" : undefined}
               />
-              
-              {/* Enhanced ripple effect */}
-              {/* <AnimatePresence>
-                {active && (
-                  <motion.span
-                    className="absolute inset-0 rounded-full bg-white/20 border border-white/30"
-                    initial={{ scale: 0.8, opacity: 0 }}
-                    animate={{ 
-                      scale: [0.8, 2.5, 0.8], 
-                      opacity: [0, 0.4, 0] 
-                    }}
-                    exit={{ scale: 0.8, opacity: 0 }}
-                    transition={{ 
-                      duration: 2.5, 
-                      repeat: Infinity, 
-                      ease: [0.22, 1, 0.36, 1] 
-                    }}
-                  />
-                )}
-              </AnimatePresence> */}
             </motion.button>
           );
         })}

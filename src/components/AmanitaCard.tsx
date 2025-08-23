@@ -19,13 +19,21 @@ export default function AmanitaCard({ src, title, subtitle }: Props) {
       <div className="relative w-full overflow-hidden rounded-sm bg-[#1b1b1b]">
         {/* 16:9 like the reference */}
         <div className="relative aspect-[16/9]">
-          <Image
-            src={src}
-            alt={title}
-            fill
-            className="object-cover transition duration-300 ease-out group-hover:scale-[1.01] group-hover:brightness-110"
-            priority={false}
-          />
+          {src === '' ? (
+            // Coming Soon placeholder
+            <div className="w-full h-full bg-black flex items-center justify-center">
+              <span className="text-white font-semibold text-lg">Coming Soon</span>
+            </div>
+          ) : (
+            // Regular image
+            <Image
+              src={src}
+              alt={title}
+              fill
+              className="object-cover transition duration-300 ease-out group-hover:scale-[1.01] group-hover:brightness-110"
+              priority={false}
+            />
+          )}
         </div>
       </div>
       {/* Text */}

@@ -18,17 +18,17 @@ export default function HomeBody() {
       subtitle: "Smash zombies, dodge chaos, win XP.",
     },
     {
-      src: "/spin.png",
-      title: "8 Balls Pool",
-      subtitle: "Play the classic pool game with friends or online opponents.",
-    },
-    {
       src: "/triangle.png",
       title: "Triangle Chess",
       subtitle: "A strategic twist on chess played on a triangular board.",
     },
     {
-      src: "/doom.png",
+      src: "",
+      title: "8 Balls Pool",
+      subtitle: "Play the classic pool game with friends or online opponents.",
+    },
+    {
+      src: "",
       title: "Penalty Shootout",
       subtitle: "Test your skills in a thrilling football penalty shootout.",
     },
