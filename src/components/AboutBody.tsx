@@ -37,7 +37,7 @@ export default function AboutBody() {
   return (
     <div className="min-h-screen px-5">
       <div className="mx-auto max-w-full flex items-center justify-between">
-        <div className="grid grid-cols-1 gap-x- gap-y-2 md:grid-cols-2 lg:grid-cols-4 gap-x-4">
+        <div className="grid grid-cols-1 gap-x- gap-y-2 lg:grid-cols-3 md:grid-cols-2 gap-x-4">
           {cards.map((card, index) => (
             <div className="w-full">
                 <AmanitaCard
