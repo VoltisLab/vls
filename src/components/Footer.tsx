@@ -10,6 +10,7 @@ export default function Footer() {
     { label: "Instagram", href: "#" },
     { label: "Discord", href: "#" },
     { label: "YouTube", href: "#" },
+    { label: "Voltis Labs", href: "https://voltislabs.com" },
   ];
 
   return (
