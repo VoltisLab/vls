@@ -37,7 +37,7 @@ export default function AmanitaCard({ src, title, subtitle }: Props) {
         </div>
       </div>
       {/* Text */}
-      <div className="mt-4 text-center border-t border-b pb-6 pt-2 border-[#2b2b2b]">
+      <div className="mt-2 text-center border-b pb-2 pt-2 border-[#2b2b2b]">
         <h3 className="text-base font-semibold leading-tight text-white">
           {title}
         </h3>
