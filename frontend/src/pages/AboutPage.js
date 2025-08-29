@@ -8,63 +8,43 @@ const AboutPage = () => {
 
   const sideProjects = [
     {
-      title: "Little Buddy Move",
-      description: "Interactive Music Video",
+      title: "VModel",
+      description: "Designed for Creators, Built for the Future",
+      link: "https://vmodelapp.com/"
+    },
+    {
+      title: "Prelura",
+      description: "A New Home for Your Fashion Finds",
+      link: "https://prelura.com/"
+    },
+    {
+      title: "PONY",
+      description: "Interests Make Connections, Start With Substance",
+      link: "https://myponyapp.com/"
+    },
+    {
+      title: "Afrogarm",
+      description: "Rooted in Culture, Styled for Everyone",
+      link: "https://www.afrogarm.com/"
+    },
+    {
+      title: "Outfeatz",
+      description: "Smart Fashion Tools",
       link: "#"
     },
     {
-      title: "Zorya",
-      description: "Music Album by Floex",
+      title: "Loyalty Bot",
+      description: "Building Customer Loyalty",
       link: "#"
     },
     {
-      title: "Kooky",
-      description: "Puppet Feature Film and Book",
-      link: "#"
+      title: "VoltisLabs Academy",
+      description: "Hands-on Learning and Internship Hub",
+      link: "https://voltislabs.com/academy"
     },
     {
-      title: "Osada",
-      description: "Online Interactive Music Video",
-      link: "#"
-    },
-    {
-      title: "Shy Dwarf",
-      description: "Short Web Game by Jára Plachý",
-      link: "#"
-    },
-    {
-      title: "Plantage",
-      description: "Music Video for Under Byen",
-      link: "#"
-    },
-    {
-      title: "Na tu svatbu",
-      description: "Music Video for Kamil Jasmín",
-      link: "#"
-    },
-    {
-      title: "Nusle",
-      description: "Short Film",
-      link: "#"
-    },
-    {
-      title: "Psyride",
-      description: "Psytrance Music Video",
-      link: "#"
-    },
-    {
-      title: "Blanka Šperková",
-      description: "Flash Website",
-      link: "#"
-    },
-    {
-      title: "Podvědomím",
-      description: "Flash Website",
-      link: "#"
-    },
-    {
-      title: "Pantry",
-      description: "Web Toy",
+      title: "ProductiveToolkits",
+      description: "Smart Tools for Fast Image & Video Editing",
       link: "#"
     }
   ];
@@ -75,48 +55,53 @@ const AboutPage = () => {
       <main className="main-content">
         <div className="about-content">
           <section className="about-section">
-            <h1 className="page-title">About Amanita Design</h1>
+            <h1 className="page-title">About Voltis Labs Games</h1>
             <div className="about-text">
               <p>
-                Amanita Design is a Czech indie game developer. The studio was founded in 2003 by 
-                designer, artist and animator Jakub Dvorsky, and is known for its emphasis on surreal 
-                worlds, light-hearted humour, hand-crafted appeal and audiovisual experience.
+                Voltis Labs Games is the game development arm of Voltis Labs, built to push the boundaries of play, creativity, and interactive storytelling.
               </p>
               <p>
-                Amanita is currently operating in several small teams, working on a bunch of new games 
-                for various platforms.
+                We craft unique, addictive, and visually striking experiences that merge fun with imagination. From high-speed racers like Spinnersonic to experimental titles still in the lab, our mission is simple: to make games that feel good to play and hard to put down.
+              </p>
+              <p>
+                We believe in player-first design, ADHD-friendly features, and building global communities around our titles - all from a remote, creative-first studio culture that thrives on innovation.
+              </p>
+              <p>
+                Our games are not just for entertainment. They're ecosystems, challenges, and canvases built with care, purpose, and the same experimental energy that defines Voltis Labs.
+              </p>
+              <p>
+                Whether you're here to race, build, explore, or collaborate, welcome to the new era of gaming.
+              </p>
+              <p>
+                <strong>Welcome to Voltis Labs Games.</strong>
               </p>
             </div>
           </section>
 
           <section className="crew-section">
-            <h2 className="section-title">Amanita Crew</h2>
+            <h2 className="section-title">Our Team</h2>
             <div className="crew-info">
               <p>
                 Our team consists of passionate creators, artists, programmers, and designers who bring 
-                unique artistic visions to life through interactive experiences.
+                unique gaming visions to life through interactive experiences that push boundaries.
               </p>
             </div>
           </section>
 
           <section className="projects-section">
-            <h2 className="section-title">Our Side Projects</h2>
+            <h2 className="section-title">Other Voltis Labs Products</h2>
             <div className="projects-grid">
               {sideProjects.map((project, index) => (
                 <div key={index} className="project-card">
                   <h3 className="project-title">{project.title}</h3>
                   <p className="project-description">{project.description}</p>
+                  {project.link !== "#" && (
+                    <a href={project.link} target="_blank" rel="noopener noreferrer" className="project-link">
+                      Learn More
+                    </a>
+                  )}
                 </div>
               ))}
-            </div>
-
-            <div className="music-videos">
-              <h3 className="subsection-title">Music Videos</h3>
-              <ul className="music-video-list">
-                <li><a href="https://youtu.be/lZk-9hyF-sQ" target="_blank" rel="noopener noreferrer">Vespering - DVA, Jaromír Plachý</a></li>
-                <li><a href="https://youtu.be/JPJrHrH4dWc" target="_blank" rel="noopener noreferrer">Mulatu - DVA, Jaromír Plachý</a></li>
-                <li><a href="https://youtu.be/xMoXnZpYgFk" target="_blank" rel="noopener noreferrer">Nunovó tango - DVA, Jaromír Plachý</a></li>
-              </ul>
             </div>
           </section>
         </div>

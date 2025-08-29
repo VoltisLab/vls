@@ -22,7 +22,7 @@ const Header = () => {
               <span className="dot yellow"></span>
             </div>
           </div>
-          <span className="logo-text">Amanita Design</span>
+          <span className="logo-text">Voltis Labs Games</span>
         </Link>
         
         <nav className="navigation">
@@ -47,7 +47,7 @@ const Header = () => {
           <a href="#" className="social-link" aria-label="Facebook">
             <Facebook size={20} />
           </a>
-          <a href="#" className="social-link" aria-label="Instagram">
+          <a href="https://voltislabs.com/voltislabsgames" className="social-link" aria-label="Instagram">
             <Instagram size={20} />
           </a>
           <a href="#" className="social-link" aria-label="Discord">
