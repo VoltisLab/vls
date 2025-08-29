@@ -1,34 +1,34 @@
 // Slider games for homepage
 export const sliderGames = [
   {
-    title: "Phonopolis",
-    description: "A hand-crafted adventure game",
+    title: "Spinnersonic",
+    description: "High-speed racing with fidget spinner mechanics",
     image: "https://customer-assets.emergentagent.com/job_2254775f-056c-475f-8e45-02c39741e786/artifacts/0v9v8a91_Group%201244831544.png",
-    link: "/games/phonopolis"
+    link: "/games/spinnersonic"
   },
   {
-    title: "Pilgrims",
-    description: "Now available on App Store and Google Play", 
-    image: "https://customer-assets.emergentagent.com/job_2254775f-056c-475f-8e45-02c39741e786/artifacts/hxtwpsyl_Background.png",
-    link: "/games/pilgrims"
+    title: "Triangle Chess",
+    description: "Revolutionary chess on a triangular board", 
+    image: "https://customer-assets.emergentagent.com/job_2254775f-056c-475f-8e45-02c39741e786/artifacts/am9wazee_hkvbsxdfxd.png",
+    link: "/games/triangle-chess"
   },
   {
-    title: "Happy Game",
-    description: "Out now on PC / Mac, Nintendo Switch and mobile",
-    image: "https://customer-assets.emergentagent.com/job_2254775f-056c-475f-8e45-02c39741e786/artifacts/am9wazee_hkvbsxdfxd.png", 
-    link: "/games/happy"
+    title: "Spellcheck",
+    description: "Word adventure meets puzzle solving",
+    image: "https://customer-assets.emergentagent.com/job_2254775f-056c-475f-8e45-02c39741e786/artifacts/hxtwpsyl_Background.png", 
+    link: "/games/spellcheck"
   },
   {
-    title: "Creaks",
-    description: "Immersive Puzzle Game",
+    title: "Doomlane",
+    description: "Fast-paced survival racing",
     image: "https://customer-assets.emergentagent.com/job_2254775f-056c-475f-8e45-02c39741e786/artifacts/a8g9ilrg_pexels-ash-craig-122861-376464.jpg",
-    link: "/games/creaks"
+    link: "/games/doomlane"
   },
   {
-    title: "Samorost 3",
-    description: "Cosmic Adventure Game", 
+    title: "Tac ticx",
+    description: "Strategic multiplayer tactics game", 
     image: "https://customer-assets.emergentagent.com/job_2254775f-056c-475f-8e45-02c39741e786/artifacts/d4j87eyh_pexels-robinstickel-70497.jpg",
-    link: "/games/samorost3"
+    link: "/games/tacticx"
   }
 ];
 
