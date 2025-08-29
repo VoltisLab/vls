@@ -35,40 +35,40 @@ export const sliderGames = [
 // Featured games for homepage
 export const featuredGames = [
   {
-    title: "Pilgrims: Curious Adventures",
-    description: "A new family-friendly board game",
+    title: "Spinnersonic",
+    description: "High-speed racing with fidget spinner mechanics",
     image: "https://customer-assets.emergentagent.com/job_2254775f-056c-475f-8e45-02c39741e786/artifacts/0v9v8a91_Group%201244831544.png",
-    link: "/games/pilgrims-curious-adventures"
+    link: "/games/spinnersonic"
   },
   {
-    title: "Phonopolis", 
-    description: "A hand-crafted adventure game",
-    image: "https://customer-assets.emergentagent.com/job_2254775f-056c-475f-8e45-02c39741e786/artifacts/hxtwpsyl_Background.png",
-    link: "/games/phonopolis"
-  },
-  {
-    title: "Pilgrims",
-    description: "Now available on App Store and Google Play",
+    title: "Triangle Chess", 
+    description: "Revolutionary chess on a triangular board",
     image: "https://customer-assets.emergentagent.com/job_2254775f-056c-475f-8e45-02c39741e786/artifacts/am9wazee_hkvbsxdfxd.png",
-    link: "/games/pilgrims"
+    link: "/games/triangle-chess"
   },
   {
-    title: "Happy Game",
-    description: "Out now on PC / Mac, Nintendo Switch and mobile", 
+    title: "Spellcheck",
+    description: "Word adventure meets puzzle solving",
+    image: "https://customer-assets.emergentagent.com/job_2254775f-056c-475f-8e45-02c39741e786/artifacts/hxtwpsyl_Background.png",
+    link: "/games/spellcheck"
+  },
+  {
+    title: "Doomlane",
+    description: "Fast-paced survival racing", 
     image: "https://customer-assets.emergentagent.com/job_2254775f-056c-475f-8e45-02c39741e786/artifacts/a8g9ilrg_pexels-ash-craig-122861-376464.jpg",
-    link: "/games/happy"
+    link: "/games/doomlane"
   },
   {
-    title: "Order Creaks Collector's Box",
-    description: "Limited to 1000 units",
+    title: "Tac ticx",
+    description: "Strategic multiplayer tactics game",
     image: "https://customer-assets.emergentagent.com/job_2254775f-056c-475f-8e45-02c39741e786/artifacts/d4j87eyh_pexels-robinstickel-70497.jpg", 
-    link: "/merch/creaks-collectors-edition"
+    link: "/games/tacticx"
   },
   {
-    title: "Samorost 1",
-    description: "Play the new enhanced version on PC / Mac and mobile",
-    image: "https://images.unsplash.com/photo-1553490038-143ef3ab2a98",
-    link: "/games/samorost-1"
+    title: "Gringhouse",
+    description: "Experimental action adventure",
+    image: "https://customer-assets.emergentagent.com/job_2254775f-056c-475f-8e45-02c39741e786/artifacts/0v9v8a91_Group%201244831544.png",
+    link: "/games/gringhouse"
   }
 ];
 
