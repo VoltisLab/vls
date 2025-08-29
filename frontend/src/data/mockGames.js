@@ -37,31 +37,31 @@ export const featuredGames = [
   {
     title: "Pilgrims: Curious Adventures",
     description: "A new family-friendly board game",
-    image: "https://images.unsplash.com/photo-1697851429014-8b5f5fb76313",
+    image: "https://customer-assets.emergentagent.com/job_2254775f-056c-475f-8e45-02c39741e786/artifacts/0v9v8a91_Group%201244831544.png",
     link: "/games/pilgrims-curious-adventures"
   },
   {
     title: "Phonopolis", 
     description: "A hand-crafted adventure game",
-    image: "https://images.unsplash.com/photo-1707042711207-2b38f5d93974",
+    image: "https://customer-assets.emergentagent.com/job_2254775f-056c-475f-8e45-02c39741e786/artifacts/hxtwpsyl_Background.png",
     link: "/games/phonopolis"
   },
   {
     title: "Pilgrims",
     description: "Now available on App Store and Google Play",
-    image: "https://images.unsplash.com/photo-1601987177651-8edfe6c20009",
+    image: "https://customer-assets.emergentagent.com/job_2254775f-056c-475f-8e45-02c39741e786/artifacts/am9wazee_hkvbsxdfxd.png",
     link: "/games/pilgrims"
   },
   {
     title: "Happy Game",
     description: "Out now on PC / Mac, Nintendo Switch and mobile", 
-    image: "https://images.unsplash.com/photo-1679395608214-f1de4a7dbf96",
+    image: "https://customer-assets.emergentagent.com/job_2254775f-056c-475f-8e45-02c39741e786/artifacts/a8g9ilrg_pexels-ash-craig-122861-376464.jpg",
     link: "/games/happy"
   },
   {
     title: "Order Creaks Collector's Box",
     description: "Limited to 1000 units",
-    image: "https://images.unsplash.com/photo-1704123298707-d68f96152464", 
+    image: "https://customer-assets.emergentagent.com/job_2254775f-056c-475f-8e45-02c39741e786/artifacts/d4j87eyh_pexels-robinstickel-70497.jpg", 
     link: "/merch/creaks-collectors-edition"
   },
   {
