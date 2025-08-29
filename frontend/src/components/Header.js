@@ -1,11 +1,20 @@
 import React from "react";
+import { Link, useLocation } from "react-router-dom";
 import { Facebook, Instagram, Youtube, MessageCircle } from "lucide-react";
 
 const Header = () => {
+  const location = useLocation();
+
+  const isActive = (path) => {
+    if (path === "/" && location.pathname === "/") return true;
+    if (path !== "/" && location.pathname.startsWith(path)) return true;
+    return false;
+  };
+
   return (
     <header className="header">
       <div className="header-container">
-        <div className="logo">
+        <Link to="/" className="logo">
           <div className="logo-icon">
             <div className="logo-dots">
               <span className="dot red"></span>
@@ -14,14 +23,24 @@ const Header = () => {
             </div>
           </div>
           <span className="logo-text">Amanita Design</span>
-        </div>
+        </Link>
         
         <nav className="navigation">
-          <a href="/" className="nav-link">Home</a>
-          <a href="/about" className="nav-link">About</a>
-          <a href="/games" className="nav-link active">Games</a>
-          <a href="/merch" className="nav-link">Merch</a>
-          <a href="/contact" className="nav-link">Contact</a>
+          <Link to="/" className={`nav-link ${isActive("/") ? "active" : ""}`}>
+            Home
+          </Link>
+          <Link to="/about" className={`nav-link ${isActive("/about") ? "active" : ""}`}>
+            About
+          </Link>
+          <Link to="/games" className={`nav-link ${isActive("/games") ? "active" : ""}`}>
+            Games
+          </Link>
+          <Link to="/merch" className={`nav-link ${isActive("/merch") ? "active" : ""}`}>
+            Merch
+          </Link>
+          <Link to="/contact" className={`nav-link ${isActive("/contact") ? "active" : ""}`}>
+            Contact
+          </Link>
         </nav>
 
         <div className="social-links">
