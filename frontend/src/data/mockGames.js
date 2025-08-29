@@ -1,4 +1,79 @@
-export const gamesData = [
+// Slider games for homepage
+export const sliderGames = [
+  {
+    title: "Phonopolis",
+    description: "A hand-crafted adventure game",
+    image: "https://images.unsplash.com/photo-1707042711207-2b38f5d93974",
+    link: "/games/phonopolis"
+  },
+  {
+    title: "Pilgrims",
+    description: "Now available on App Store and Google Play", 
+    image: "https://images.unsplash.com/photo-1697851429014-8b5f5fb76313",
+    link: "/games/pilgrims"
+  },
+  {
+    title: "Happy Game",
+    description: "Out now on PC / Mac, Nintendo Switch and mobile",
+    image: "https://images.unsplash.com/photo-1679395608214-f1de4a7dbf96", 
+    link: "/games/happy"
+  },
+  {
+    title: "Creaks",
+    description: "Immersive Puzzle Game",
+    image: "https://images.unsplash.com/photo-1679395608216-debf85bdd107",
+    link: "/games/creaks"
+  },
+  {
+    title: "Samorost 3",
+    description: "Cosmic Adventure Game", 
+    image: "https://images.unsplash.com/photo-1673350808686-209dc177c898",
+    link: "/games/samorost3"
+  }
+];
+
+// Featured games for homepage
+export const featuredGames = [
+  {
+    title: "Pilgrims: Curious Adventures",
+    description: "A new family-friendly board game",
+    image: "https://images.unsplash.com/photo-1697851429014-8b5f5fb76313",
+    link: "/games/pilgrims-curious-adventures"
+  },
+  {
+    title: "Phonopolis", 
+    description: "A hand-crafted adventure game",
+    image: "https://images.unsplash.com/photo-1707042711207-2b38f5d93974",
+    link: "/games/phonopolis"
+  },
+  {
+    title: "Pilgrims",
+    description: "Now available on App Store and Google Play",
+    image: "https://images.unsplash.com/photo-1601987177651-8edfe6c20009",
+    link: "/games/pilgrims"
+  },
+  {
+    title: "Happy Game",
+    description: "Out now on PC / Mac, Nintendo Switch and mobile", 
+    image: "https://images.unsplash.com/photo-1679395608214-f1de4a7dbf96",
+    link: "/games/happy"
+  },
+  {
+    title: "Order Creaks Collector's Box",
+    description: "Limited to 1000 units",
+    image: "https://images.unsplash.com/photo-1704123298707-d68f96152464", 
+    link: "/merch/creaks-collectors-edition"
+  },
+  {
+    title: "Samorost 1",
+    description: "Play the new enhanced version on PC / Mac and mobile",
+    image: "https://images.unsplash.com/photo-1553490038-143ef3ab2a98",
+    link: "/games/samorost-1"
+  }
+];
+
+// All games for games page
+export const allGames = [
   {
     title: "Pilgrims: Curious Adventures",
     description: "A new family-friendly board game",
