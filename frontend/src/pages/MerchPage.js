@@ -12,42 +12,42 @@ const MerchPage = () => {
       title: "Creaks Collector's Box",
       description: "Limited to 1000 units",
       price: "$89.99",
-      image: "https://images.unsplash.com/photo-1704123298707-d68f96152464",
+      image: "https://customer-assets.emergentagent.com/job_2254775f-056c-475f-8e45-02c39741e786/artifacts/0v9v8a91_Group%201244831544.png",
       category: "Collector's Edition"
     },
     {
       title: "Samorost 3 Soundtrack Vinyl",
       description: "Original soundtrack by Floex",
       price: "$34.99",
-      image: "https://images.unsplash.com/photo-1673350808686-209dc177c898",
+      image: "https://customer-assets.emergentagent.com/job_2254775f-056c-475f-8e45-02c39741e786/artifacts/hxtwpsyl_Background.png",
       category: "Music"
     },
     {
       title: "Machinarium Art Book",
       description: "Beautiful concept art collection",
       price: "$24.99",
-      image: "https://images.unsplash.com/photo-1755741503757-6c65894e0d3f",
+      image: "https://customer-assets.emergentagent.com/job_2254775f-056c-475f-8e45-02c39741e786/artifacts/am9wazee_hkvbsxdfxd.png",
       category: "Art Book"
     },
     {
       title: "CHUCHEL Plush Toy",
       description: "Soft and cuddly CHUCHEL character",
       price: "$19.99",
-      image: "https://images.unsplash.com/photo-1637094408647-0d81d08f81b5",
+      image: "https://customer-assets.emergentagent.com/job_2254775f-056c-475f-8e45-02c39741e786/artifacts/a8g9ilrg_pexels-ash-craig-122861-376464.jpg",
       category: "Toy"
     },
     {
       title: "Botanicula T-Shirt",
       description: "Organic cotton with tree design",
       price: "$29.99",
-      image: "https://images.unsplash.com/photo-1722223223055-6ff2c5f80d89",
+      image: "https://customer-assets.emergentagent.com/job_2254775f-056c-475f-8e45-02c39741e786/artifacts/d4j87eyh_pexels-robinstickel-70497.jpg",
       category: "Apparel"
     },
     {
       title: "Pilgrims Board Game",
       description: "Family-friendly adventure board game",
       price: "$49.99",
-      image: "https://images.unsplash.com/photo-1601987177651-8edfe6c20009",
+      image: "https://customer-assets.emergentagent.com/job_2254775f-056c-475f-8e45-02c39741e786/artifacts/0v9v8a91_Group%201244831544.png",
       category: "Board Game"
     }
   ];
