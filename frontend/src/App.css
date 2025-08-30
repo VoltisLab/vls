@@ -48,31 +48,9 @@ body {
   font-size: 16px;
 }
 
-.logo-icon {
-  position: relative;
-}
-
-.logo-dots {
-  display: flex;
-  gap: 2px;
-}
-
-.dot {
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-}
-
-.dot.red {
-  background-color: #ff4444;
-}
-
-.dot.orange {
-  background-color: #ff8800;
-}
-
-.dot.yellow {
-  background-color: #ffdd00;
+.logo-image {
+  height: 40px;
+  width: auto;
 }
 
 .navigation {
