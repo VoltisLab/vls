@@ -16,20 +16,6 @@ const MerchPage = () => {
       price: "$29.99",
       image: "https://customer-assets.emergentagent.com/job_2254775f-056c-475f-8e45-02c39741e786/artifacts/0v9v8a91_Group%201244831544.png",
       category: "Featured"
-    },
-    {
-      title: "Triangle Chess Premium Set",
-      description: "Wooden board with magnetic pieces",
-      price: "$149.99",
-      image: "https://customer-assets.emergentagent.com/job_2254775f-056c-475f-8e45-02c39741e786/artifacts/am9wazee_hkvbsxdfxd.png",
-      category: "Featured"
-    },
-    {
-      title: "Voltis Labs Gaming Chair",
-      description: "Ergonomic gaming chair with LED lighting",
-      price: "$299.99",
-      image: "https://customer-assets.emergentagent.com/job_2254775f-056c-475f-8e45-02c39741e786/artifacts/hxtwpsyl_Background.png",
-      category: "Featured"
     }
   ];
 
