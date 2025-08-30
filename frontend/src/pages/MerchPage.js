@@ -393,22 +393,6 @@ const MerchPage = () => {
       <Header />
       <main className="main-content">
         <div className="merch-content">
-          <section className="merch-header">
-            <h1 className="page-title">Voltis Labs Games Store</h1>
-            <p className="page-description">
-              Discover exclusive merchandise from your favorite Voltis Labs games, from collectibles to gaming gear and apparel.
-            </p>
-            <a 
-              href="https://voltislabs.com" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="external-store-link"
-            >
-              <ExternalLink size={20} />
-              Visit Main Voltis Labs Store
-            </a>
-          </section>
-
           {/* Featured Items Slider */}
           <section className="featured-slider">
             <h2 className="section-title">Featured Items</h2>
