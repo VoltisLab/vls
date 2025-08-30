@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const GameCard = ({ game }) => {
   return (
-    <Link to={game.link} className="game-card-link">
+    <Link to={game.link} target="_blank" className="game-card-link">
       <div className="game-card">
         <div className="game-image-container">
           <img 
