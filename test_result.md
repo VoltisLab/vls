@@ -101,3 +101,35 @@
 #====================================================================================================
 # Testing Data - Main Agent and testing sub agent both should log testing data below this section
 #====================================================================================================
+
+user_problem_statement: Change currency to £ (British pounds) in the merchandise section
+
+frontend:
+  - task: "Change currency from $ to £ in merchandise prices"
+    implemented: false
+    working: "NA"
+    file: "/app/frontend/src/pages/MerchPage.js"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: true
+    status_history:
+        - working: "NA"
+          agent: "main"
+          comment: "Task identified - need to update all $ symbols to £ in MerchPage.js featuring 49 price instances"
+
+metadata:
+  created_by: "main_agent"
+  version: "1.0"
+  test_sequence: 0
+  run_ui: false
+
+test_plan:
+  current_focus:
+    - "Change currency from $ to £ in merchandise prices"
+  stuck_tasks: []
+  test_all: false
+  test_priority: "high_first"
+
+agent_communication:
+    - agent: "main"
+      message: "Starting currency change task - updating all $ symbols to £ in merchandise page prices"
