@@ -9,6 +9,7 @@ import ContactPage from "./pages/ContactPage";
 
 // Game Pages
 import SpinnersonicPage from "./pages/games/SpinnersonicPage";
+import CreaksPage from "./pages/games/CreaksPage";
 import TriangleChessPage from "./pages/games/TriangleChessPage";
 import SpellcheckPage from "./pages/games/SpellcheckPage";
 import DoomlanePage from "./pages/games/DoomlanePage";
