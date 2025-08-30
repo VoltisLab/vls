@@ -89,7 +89,7 @@ export const allGames = [
   {
     title: "Spellcheck",
     description: "Word adventure meets puzzle solving", 
-    image: "https://customer-assets.emergentagent.com/job_2254775f-056c-475f-8e45-02c39741e786/artifacts/hxtwpsyl_Background.png",
+    image: "https://customer-assets.emergentagent.com/job_2254775f-056c-475f-8e45-02c39741e786/artifacts/a8g9ilrg_pexels-ash-craig-122861-376464.jpg",
     link: "/games/spellcheck"
   },
   {
