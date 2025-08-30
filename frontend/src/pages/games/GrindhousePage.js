@@ -15,7 +15,7 @@ const GrindhousePage = () => {
           <section className="game-hero">
             <div className="game-hero-content">
               <div className="game-info">
-                <h1 className="game-title">Gringhouse</h1>
+                <h1 className="game-title">Grindhouse</h1>
                 <h2 className="game-subtitle">Experimental Action Adventure</h2>
                 <p className="game-description">
                   Dive into an experimental world where reality bends and action knows no bounds. 
