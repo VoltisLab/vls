@@ -1,6 +1,6 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Facebook, Instagram, Youtube, MessageCircle } from "lucide-react";
+import { Instagram, Youtube, MessageCircle } from "lucide-react";
 
 const Header = () => {
   const location = useLocation();
