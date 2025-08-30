@@ -29,6 +29,7 @@ function App() {
           
           {/* Individual Game Routes */}
           <Route path="/games/spinnersonic" element={<SpinnersonicPage />} />
+          <Route path="/games/creaks" element={<CreaksPage />} />
           <Route path="/games/triangle-chess" element={<TriangleChessPage />} />
           <Route path="/games/spellcheck" element={<SpellcheckPage />} />
           <Route path="/games/doomlane" element={<DoomlanePage />} />
