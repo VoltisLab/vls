@@ -859,8 +859,9 @@ body {
   .slider-container {
     height: 75vw;
     max-height: 325px;
-    margin: 0 -20px 40px -20px;
+    margin: 0 -15px 40px -15px;
     border-radius: 0;
+    width: calc(100% + 30px);
   }
   
   .slider-image {
