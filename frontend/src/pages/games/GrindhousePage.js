@@ -4,7 +4,7 @@ import Footer from "../../components/Footer";
 import CookieConsent from "../../components/CookieConsent";
 import { ExternalLink, Play } from "lucide-react";
 
-const GringhousePage = () => {
+const GrindhousePage = () => {
   const [showCookieConsent, setShowCookieConsent] = useState(true);
 
   return (
