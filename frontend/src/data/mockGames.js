@@ -63,6 +63,12 @@ export const allGames = [
     link: "/games/spinnersonic"
   },
   {
+    title: "Creaks",
+    description: "Mind-bending puzzle adventure with mysterious creatures",
+    image: "https://customer-assets.emergentagent.com/job_gaming-rebrand/artifacts/ri4qnibm_Creaks%20Box.jpg",
+    link: "/games/creaks"
+  },
+  {
     title: "Triangle Chess", 
     description: "Revolutionary chess on a triangular board",
     image: "https://customer-assets.emergentagent.com/job_2254775f-056c-475f-8e45-02c39741e786/artifacts/am9wazee_hkvbsxdfxd.png",
