@@ -1,13 +1,14 @@
-import React, { useState } from "react";
+import React from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import CookieConsent from "../components/CookieConsent";
 import GameSlider from "../components/GameSlider";
 import GameGrid from "../components/GameGrid";
 import { sliderGames, featuredGames } from "../data/mockGames";
+import { useCookieConsent } from "../hooks/useCookieConsent";
 
 const HomePage = () => {
-  const [showCookieConsent, setShowCookieConsent] = useState(true);
+  const { showCookieConsent, handleAccept } = useCookieConsent();
 
   return (
     <div className="home-page">
@@ -23,7 +24,7 @@ const HomePage = () => {
       </main>
       <Footer />
       {showCookieConsent && (
-        <CookieConsent onAccept={() => setShowCookieConsent(false)} />
+        <CookieConsent onAccept={handleAccept} />
       )}
     </div>
   );
