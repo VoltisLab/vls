@@ -14,7 +14,7 @@ const Footer = () => {
           <span className="separator">·</span>
           <a href="#" className="footer-link">Facebook</a>
           <span className="separator">·</span>
-          <a href="https://voltislabs.com/voltislabsgames" className="footer-link">Instagram</a>
+          <a href="https://instagram.com/voltislabsgames" className="footer-link">Instagram</a>
           <span className="separator">·</span>
           <a href="#" className="footer-link">Bluesky</a>
           <span className="separator">·</span>
