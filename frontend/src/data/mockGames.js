@@ -23,6 +23,12 @@ export const featuredGames = [
     link: "/games/spinnersonic"
   },
   {
+    title: "Creaks",
+    description: "Mind-bending puzzle adventure with mysterious creatures",
+    image: "https://customer-assets.emergentagent.com/job_gaming-rebrand/artifacts/ri4qnibm_Creaks%20Box.jpg",
+    link: "/games/creaks"
+  },
+  {
     title: "Triangle Chess", 
     description: "Revolutionary chess on a triangular board",
     image: "https://customer-assets.emergentagent.com/job_2254775f-056c-475f-8e45-02c39741e786/artifacts/am9wazee_hkvbsxdfxd.png",
@@ -45,12 +51,6 @@ export const featuredGames = [
     description: "Strategic multiplayer tactics game",
     image: "https://customer-assets.emergentagent.com/job_2254775f-056c-475f-8e45-02c39741e786/artifacts/d4j87eyh_pexels-robinstickel-70497.jpg", 
     link: "/games/tacticx"
-  },
-  {
-    title: "Grindhouse",
-    description: "Experimental action adventure",
-    image: "https://customer-assets.emergentagent.com/job_2254775f-056c-475f-8e45-02c39741e786/artifacts/0v9v8a91_Group%201244831544.png",
-    link: "/games/grindhouse"
   }
 ];
 
