@@ -15,14 +15,11 @@ const Header = () => {
     <header className="header">
       <div className="header-container">
         <Link to="/" className="logo">
-          <div className="logo-icon">
-            <div className="logo-dots">
-              <span className="dot red"></span>
-              <span className="dot orange"></span>
-              <span className="dot yellow"></span>
-            </div>
-          </div>
-          <span className="logo-text">Voltis Labs Games</span>
+          <img 
+            src="https://customer-assets.emergentagent.com/job_gaming-rebrand/artifacts/n7rtb7og_Group%201244831488.png" 
+            alt="Voltis Labs Games" 
+            className="logo-image"
+          />
         </Link>
         
         <nav className="navigation">
