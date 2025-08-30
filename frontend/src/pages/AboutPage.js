@@ -89,19 +89,13 @@ const AboutPage = () => {
           </section>
 
           <section className="projects-section">
-            <h2 className="section-title">Other Voltis Labs Products</h2>
-            <div className="projects-grid">
-              {sideProjects.map((project, index) => (
-                <div key={index} className="project-card">
-                  <h3 className="project-title">{project.title}</h3>
-                  <p className="project-description">{project.description}</p>
-                  {project.link !== "#" && (
-                    <a href={project.link} target="_blank" rel="noopener noreferrer" className="project-link">
-                      Learn More
-                    </a>
-                  )}
-                </div>
-              ))}
+            <h2 className="section-title">Our Focus</h2>
+            <div className="projects-info">
+              <p>
+                At Voltis Labs Games, we are dedicated exclusively to creating exceptional gaming experiences. 
+                Our team focuses all energy and creativity on developing innovative games that push the 
+                boundaries of interactive entertainment.
+              </p>
             </div>
           </section>
         </div>
