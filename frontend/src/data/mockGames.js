@@ -91,5 +91,17 @@ export const allGames = [
     description: "Experimental action adventure",
     image: "https://customer-assets.emergentagent.com/job_2254775f-056c-475f-8e45-02c39741e786/artifacts/0v9v8a91_Group%201244831544.png",
     link: "/games/grindhouse"
+  },
+  {
+    title: "8 Ball Pool",
+    description: "Classic billiards with modern twists",
+    image: "https://customer-assets.emergentagent.com/job_2254775f-056c-475f-8e45-02c39741e786/artifacts/0v9v8a91_Group%201244831544.png",
+    link: "/games/8-ball-pool"
+  },
+  {
+    title: "Penalty Shootout",
+    description: "Intense soccer penalty competition",
+    image: "https://customer-assets.emergentagent.com/job_2254775f-056c-475f-8e45-02c39741e786/artifacts/am9wazee_hkvbsxdfxd.png",
+    link: "/games/penalty-shootout"
   }
 ];
