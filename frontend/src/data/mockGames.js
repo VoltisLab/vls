@@ -43,13 +43,13 @@ export const featuredGames = [
   {
     title: "Doomlane",
     description: "Fast-paced survival racing", 
-    image: "https://customer-assets.emergentagent.com/job_2254775f-056c-475f-8e45-02c39741e786/artifacts/a8g9ilrg_pexels-ash-craig-122861-376464.jpg",
+    image: "https://customer-assets.emergentagent.com/job_gaming-rebrand/artifacts/1p5vhozt_Group%201244831567.jpg",
     link: "/games/doomlane"
   },
   {
     title: "Tacticx",
     description: "Strategic multiplayer tactics game",
-    image: "https://customer-assets.emergentagent.com/job_2254775f-056c-475f-8e45-02c39741e786/artifacts/d4j87eyh_pexels-robinstickel-70497.jpg", 
+    image: "https://customer-assets.emergentagent.com/job_gaming-rebrand/artifacts/1p5vhozt_Group%201244831567.jpg", 
     link: "/games/tacticx"
   }
 ];
