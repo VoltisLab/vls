@@ -58,11 +58,24 @@ const SpellcheckPage = () => {
               </div>
               
               <div className="game-media">
-                <img 
-                  src="https://customer-assets.emergentagent.com/job_2254775f-056c-475f-8e45-02c39741e786/artifacts/hxtwpsyl_Background.png" 
-                  alt="Spellcheck Game"
-                  className="game-image"
-                />
+                <div 
+                  className="game-image spellcheck-bg"
+                  style={{
+                    backgroundColor: '#0f0f0f',
+                    border: '1px solid #333',
+                    borderRadius: '8px',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    minHeight: '300px',
+                    color: '#ffffff',
+                    fontSize: '48px',
+                    fontWeight: 'bold',
+                    textAlign: 'center'
+                  }}
+                >
+                  SPELLCHECK
+                </div>
                 <button className="play-trailer-btn">
                   <Play size={24} />
                   Watch Trailer
