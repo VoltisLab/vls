@@ -13,7 +13,7 @@ import TriangleChessPage from "./pages/games/TriangleChessPage";
 import SpellcheckPage from "./pages/games/SpellcheckPage";
 import DoomlanePage from "./pages/games/DoomlanePage";
 import TacticxPage from "./pages/games/TacticxPage";
-import GringhousePage from "./pages/games/GringhousePage";
+import GrindhousePage from "./pages/games/GrindhousePage";
 
 function App() {
   return (
