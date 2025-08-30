@@ -41,9 +41,6 @@ const Header = () => {
         </nav>
 
         <div className="social-links">
-          <a href="#" className="social-link" aria-label="Facebook">
-            <Facebook size={20} />
-          </a>
           <a href="https://instagram.com/voltislabsgames" className="social-link" aria-label="Instagram">
             <Instagram size={20} />
           </a>
