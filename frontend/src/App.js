@@ -32,7 +32,7 @@ function App() {
           <Route path="/games/spellcheck" element={<SpellcheckPage />} />
           <Route path="/games/doomlane" element={<DoomlanePage />} />
           <Route path="/games/tacticx" element={<TacticxPage />} />
-          <Route path="/games/gringhouse" element={<GringhousePage />} />
+          <Route path="/games/grindhouse" element={<GrindhousePage />} />
         </Routes>
       </BrowserRouter>
     </div>
