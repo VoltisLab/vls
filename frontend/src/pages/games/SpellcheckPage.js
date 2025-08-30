@@ -95,7 +95,23 @@ const SpellcheckPage = () => {
           <section className="merch-section">
             <h3>Spellcheck Merchandise</h3>
             <div className="merch-item">
-              <img src="https://customer-assets.emergentagent.com/job_2254775f-056c-475f-8e45-02c39741e786/artifacts/hxtwpsyl_Background.png" alt="Spellcheck Merch" />
+              <div 
+                style={{
+                  backgroundColor: '#0f0f0f',
+                  border: '1px solid #333',
+                  borderRadius: '8px',
+                  width: '100px',
+                  height: '100px',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  color: '#ffffff',
+                  fontSize: '12px',
+                  fontWeight: 'bold'
+                }}
+              >
+                SPELLCHECK
+              </div>
               <div>
                 <h4>Spellcheck Word Guide Book</h4>
                 <p>Official strategy guide with advanced word lists</p>
