@@ -15,6 +15,8 @@ import SpellcheckPage from "./pages/games/SpellcheckPage";
 import DoomlanePage from "./pages/games/DoomlanePage";
 import TacticxPage from "./pages/games/TacticxPage";
 import GrindhousePage from "./pages/games/GrindhousePage";
+import EightBallPoolPage from "./pages/games/EightBallPoolPage";
+import PenaltyShootoutPage from "./pages/games/PenaltyShootoutPage";
 
 function App() {
   return (
