@@ -407,23 +407,6 @@ const MerchPage = () => {
                   </div>
                 ))}
               </div>
-              
-              <button className="slider-nav prev" onClick={prevSlide}>
-                <ChevronLeft size={24} />
-              </button>
-              <button className="slider-nav next" onClick={nextSlide}>
-                <ChevronRight size={24} />
-              </button>
-
-              <div className="slider-dots">
-                {featuredItems.map((_, index) => (
-                  <button
-                    key={index}
-                    className={`dot ${index === currentSlide ? 'active' : ''}`}
-                    onClick={() => setCurrentSlide(index)}
-                  />
-                ))}
-              </div>
             </div>
           </section>
 
