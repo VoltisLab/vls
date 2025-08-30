@@ -863,6 +863,11 @@ body {
     border-radius: 0;
   }
   
+  .slider-image {
+    object-position: center;
+    object-fit: cover;
+  }
+  
   .slider-nav {
     width: 40px;
     height: 40px;
