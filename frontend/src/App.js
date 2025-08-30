@@ -37,6 +37,8 @@ function App() {
           <Route path="/games/doomlane" element={<DoomlanePage />} />
           <Route path="/games/tacticx" element={<TacticxPage />} />
           <Route path="/games/grindhouse" element={<GrindhousePage />} />
+          <Route path="/games/8-ball-pool" element={<EightBallPoolPage />} />
+          <Route path="/games/penalty-shootout" element={<PenaltyShootoutPage />} />
         </Routes>
       </BrowserRouter>
     </div>
