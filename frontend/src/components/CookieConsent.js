@@ -2,6 +2,16 @@ import React from "react";
 import { Button } from "./ui/button";
 
 const CookieConsent = ({ onAccept }) => {
+  const handleAccept = () => {
+    localStorage.setItem('cookiesAccepted', 'true');
+    onAccept();
+  };
+
+  const handleReject = () => {
+    localStorage.setItem('cookiesAccepted', 'false');
+    onAccept();
+  };
+
   return (
     <div className="cookie-consent">
       <div className="cookie-content">
@@ -12,13 +22,13 @@ const CookieConsent = ({ onAccept }) => {
         </p>
         <div className="cookie-buttons">
           <Button 
-            onClick={onAccept}
+            onClick={handleAccept}
             className="accept-button"
           >
             Accept all
           </Button>
           <Button 
-            onClick={onAccept}
+            onClick={handleReject}
             variant="outline"
             className="reject-button"
           >
