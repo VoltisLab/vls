@@ -110,6 +110,12 @@ body {
 }
 
 /* Game Card */
+.game-card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
 .game-card {
   background-color: transparent;
   border-radius: 8px;
