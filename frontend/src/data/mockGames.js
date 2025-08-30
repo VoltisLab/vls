@@ -25,7 +25,7 @@ export const featuredGames = [
   {
     title: "Creaks",
     description: "Mind-bending puzzle adventure with mysterious creatures",
-    image: "https://customer-assets.emergentagent.com/job_gaming-rebrand/artifacts/1p5vhozt_Group%201244831567.jpg",
+    image: "https://customer-assets.emergentagent.com/job_gaming-rebrand/artifacts/ri4qnibm_Creaks%20Box.jpg",
     link: "/games/creaks"
   },
   {
