@@ -7,16 +7,10 @@ export const sliderGames = [
     link: "/games/spinnersonic"
   },
   {
-    title: "Triangle Chess",
-    description: "Revolutionary chess on a triangular board", 
-    image: "https://customer-assets.emergentagent.com/job_2254775f-056c-475f-8e45-02c39741e786/artifacts/am9wazee_hkvbsxdfxd.png",
-    link: "/games/triangle-chess"
-  },
-  {
-    title: "Doomlane",
-    description: "Fast-paced survival racing",
-    image: "https://customer-assets.emergentagent.com/job_2254775f-056c-475f-8e45-02c39741e786/artifacts/a8g9ilrg_pexels-ash-craig-122861-376464.jpg",
-    link: "/games/doomlane"
+    title: "Creaks",
+    description: "Mind-bending puzzle adventure with mysterious creatures",
+    image: "https://customer-assets.emergentagent.com/job_gaming-rebrand/artifacts/ri4qnibm_Creaks%20Box.jpg",
+    link: "/games/creaks"
   }
 ];
 
