@@ -855,7 +855,10 @@ body {
 
   /* Slider responsive */
   .slider-container {
-    height: 325px;
+    height: 75vw;
+    max-height: 325px;
+    margin: 0 -20px 40px -20px;
+    border-radius: 0;
   }
   
   .slider-nav {
