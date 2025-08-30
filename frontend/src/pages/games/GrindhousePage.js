@@ -80,4 +80,4 @@ const GrindhousePage = () => {
   );
 };
 
-export default GringhousePage;
+export default GrindhousePage;
