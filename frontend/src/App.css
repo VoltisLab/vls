@@ -976,7 +976,168 @@ body {
     font-size: 14px;
   }
 
-  /* Contact form responsive */
+  /* Game Page Styles */
+.game-page {
+  min-height: 100vh;
+  background: #0f0f0f;
+}
+
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #cccccc;
+  text-decoration: none;
+  font-size: 14px;
+  margin-bottom: 30px;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.back-link:hover {
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.game-banner {
+  margin-bottom: 50px;
+}
+
+.game-banner-image {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+}
+
+.game-description {
+  margin-bottom: 50px;
+}
+
+.game-title {
+  font-size: 48px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.game-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.game-text {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #cccccc;
+  margin-bottom: 20px;
+}
+
+.game-features {
+  margin-top: 40px;
+  padding: 30px;
+  background: linear-gradient(135deg, rgba(255, 221, 0, 0.1) 0%, rgba(255, 221, 0, 0.05) 100%);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 221, 0, 0.2);
+}
+
+.game-features h3 {
+  font-size: 24px;
+  color: #ffdd00;
+  margin-bottom: 20px;
+}
+
+.game-features ul {
+  list-style: none;
+  padding: 0;
+}
+
+.game-features li {
+  font-size: 16px;
+  color: #cccccc;
+  margin-bottom: 12px;
+  padding-left: 20px;
+  position: relative;
+}
+
+.game-features li:before {
+  content: "✓";
+  color: #ffdd00;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+}
+
+.game-downloads {
+  margin-bottom: 50px;
+  padding: 50px 0;
+  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+}
+
+.downloads-title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.download-buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.download-btn {
+  display: block;
+  transition: transform 0.3s ease;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.download-btn:hover {
+  transform: translateY(-3px);
+}
+
+.download-btn img {
+  height: 48px;
+  width: auto;
+  filter: brightness(0.9);
+  transition: filter 0.3s ease;
+}
+
+.download-btn:hover img {
+  filter: brightness(1);
+}
+
+@media (max-width: 768px) {
+  .game-banner-image {
+    height: 250px;
+  }
+  
+  .game-title {
+    font-size: 36px;
+  }
+  
+  .game-text {
+    font-size: 16px;
+  }
+  
+  .downloads-title {
+    font-size: 24px;
+  }
+  
+  .download-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+}
   .contact-layout {
     grid-template-columns: 1fr;
     gap: 40px;
