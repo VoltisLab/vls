@@ -2608,8 +2608,8 @@ body {
   display: inline-flex;
   align-items: center;
   gap: 10px;
-  background: white;
-  color: #007AFF;
+  background: var(--bg-primary);
+  color: var(--accent-primary);
   padding: 16px 32px;
   border-radius: 12px;
   text-decoration: none;
