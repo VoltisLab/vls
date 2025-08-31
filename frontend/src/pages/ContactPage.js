@@ -135,7 +135,23 @@ const ContactPage = () => {
 
             {/* Form Section */}
             <div className="contact-form-section">
-              {showForm ? (
+              {showGameSelection ? (
+                <div className="game-selection">
+                  <h2 className="form-title">Select a Game</h2>
+                  <div className="games-grid">
+                    {allGames.map((game, index) => (
+                      <div 
+                        key={index}
+                        className="game-select-card"
+                        onClick={() => handleGameSelect(game)}
+                      >
+                        <img src={game.image} alt={game.title} className="game-select-image" />
+                        <h4 className="game-select-title">{game.title}</h4>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              ) : showForm ? (
                 <form className={`amanita-contact-form ${showForm ? 'show' : ''}`} onSubmit={handleSubmit}>
                   <h2 className="form-title">Contact Form</h2>
                   
