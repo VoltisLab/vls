@@ -105,23 +105,20 @@
 user_problem_statement: Change "Coming Soon" to "Soon" on Games page
 
 frontend:
-  - task: "Change currency from $ to £ in merchandise prices"
+  - task: "Change 'Coming Soon' to 'Soon' on Games page"
     implemented: true
     working: true
-    file: "/app/frontend/src/pages/MerchPage.js"
+    file: "/app/frontend/src/pages/GamesPage.js"
     stuck_count: 0
     priority: "high"
     needs_retesting: false
     status_history:
         - working: "NA"
           agent: "main"
-          comment: "Task identified - need to update all $ symbols to £ in MerchPage.js featuring 49 price instances"
+          comment: "Task identified - need to update 'Coming Soon' text to 'Soon' in Games page download counts"
         - working: true
           agent: "main"
-          comment: "Successfully updated all 49 currency instances from $ to £ in MerchPage.js. All dollar symbols replaced with pound symbols."
-        - working: true
-          agent: "testing"
-          comment: "TESTING COMPLETED SUCCESSFULLY: Verified all currency symbols changed from $ to £. Featured item shows £29.99 correctly. All 48 merchandise items display £ symbols. Found 49 total £ symbols and 0 $ symbols in prices. Specific high-value items verified: Triangle Chess Set £149.99, Gaming Chair £299.99. Currency conversion is fully functional."
+          comment: "Successfully updated all 5 instances of 'Coming Soon' to 'Soon' in the getDownloadCount function for upcoming games: Creaks, Doomlane, Tacticx, 8 Ball Pool, and Penalty Shootout"
 
 metadata:
   created_by: "main_agent"
