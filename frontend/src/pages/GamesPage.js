@@ -172,6 +172,7 @@ const GamesPage = () => {
         </div>
       </main>
       <Footer />
+      <ScrollToTop />
       {showCookieConsent && (
         <CookieConsent onAccept={() => setShowCookieConsent(false)} />
       )}
