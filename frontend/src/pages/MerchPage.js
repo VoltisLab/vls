@@ -81,7 +81,7 @@ const MerchPage = () => {
     {
       title: "Gaming Controller Stand",
       description: "LED-lit controller display stand",
-      price: "$34.99",
+      price: "£34.99",
       image: "https://customer-assets.emergentagent.com/job_2254775f-056c-475f-8e45-02c39741e786/artifacts/a8g9ilrg_pexels-ash-craig-122861-376464.jpg",
       category: "Gaming"
     },
