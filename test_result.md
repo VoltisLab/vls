@@ -128,7 +128,7 @@ metadata:
 
 test_plan:
   current_focus:
-    - "Change currency from $ to £ in merchandise prices"
+    - "Change 'Coming Soon' to 'Soon' on Games page"
   stuck_tasks: []
   test_all: false
   test_priority: "high_first"
