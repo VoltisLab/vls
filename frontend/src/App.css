@@ -377,8 +377,8 @@ body {
 }
 
 .primary-download {
-  background: #007AFF;
-  color: white;
+  background: var(--accent-primary);
+  color: var(--bg-primary);
   border: none;
   padding: 12px 30px;
   border-radius: 25px;
