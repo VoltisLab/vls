@@ -339,7 +339,7 @@ const MerchPage = () => {
     {
       title: "Webcam Cover Set",
       description: "Privacy covers with game logos",
-      price: "$9.99",
+      price: "£9.99",
       image: "https://customer-assets.emergentagent.com/job_2254775f-056c-475f-8e45-02c39741e786/artifacts/d4j87eyh_pexels-robinstickel-70497.jpg",
       category: "Tech"
     },
