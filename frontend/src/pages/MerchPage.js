@@ -360,7 +360,7 @@ const MerchPage = () => {
     {
       title: "Cable Organizer Kit",
       description: "Complete cable management solution",
-      price: "$24.99",
+      price: "£24.99",
       image: "https://customer-assets.emergentagent.com/job_2254775f-056c-475f-8e45-02c39741e786/artifacts/hxtwpsyl_Background.png",
       category: "Tech"
     }
