@@ -109,7 +109,7 @@ const AboutPage = () => {
 
           {/* Mission Section */}
           <section className="mission-section">
-            <div className="app-store-card">
+            <div className="app-store-card wide-card">
               <div className="card-header">
                 <div className="card-icon">
                   <Target size={24} />
@@ -123,7 +123,14 @@ const AboutPage = () => {
                   and canvases built with care, purpose, and experimental energy.
                 </p>
                 <p>
-                  Whether you're here to race, build, explore, or collaborate, welcome to the new era of gaming.
+                  Whether you're here to race, build, explore, or collaborate, welcome to the new era of gaming. 
+                  We're committed to creating experiences that are not only fun but meaningful, bringing people 
+                  together across the globe through shared adventures and challenges.
+                </p>
+                <p>
+                  Our approach combines cutting-edge technology with timeless game design principles, ensuring 
+                  that every title we release pushes the medium forward while remaining accessible to players 
+                  of all backgrounds and skill levels.
                 </p>
               </div>
             </div>
