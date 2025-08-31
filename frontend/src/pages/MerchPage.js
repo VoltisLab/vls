@@ -491,6 +491,7 @@ const MerchPage = () => {
         </div>
       </main>
       <Footer />
+      <ScrollToTop />
       
       {/* Shopping Cart Button */}
       {cart.length > 0 && (
