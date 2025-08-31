@@ -1674,20 +1674,42 @@ body {
   }
 
   .amanita-contact-container {
-    padding: 20px 15px;
+    padding: 40px 15px;
   }
 
-  .amanita-contact-form {
-    padding: 20px;
+  .contact-hero-section {
+    margin-bottom: 50px;
   }
 
-  .amanita-contact-title,
+  .amanita-contact-title {
+    font-size: 36px;
+  }
+
   .amanita-contact-subtitle {
-    font-size: 16px;
+    font-size: 18px;
+  }
+
+  .contact-main-layout {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .contact-selection-section,
+  .contact-form-section {
+    padding: 30px 20px;
   }
 
   .amanita-question {
-    font-size: 18px;
+    font-size: 20px;
+  }
+
+  .amanita-radio-label {
+    padding: 15px 20px;
+    font-size: 15px;
+  }
+
+  .form-title {
+    font-size: 24px;
   }
 }
   .contact-layout {
