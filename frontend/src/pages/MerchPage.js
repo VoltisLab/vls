@@ -290,7 +290,7 @@ const MerchPage = () => {
     {
       title: "Phone Case Collection",
       description: "Cases for all major phone models",
-      price: "$24.99",
+      price: "£24.99",
       image: "https://customer-assets.emergentagent.com/job_2254775f-056c-475f-8e45-02c39741e786/artifacts/hxtwpsyl_Background.png",
       category: "Tech"
     },
