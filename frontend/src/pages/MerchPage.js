@@ -197,7 +197,7 @@ const MerchPage = () => {
     {
       title: "Spinner Figure Collection",
       description: "Set of 6 collectible figures",
-      price: "$49.99",
+      price: "£49.99",
       image: "https://customer-assets.emergentagent.com/job_2254775f-056c-475f-8e45-02c39741e786/artifacts/d4j87eyh_pexels-robinstickel-70497.jpg",
       category: "Collectibles"
     },
