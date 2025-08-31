@@ -9,7 +9,7 @@ const AboutPage = () => {
 
   const values = [
     {
-      icon: <GameController2 size={32} />,
+      icon: <Zap size={32} />,
       title: "Player-First Design",
       description: "Every decision we make prioritizes the player experience, ensuring games that feel intuitive and engaging."
     },
