@@ -78,54 +78,63 @@ export const allGames = [
     title: "Spinnersonic",
     description: "High-speed racing with fidget spinner mechanics",
     image: "https://customer-assets.emergentagent.com/job_voltis-gaming/artifacts/9pj2qbjo_Frame%202.jpg",
-    link: "/games/spinnersonic"
+    link: "/games/spinnersonic",
+    category: "Racing"
   },
   {
     title: "Triangle Chess", 
     description: "Revolutionary chess on a triangular board",
     image: "https://customer-assets.emergentagent.com/job_2254775f-056c-475f-8e45-02c39741e786/artifacts/am9wazee_hkvbsxdfxd.png",
-    link: "/games/triangle-chess"
+    link: "/games/triangle-chess",
+    category: "Strategy"
   },
   {
     title: "Spellcheck",
     description: "Word adventure meets puzzle solving", 
     image: "https://customer-assets.emergentagent.com/job_2254775f-056c-475f-8e45-02c39741e786/artifacts/hxtwpsyl_Background.png",
-    link: "/games/spellcheck"
+    link: "/games/spellcheck",
+    category: "Word"
   },
   {
     title: "Grindhouse",
     description: "Experimental action adventure",
     image: "https://customer-assets.emergentagent.com/job_2254775f-056c-475f-8e45-02c39741e786/artifacts/0v9v8a91_Group%201244831544.png",
-    link: "/games/grindhouse"
+    link: "/games/grindhouse",
+    category: "Action"
   },
   {
     title: "Creaks",
     description: "Mind-bending puzzle adventure with mysterious creatures",
     image: "https://customer-assets.emergentagent.com/job_gaming-rebrand/artifacts/1p5vhozt_Group%201244831567.jpg",
-    link: "/games/creaks"
+    link: "/games/creaks",
+    category: "Puzzle"
   },
   {
     title: "Doomlane",
     description: "Fast-paced survival racing",
     image: "https://customer-assets.emergentagent.com/job_gaming-rebrand/artifacts/1p5vhozt_Group%201244831567.jpg", 
-    link: "/games/doomlane"
+    link: "/games/doomlane",
+    category: "Racing"
   },
   {
     title: "Tacticx",
     description: "Strategic multiplayer tactics game",
     image: "https://customer-assets.emergentagent.com/job_gaming-rebrand/artifacts/1p5vhozt_Group%201244831567.jpg",
-    link: "/games/tacticx"
+    link: "/games/tacticx",
+    category: "Strategy"
   },
   {
     title: "8 Ball Pool",
     description: "Classic billiards with modern twists",
     image: "https://customer-assets.emergentagent.com/job_gaming-rebrand/artifacts/1p5vhozt_Group%201244831567.jpg",
-    link: "/games/8-ball-pool"
+    link: "/games/8-ball-pool",
+    category: "Sports" 
   },
   {
     title: "Penalty Shootout",
     description: "Intense soccer penalty competition",
     image: "https://customer-assets.emergentagent.com/job_gaming-rebrand/artifacts/1p5vhozt_Group%201244831567.jpg",
-    link: "/games/penalty-shootout"
+    link: "/games/penalty-shootout",
+    category: "Sports"
   }
 ];
