@@ -106,8 +106,8 @@ user_problem_statement: Change currency to £ (British pounds) in the merchandis
 
 frontend:
   - task: "Change currency from $ to £ in merchandise prices"
-    implemented: false
-    working: "NA"
+    implemented: true
+    working: true
     file: "/app/frontend/src/pages/MerchPage.js"
     stuck_count: 0
     priority: "high"
@@ -116,6 +116,9 @@ frontend:
         - working: "NA"
           agent: "main"
           comment: "Task identified - need to update all $ symbols to £ in MerchPage.js featuring 49 price instances"
+        - working: true
+          agent: "main"
+          comment: "Successfully updated all 49 currency instances from $ to £ in MerchPage.js. All dollar symbols replaced with pound symbols."
 
 metadata:
   created_by: "main_agent"
