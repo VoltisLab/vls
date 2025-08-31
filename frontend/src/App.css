@@ -797,8 +797,8 @@ body {
 }
 
 .view-btn.active {
-  background: #007AFF;
-  color: white;
+  background: var(--accent-primary);
+  color: var(--bg-primary);
 }
 
 /* Results Info */
