@@ -260,6 +260,16 @@ body {
   text-align: center;
 }
 
+/* Coming Soon Thumbnail Border (Dark Mode Only) */
+[data-theme="dark"] .game-image[src*="1p5vhozt_Group%201244831567.jpg"] {
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 8px;
+}
+
+[data-theme="dark"] .game-card:hover .game-image[src*="1p5vhozt_Group%201244831567.jpg"] {
+  border-color: rgba(255, 255, 255, 0.15);
+}
+
 .game-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 10px 30px var(--shadow-color);
