@@ -135,7 +135,7 @@ const AboutPage = () => {
             <div className="values-grid">
               {values.map((value, index) => (
                 <div key={index} className="value-card">
-                  <div className="value-icon">
+                  <div className="value-icon" style={{ background: `linear-gradient(135deg, ${value.color}, ${value.color}dd)` }}>
                     {value.icon}
                   </div>
                   <h3 className="value-title">{value.title}</h3>
