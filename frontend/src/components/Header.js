@@ -47,13 +47,6 @@ const Header = () => {
           </Link>
         </nav>
 
-        <button 
-          className="mobile-menu-button"
-          onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-        >
-          {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
-        </button>
-
         <div className="header-actions">
           <ThemeToggle />
           <div className="social-links">
@@ -67,6 +60,12 @@ const Header = () => {
               <Youtube size={20} />
             </a>
           </div>
+          <button 
+            className="mobile-menu-button"
+            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+          >
+            {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+          </button>
         </div>
       </div>
 
