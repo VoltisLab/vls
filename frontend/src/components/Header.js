@@ -1,6 +1,7 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Instagram, Youtube, MessageCircle } from "lucide-react";
+import ThemeToggle from "./ThemeToggle";
 
 const Header = () => {
   const location = useLocation();
@@ -40,16 +41,19 @@ const Header = () => {
           </Link>
         </nav>
 
-        <div className="social-links">
-          <a href="https://instagram.com/voltislabsgames" className="social-link" aria-label="Instagram">
-            <Instagram size={20} />
-          </a>
-          <a href="#" className="social-link" aria-label="Discord">
-            <MessageCircle size={20} />
-          </a>
-          <a href="#" className="social-link" aria-label="YouTube">
-            <Youtube size={20} />
-          </a>
+        <div className="header-actions">
+          <ThemeToggle />
+          <div className="social-links">
+            <a href="https://instagram.com/voltislabsgames" className="social-link" aria-label="Instagram">
+              <Instagram size={20} />
+            </a>
+            <a href="#" className="social-link" aria-label="Discord">
+              <MessageCircle size={20} />
+            </a>
+            <a href="#" className="social-link" aria-label="YouTube">
+              <Youtube size={20} />
+            </a>
+          </div>
         </div>
       </div>
     </header>
