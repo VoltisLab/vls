@@ -821,6 +821,8 @@ body {
 
 .games-store-grid.grid {
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .games-store-grid.list {
