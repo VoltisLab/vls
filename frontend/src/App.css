@@ -507,7 +507,7 @@ body {
 .feature-icon {
   width: 40px;
   height: 40px;
-  background: #007AFF;
+  background: var(--accent-primary);
   border-radius: 10px;
   display: flex;
   align-items: center;
