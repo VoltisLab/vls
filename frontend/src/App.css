@@ -1347,6 +1347,191 @@ body {
   font-weight: 600;
 }
 
+/* Amanita Design Contact Page Styles */
+.amanita-contact-container {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.amanita-header {
+  margin-bottom: 40px;
+}
+
+.amanita-contact-title,
+.amanita-contact-subtitle {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #ffffff;
+  margin-bottom: 15px;
+  line-height: 1.4;
+}
+
+.amanita-contact-title span {
+  color: #cccccc;
+  font-weight: 300;
+}
+
+.amanita-status-message {
+  margin-bottom: 30px;
+}
+
+.amanita-success,
+.amanita-error {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.4;
+  margin-bottom: 15px;
+}
+
+.amanita-success {
+  color: #4CAF50;
+}
+
+.amanita-error {
+  color: #f44336;
+}
+
+.amanita-success span,
+.amanita-error span {
+  color: #cccccc;
+  font-weight: 300;
+}
+
+.amanita-question {
+  font-size: 20px;
+  font-weight: 500;
+  color: #ffffff;
+  margin-bottom: 25px;
+  margin-top: 30px;
+}
+
+.amanita-radio-group {
+  margin-bottom: 40px;
+}
+
+.amanita-radio-label {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  font-size: 16px;
+  color: #ffffff;
+  user-select: none;
+  line-height: 1.5;
+}
+
+.amanita-radio-label input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.amanita-checkmark {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: transparent;
+  border: 2px solid #666666;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.amanita-radio-label:hover input ~ .amanita-checkmark {
+  border-color: #ffffff;
+}
+
+.amanita-radio-label input:checked ~ .amanita-checkmark {
+  background-color: #ffffff;
+  border-color: #ffffff;
+}
+
+.amanita-checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.amanita-radio-label input:checked ~ .amanita-checkmark:after {
+  display: block;
+}
+
+.amanita-radio-label .amanita-checkmark:after {
+  top: 4px;
+  left: 4px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #000000;
+}
+
+.amanita-contact-form {
+  background-color: rgba(255, 255, 255, 0.02);
+  padding: 30px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  margin-top: 30px;
+}
+
+.amanita-form-group {
+  margin-bottom: 25px;
+}
+
+.amanita-form-label {
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  color: #ffffff;
+  margin-bottom: 8px;
+}
+
+.amanita-form-input,
+.amanita-form-textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+  background-color: rgba(255, 255, 255, 0.05);
+  color: #ffffff;
+  font-size: 16px;
+  font-family: inherit;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.amanita-form-input:focus,
+.amanita-form-textarea:focus {
+  outline: none;
+  border-color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+.amanita-form-textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.amanita-submit-button {
+  background-color: #ffffff;
+  color: #000000;
+  border: none;
+  padding: 12px 30px;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+}
+
+.amanita-submit-button:hover {
+  background-color: #f0f0f0;
+  transform: translateY(-1px);
+}
+
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
   .game-page .game-title {
@@ -1373,6 +1558,23 @@ body {
   .game-stats {
     flex-wrap: wrap;
     justify-content: center;
+  }
+
+  .amanita-contact-container {
+    padding: 20px 15px;
+  }
+
+  .amanita-contact-form {
+    padding: 20px;
+  }
+
+  .amanita-contact-title,
+  .amanita-contact-subtitle {
+    font-size: 16px;
+  }
+
+  .amanita-question {
+    font-size: 18px;
   }
 }
   .contact-layout {
