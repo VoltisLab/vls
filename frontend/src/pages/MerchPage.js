@@ -253,7 +253,7 @@ const MerchPage = () => {
     {
       title: "Neon Sign Mini",
       description: "LED neon game logo sign",
-      price: "$69.99",
+      price: "£69.99",
       image: "https://customer-assets.emergentagent.com/job_2254775f-056c-475f-8e45-02c39741e786/artifacts/hxtwpsyl_Background.png",
       category: "Collectibles"
     },
