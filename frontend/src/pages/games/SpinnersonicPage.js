@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowLeft, Users, Clock, Trophy, Zap } from 'lucide-react';
+import { ArrowLeft, Star, Download, Users, Clock, Trophy } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
@@ -9,125 +9,160 @@ const SpinnersonicPage = () => {
     <div className="game-page">
       <Header />
       <main className="main-content">
-        {/* Back Navigation */}
         <div className="container">
+          {/* Back Navigation */}
           <Link to="/games" className="back-link">
             <ArrowLeft size={20} />
             Back to Games
           </Link>
-        </div>
 
-        {/* Game Hero Section */}
-        <section className="game-hero">
-          <div className="container">
-            <img 
-              src="https://customer-assets.emergentagent.com/job_2254775f-056c-475f-8e45-02c39741e786/artifacts/0v9v8a91_Group%201244831544.png" 
-              alt="Spinnersonic" 
-              className="game-banner-image"
-            />
-            <div className="game-hero-overlay">
-              <h1 className="game-title">Spinnersonic</h1>
-              <p className="game-subtitle">High-speed racing with fidget spinner mechanics</p>
-              
-              <div className="game-stats">
-                <div className="stat-item">
-                  <span className="stat-value">8</span>
-                  <span className="stat-label">Players</span>
+          {/* App Store Hero Section */}
+          <section className="game-hero">
+            <div className="app-store-hero">
+              <div className="hero-top">
+                <img 
+                  src="https://customer-assets.emergentagent.com/job_voltis-gaming/artifacts/9pj2qbjo_Frame%202.jpg" 
+                  alt="Spinnersonic" 
+                  className="game-icon"
+                />
+                <div className="hero-info">
+                  <h1 className="game-title">Spinnersonic</h1>
+                  <p className="game-subtitle">High-speed racing with fidget spinner mechanics</p>
+                  
+                  <div className="rating-section">
+                    <div className="rating-score">
+                      <span className="rating-number">4.9</span>
+                      <div className="rating-stars">★★★★★</div>
+                    </div>
+                    <span className="rating-count">(2.1K reviews)</span>
+                  </div>
+
+                  <div className="category-age">
+                    <span className="category-badge">Racing</span>
+                    <span className="age-rating">9+</span>
+                  </div>
                 </div>
-                <div className="stat-item">
-                  <span className="stat-value">5m</span>
+                
+                <button className="primary-download">
+                  <Download size={18} style={{marginRight: '8px'}} />
+                  Get
+                </button>
+              </div>
+
+              {/* Quick Stats */}
+              <div className="quick-stats">
+                <div className="stat-card">
+                  <span className="stat-value">100K+</span>
+                  <span className="stat-label">Downloads</span>
+                </div>
+                <div className="stat-card">
+                  <span className="stat-value">8</span>
+                  <span className="stat-label">Max Players</span>
+                </div>
+                <div className="stat-card">
+                  <span className="stat-value">5 min</span>
                   <span className="stat-label">Quick Race</span>
                 </div>
-                <div className="stat-item">
-                  <span className="stat-value">4.9★</span>
-                  <span className="stat-label">Rating</span>
-                </div>
-                <div className="stat-item">
-                  <span className="stat-value">100K+</span>
-                  <span className="stat-label">Players</span>
+                <div className="stat-card">
+                  <span className="stat-value">Free</span>
+                  <span className="stat-label">Price</span>
                 </div>
               </div>
             </div>
-          </div>
-        </section>
+          </section>
 
-        {/* Game Description */}
-        <section className="game-content-section">
-          <div className="container">
-            <div className="section-header">
-              <h2 className="section-title">Game Overview</h2>
+          {/* Screenshots */}
+          <section className="screenshots-section">
+            <h2 className="section-title">Screenshots</h2>
+            <div className="screenshots-container">
+              <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?w=400&h=600&fit=crop" alt="Screenshot 1" className="screenshot" />
+              <img src="https://images.unsplash.com/photo-1551698618-1dfe5d97d256?w=400&h=600&fit=crop" alt="Screenshot 2" className="screenshot" />
+              <img src="https://images.unsplash.com/photo-1509198397868-475647b2a1e5?w=400&h=600&fit=crop" alt="Screenshot 3" className="screenshot" />
+              <img src="https://images.unsplash.com/photo-1526509867162-5b0c0d1b4b33?w=400&h=600&fit=crop" alt="Screenshot 4" className="screenshot" />
             </div>
-            
-            <div className="game-description-grid">
-              <div className="game-description-content">
-                <p className="game-text">
-                  <strong>Spinnersonic</strong> revolutionizes racing games by combining high-speed competition with 
-                  innovative fidget spinner mechanics. Master the art of spin control as you race through dynamic 
-                  tracks filled with loops, jumps, and physics-defying challenges.
-                </p>
-                <p className="game-text">
-                  Experience the ultimate fusion of relaxation and adrenaline as you control momentum through precise 
-                  spinning techniques. Each track is designed to test your reflexes, strategic thinking, and ability 
-                  to maintain perfect spin balance while competing against up to 8 players online.
-                </p>
-                <p className="game-text">
-                  Whether you're seeking quick arcade-style races or deep championship campaigns, Spinnersonic delivers 
-                  an addictive racing experience that's both ADHD-friendly and competitively intense. Customize your 
-                  spinners, unlock new tracks, and climb the global leaderboards.
-                </p>
-              </div>
-              
-              <div className="game-sidebar">
-                <div className="features-card">
-                  <h3 className="features-title">Epic Features</h3>
-                  <ul className="features-list">
-                    <li>Revolutionary spinner-based racing physics</li>
-                    <li>20+ unique tracks with varying challenges</li>
-                    <li>8-player online multiplayer races</li>
-                    <li>100+ customizable spinner designs</li>
-                    <li>ADHD-friendly satisfying feedback systems</li>
-                    <li>Championship mode with season rewards</li>
-                    <li>Real-time physics simulation</li>
-                    <li>Cross-platform progression and matchmaking</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+          </section>
 
-        {/* Download Section */}
-        <section className="download-section">
-          <div className="container">
-            <div className="download-content">
-              <h2 className="download-title">Start Racing Now!</h2>
-              <p className="download-subtitle">Download Spinnersonic and experience the most addictive racing game of 2024</p>
-              
-              <div className="download-grid">
-                <a href="#" className="download-card">
-                  <span className="download-icon">📱</span>
-                  <div className="download-platform">App Store</div>
-                  <div className="download-status">Available Now</div>
-                </a>
-                <a href="#" className="download-card">
-                  <span className="download-icon">🤖</span>
-                  <div className="download-platform">Google Play</div>
-                  <div className="download-status">Available Now</div>
-                </a>
-                <a href="#" className="download-card">
-                  <span className="download-icon">🎮</span>
-                  <div className="download-platform">Steam</div>
-                  <div className="download-status">Available Now</div>
-                </a>
-                <a href="#" className="download-card">
-                  <span className="download-icon">💻</span>
-                  <div className="download-platform">Windows</div>
-                  <div className="download-status">Available Now</div>
-                </a>
+          {/* Description */}
+          <section className="description-section">
+            <h2 className="section-title">About Spinnersonic</h2>
+            <p className="description-text">
+              Spinnersonic revolutionizes racing games by combining high-speed competition with innovative fidget spinner mechanics. Master the art of spin control as you race through dynamic tracks filled with loops, jumps, and physics-defying challenges.
+            </p>
+            <p className="description-text">
+              Experience the ultimate fusion of relaxation and adrenaline as you control momentum through precise spinning techniques. Each track is designed to test your reflexes and strategic thinking.
+            </p>
+            <a href="#" className="read-more">Read More</a>
+          </section>
+
+          {/* Features */}
+          <section className="features-section">
+            <h2 className="section-title">Game Features</h2>
+            <div className="features-grid">
+              <div className="feature-card">
+                <div className="feature-icon">🏎️</div>
+                <h3 className="feature-title">Innovative Racing</h3>
+                <p className="feature-description">Revolutionary spinner-based racing physics that create a unique gameplay experience.</p>
+              </div>
+              <div className="feature-card">
+                <div className="feature-icon">🎮</div>
+                <h3 className="feature-title">Multiplayer Racing</h3>
+                <p className="feature-description">Race against up to 8 players online in real-time competitive matches.</p>
+              </div>
+              <div className="feature-card">
+                <div className="feature-icon">🎨</div>
+                <h3 className="feature-title">Customization</h3>
+                <p className="feature-description">100+ customizable spinner designs and racing tracks to master.</p>
+              </div>
+              <div className="feature-card">
+                <div className="feature-icon">🏆</div>
+                <h3 className="feature-title">Championships</h3>
+                <p className="feature-description">Compete in seasonal championships and climb global leaderboards.</p>
               </div>
             </div>
-          </div>
-        </section>
+          </section>
+
+          {/* Download Options */}
+          <section className="download-section">
+            <h2 className="section-title">Download Options</h2>
+            <div className="download-options">
+              <a href="#" className="download-option">
+                <div className="platform-icon" style={{background: '#007AFF'}}>📱</div>
+                <div className="platform-info">
+                  <div className="platform-name">App Store</div>
+                  <div className="platform-status">iOS 14.0+</div>
+                </div>
+              </a>
+              <a href="#" className="download-option">
+                <div className="platform-icon" style={{background: '#34A853'}}>🤖</div>
+                <div className="platform-info">
+                  <div className="platform-name">Google Play</div>
+                  <div className="platform-status">Android 8.0+</div>
+                </div>
+              </a>
+              <a href="#" className="download-option">
+                <div className="platform-icon" style={{background: '#1B2838'}}>🎮</div>
+                <div className="platform-info">
+                  <div className="platform-name">Steam</div>
+                  <div className="platform-status">Windows/Mac/Linux</div>
+                </div>
+              </a>
+            </div>
+          </section>
+
+          {/* Developer Info */}
+          <section className="developer-section">
+            <div className="developer-header">
+              <img src="https://customer-assets.emergentagent.com/job_voltis-gaming/artifacts/logo-light.png" alt="Voltis Labs" className="developer-logo" />
+              <div>
+                <div className="developer-name">Voltis Labs Games</div>
+                <div className="developer-title">Game Developer</div>
+              </div>
+            </div>
+            <p className="description-text">
+              Voltis Labs Games specializes in creating innovative gaming experiences that blend traditional mechanics with modern twists. Our games focus on accessibility, engaging gameplay, and community-driven features.
+            </p>
+          </section>
+        </div>
       </main>
       <Footer />
     </div>
