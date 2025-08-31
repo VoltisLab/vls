@@ -1409,65 +1409,45 @@ body {
 
 .amanita-radio-group {
   margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 
 .amanita-radio-label {
-  display: block;
+  display: flex;
+  align-items: center;
   position: relative;
-  padding-left: 35px;
-  margin-bottom: 15px;
+  padding: 12px 16px;
   cursor: pointer;
   font-size: 16px;
   color: #ffffff;
   user-select: none;
   line-height: 1.5;
-}
-
-.amanita-radio-label input {
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
-}
-
-.amanita-checkmark {
-  position: absolute;
-  top: 2px;
-  left: 0;
-  height: 20px;
-  width: 20px;
-  background-color: transparent;
-  border: 2px solid #666666;
-  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 6px;
   transition: all 0.3s ease;
 }
 
-.amanita-radio-label:hover input ~ .amanita-checkmark {
-  border-color: #ffffff;
+.amanita-radio-label:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+  border-color: rgba(255, 255, 255, 0.2);
 }
 
-.amanita-radio-label input:checked ~ .amanita-checkmark {
+.amanita-radio-label input {
+  margin-right: 12px;
+  width: 18px;
+  height: 18px;
+  accent-color: #ffffff;
+  cursor: pointer;
+}
+
+.amanita-radio-label input:checked {
   background-color: #ffffff;
-  border-color: #ffffff;
 }
 
-.amanita-checkmark:after {
-  content: "";
-  position: absolute;
-  display: none;
-}
-
-.amanita-radio-label input:checked ~ .amanita-checkmark:after {
-  display: block;
-}
-
-.amanita-radio-label .amanita-checkmark:after {
-  top: 4px;
-  left: 4px;
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background: #000000;
-}
+/* Remove the custom checkmark styles since we're using native radio buttons */
 
 .amanita-contact-form {
   background-color: rgba(255, 255, 255, 0.02);
