@@ -153,7 +153,7 @@ const MerchPage = () => {
     {
       title: "Gaming Gloves",
       description: "Anti-sweat gaming gloves",
-      price: "$12.99",
+      price: "£12.99",
       image: "https://customer-assets.emergentagent.com/job_2254775f-056c-475f-8e45-02c39741e786/artifacts/a8g9ilrg_pexels-ash-craig-122861-376464.jpg",
       category: "Apparel"
     },
