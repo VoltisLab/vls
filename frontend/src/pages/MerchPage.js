@@ -474,7 +474,10 @@ const MerchPage = () => {
                     <p className="merch-description">{item.description}</p>
                     <div className="merch-footer">
                       <span className="merch-price">{item.price}</span>
-                      <button className="add-to-cart-btn">
+                      <button 
+                        className="add-to-cart-btn"
+                        onClick={() => addToCart(item)}
+                      >
                         <ShoppingCart size={16} />
                         Add to Cart
                       </button>
