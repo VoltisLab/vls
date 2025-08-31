@@ -3,13 +3,13 @@ export const sliderGames = [
   {
     title: "Spinnersonic",
     description: "High-speed racing with fidget spinner mechanics",
-    image: "https://customer-assets.emergentagent.com/job_2254775f-056c-475f-8e45-02c39741e786/artifacts/0v9v8a91_Group%201244831544.png",
+    image: "https://customer-assets.emergentagent.com/job_voltis-ui-overhaul/artifacts/ev3pv6ww_Group%201244831544.jpg",
     link: "/games/spinnersonic"
   },
   {
     title: "Spellcheck",
     description: "Word adventure meets puzzle solving",
-    image: "https://customer-assets.emergentagent.com/job_voltis-gaming/artifacts/8j8jn9pn_Creaks%20Box.jpg",
+    image: "https://customer-assets.emergentagent.com/job_voltis-ui-overhaul/artifacts/pby8nwu7_Picture%20%E2%86%92%20hero_bg_clashofclans_.fae7c799.webp.jpg",
     link: "/games/spellcheck"
   }
 ];
