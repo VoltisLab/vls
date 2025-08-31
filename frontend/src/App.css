@@ -866,6 +866,29 @@ body {
   font-size: 12px;
 }
 
+/* Mobile Footer Layout */
+@media (max-width: 768px) {
+  .footer-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .footer-link-row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .footer-link {
+    white-space: nowrap;
+    font-size: 13px;
+  }
+}
+
 /* Shopping Cart Styles */
 .cart-float-button {
   position: fixed;
