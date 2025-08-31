@@ -11,22 +11,38 @@ const AboutPage = () => {
     {
       icon: <Zap size={32} />,
       title: "Player-First Design",
-      description: "Every decision we make prioritizes the player experience, ensuring games that feel intuitive and engaging."
+      description: "Every decision we make prioritizes the player experience, ensuring games that feel intuitive and engaging.",
+      color: "#6366f1"
     },
     {
       icon: <Heart size={32} />,
       title: "ADHD-Friendly Features",
-      description: "We design with neurodiversity in mind, creating satisfying feedback systems and accessible gameplay."
+      description: "We design with neurodiversity in mind, creating satisfying feedback systems and accessible gameplay.",
+      color: "#ec4899"
     },
     {
       icon: <Globe size={32} />,
       title: "Global Communities",
-      description: "Building worldwide gaming communities that connect players across different cultures and backgrounds."
+      description: "Building worldwide gaming communities that connect players across different cultures and backgrounds.",
+      color: "#10b981"
     },
     {
       icon: <Zap size={32} />,
       title: "Innovation Focus",
-      description: "Pushing boundaries with experimental mechanics and cutting-edge technology in every project."
+      description: "Pushing boundaries with experimental mechanics and cutting-edge technology in every project.",
+      color: "#f59e0b"
+    },
+    {
+      icon: <Target size={32} />,
+      title: "Quality Craftsmanship",
+      description: "Meticulous attention to detail in every aspect of game development, from concept to final polish.",
+      color: "#8b5cf6"
+    },
+    {
+      icon: <Rocket size={32} />,
+      title: "Creative Expression",
+      description: "Empowering our team's creativity to produce unique experiences that stand out in the gaming landscape.",
+      color: "#06b6d4"
     }
   ];
 
