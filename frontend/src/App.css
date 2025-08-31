@@ -1171,14 +1171,21 @@ body {
     justify-content: center;
   }
 
+  .game-slider {
+    margin: 0 -15px 60px -15px;
+    width: calc(100% + 30px);
+  }
+  
   .slider-container {
     height: 300px;
     border-radius: 0;
-    margin: 0 -15px;
-  }
-  
-  .game-slider {
-    margin: 0 0 60px 0;
+    margin: 0;
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
   }
 
   .slider-overlay {
