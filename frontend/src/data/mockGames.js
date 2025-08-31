@@ -9,7 +9,7 @@ export const sliderGames = [
   {
     title: "Spellcheck",
     description: "Word adventure meets puzzle solving",
-    image: "https://customer-assets.emergentagent.com/job_2254775f-056c-475f-8e45-02c39741e786/artifacts/hxtwpsyl_Background.png",
+    image: "https://customer-assets.emergentagent.com/job_voltis-gaming/artifacts/8j8jn9pn_Creaks%20Box.jpg",
     link: "/games/spellcheck"
   }
 ];
