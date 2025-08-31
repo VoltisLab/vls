@@ -218,7 +218,7 @@ const MerchPage = () => {
     {
       title: "Soundtrack Vinyl Box",
       description: "All game soundtracks on vinyl",
-      price: "$129.99",
+      price: "£129.99",
       image: "https://customer-assets.emergentagent.com/job_2254775f-056c-475f-8e45-02c39741e786/artifacts/hxtwpsyl_Background.png",
       category: "Collectibles"
     },
