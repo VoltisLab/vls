@@ -118,7 +118,7 @@ const MerchPage = () => {
     {
       title: "Triangle Chess T-Shirt",
       description: "Geometric design tee",
-      price: "$24.99",
+      price: "£24.99",
       image: "https://customer-assets.emergentagent.com/job_2254775f-056c-475f-8e45-02c39741e786/artifacts/a8g9ilrg_pexels-ash-craig-122861-376464.jpg",
       category: "Apparel"
     },
