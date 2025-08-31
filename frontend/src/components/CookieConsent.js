@@ -20,19 +20,18 @@ const CookieConsent = ({ onAccept }) => {
           features and to analyse our traffic. Let me choose
         </p>
         <div className="cookie-buttons">
-          <Button 
+          <button 
             onClick={handleAccept}
             className="accept-button"
           >
             Accept all
-          </Button>
-          <Button 
+          </button>
+          <button 
             onClick={handleReject}
-            variant="outline"
             className="reject-button"
           >
             Reject all
-          </Button>
+          </button>
         </div>
       </div>
     </div>
