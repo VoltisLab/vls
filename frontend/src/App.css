@@ -1422,8 +1422,12 @@ body {
 
 /* Premium Contact Page Styles */
 .contact-page {
-  background: linear-gradient(135deg, #0f0f0f 0%, #1a1a1a 50%, #0f0f0f 100%);
+  background: var(--bg-primary);
   min-height: 100vh;
+}
+
+[data-theme="light"] .contact-page {
+  background: linear-gradient(135deg, var(--bg-secondary) 0%, var(--bg-primary) 50%, var(--bg-tertiary) 100%);
 }
 
 .amanita-contact-container {
