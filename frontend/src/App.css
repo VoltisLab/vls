@@ -264,10 +264,57 @@ body {
 [data-theme="dark"] .game-image[src*="1p5vhozt_Group%201244831567.jpg"] {
   border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 8px;
+  position: relative;
+  overflow: hidden;
+}
+
+[data-theme="dark"] .game-image[src*="1p5vhozt_Group%201244831567.jpg"]::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: conic-gradient(
+    from 0deg,
+    transparent,
+    transparent,
+    rgba(255, 255, 255, 0.15),
+    rgba(255, 255, 255, 0.25),
+    rgba(255, 255, 255, 0.15),
+    transparent,
+    transparent
+  );
+  border-radius: 8px;
+  animation: borderRotate 4s linear infinite;
+  z-index: -1;
+}
+
+@keyframes borderRotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 [data-theme="dark"] .game-card:hover .game-image[src*="1p5vhozt_Group%201244831567.jpg"] {
   border-color: rgba(255, 255, 255, 0.15);
+}
+
+[data-theme="dark"] .game-card:hover .game-image[src*="1p5vhozt_Group%201244831567.jpg"]::before {
+  background: conic-gradient(
+    from 0deg,
+    transparent,
+    transparent,
+    rgba(255, 255, 255, 0.2),
+    rgba(255, 255, 255, 0.35),
+    rgba(255, 255, 255, 0.2),
+    transparent,
+    transparent
+  );
+  animation-duration: 2s;
 }
 
 .game-card:hover {
