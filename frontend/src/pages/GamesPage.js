@@ -41,7 +41,7 @@ const GamesPage = () => {
       "Spinnersonic": "100K+",
       "Triangle Chess": "50K+", 
       "Spellcheck": "40K+",
-      "Grindhouse": "25K+",
+      "Grindhouse": "Soon",
       "Creaks": "Soon",
       "Doomlane": "Soon",
       "Tacticx": "Soon",
