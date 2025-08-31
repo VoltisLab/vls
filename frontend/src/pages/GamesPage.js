@@ -3,6 +3,7 @@ import { Search, Filter, Grid, List, Star, Download } from "lucide-react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import CookieConsent from "../components/CookieConsent";
+import ScrollToTop from "../components/ScrollToTop";
 import { allGames } from "../data/mockGames";
 
 const GamesPage = () => {
