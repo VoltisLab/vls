@@ -2564,7 +2564,7 @@ body {
 
 .team-role {
   font-size: 14px;
-  color: #007AFF;
+  color: var(--accent-primary);
   font-weight: 500;
   margin-bottom: 8px;
 }
