@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowLeft, Users, Clock, Trophy, Zap } from 'lucide-react';
+import { ArrowLeft, Star, Download, Users, Clock, Trophy } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
@@ -9,124 +9,160 @@ const PenaltyShootoutPage = () => {
     <div className="game-page">
       <Header />
       <main className="main-content">
-        {/* Back Navigation */}
         <div className="container">
+          {/* Back Navigation */}
           <Link to="/games" className="back-link">
             <ArrowLeft size={20} />
             Back to Games
           </Link>
+
+          {/* App Store Hero Section */}
+          <section className="game-hero">
+            <div className="app-store-hero">
+              <div className="hero-top">
+                <img 
+                  src="https://customer-assets.emergentagent.com/job_gaming-rebrand/artifacts/1p5vhozt_Group%201244831567.jpg" 
+                  alt="Penalty Shootout - Coming Soon" 
+                  className="game-icon"
+                />
+                <div className="hero-info">
+                  <h1 className="game-title">Penalty Shootout</h1>
+                  <p className="game-subtitle">Intense soccer penalty competition</p>
+                  
+                  <div className="rating-section">
+                    <div className="rating-score">
+                      <span className="rating-number">TBA</span>
+                      <div className="rating-stars">★★★★★</div>
+                    </div>
+                    <span className="rating-count">(Coming Soon)</span>
+                  </div>
+
+                  <div className="category-age">
+                    <span className="category-badge">Sports</span>
+                    <span className="age-rating">4+</span>
+                  </div>
+                </div>
+                
+                <button className="primary-download" style={{background: '#666', cursor: 'not-allowed'}}>
+                  <Download size={18} style={{marginRight: '8px'}} />
+                  Coming Soon
+                </button>
+              </div>
+
+              {/* Quick Stats */}
+              <div className="quick-stats">
+                <div className="stat-card">
+                  <span className="stat-value">TBA</span>
+                  <span className="stat-label">Release Date</span>
+                </div>
+                <div className="stat-card">
+                  <span className="stat-value">1-2</span>
+                  <span className="stat-label">Players</span>
+                </div>
+                <div className="stat-card">
+                  <span className="stat-value">5 min</span>
+                  <span className="stat-label">Quick Match</span>
+                </div>
+                <div className="stat-card">
+                  <span className="stat-value">TBA</span>
+                  <span className="stat-label">Price</span>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          {/* Screenshots */}
+          <section className="screenshots-section">
+            <h2 className="section-title">Screenshots</h2>
+            <div className="screenshots-container">
+              <img src="https://images.unsplash.com/photo-1551698618-1dfe5d97d256?w=400&h=600&fit=crop" alt="Screenshot 1" className="screenshot" />
+              <img src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?w=400&h=600&fit=crop" alt="Screenshot 2" className="screenshot" />
+              <img src="https://images.unsplash.com/photo-1579952363873-27d3bfad9c0d?w=400&h=600&fit=crop" alt="Screenshot 3" className="screenshot" />
+              <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=600&fit=crop" alt="Screenshot 4" className="screenshot" />
+            </div>
+          </section>
+
+          {/* Description */}
+          <section className="description-section">
+            <h2 className="section-title">About Penalty Shootout</h2>
+            <p className="description-text">
+              Experience the ultimate pressure of penalty shootouts with realistic physics, dynamic weather conditions, and intense crowd atmosphere. Master the art of precision shooting and goalkeeping in soccer's most dramatic moments.
+            </p>
+            <p className="description-text">
+              Challenge friends in local multiplayer or compete against AI goalkeepers with varying difficulty levels. Every shot matters as you aim for glory in tournaments and championship modes.
+            </p>
+            <a href="#" className="read-more">Read More</a>
+          </section>
+
+          {/* Features */}
+          <section className="features-section">
+            <h2 className="section-title">Game Features</h2>
+            <div className="features-grid">
+              <div className="feature-card">
+                <div className="feature-icon">⚽</div>
+                <h3 className="feature-title">Realistic Physics</h3>
+                <p className="feature-description">Advanced ball physics with wind effects, spin control, and goalkeeper AI reactions.</p>
+              </div>
+              <div className="feature-card">
+                <div className="feature-icon">🎯</div>
+                <h3 className="feature-title">Precision Control</h3>
+                <p className="feature-description">Intuitive controls for shot power, direction, and curve with haptic feedback.</p>
+              </div>
+              <div className="feature-card">
+                <div className="feature-icon">🏟️</div>
+                <h3 className="feature-title">Stadium Atmosphere</h3>
+                <p className="feature-description">Dynamic crowd reactions and weather conditions that affect gameplay.</p>
+              </div>
+              <div className="feature-card">
+                <div className="feature-icon">🏆</div>
+                <h3 className="feature-title">Tournament Mode</h3>
+                <p className="feature-description">Compete in various championships and unlock new stadiums and customizations.</p>
+              </div>
+            </div>
+          </section>
+
+          {/* Download Options */}
+          <section className="download-section">
+            <h2 className="section-title">Coming Soon To</h2>
+            <div className="download-options">
+              <a href="#" className="download-option" style={{opacity: 0.6, cursor: 'not-allowed'}}>
+                <div className="platform-icon" style={{background: '#007AFF'}}>📱</div>
+                <div className="platform-info">
+                  <div className="platform-name">App Store</div>
+                  <div className="platform-status">Coming Soon</div>
+                </div>
+              </a>
+              <a href="#" className="download-option" style={{opacity: 0.6, cursor: 'not-allowed'}}>
+                <div className="platform-icon" style={{background: '#34A853'}}>🤖</div>
+                <div className="platform-info">
+                  <div className="platform-name">Google Play</div>
+                  <div className="platform-status">Coming Soon</div>
+                </div>
+              </a>
+              <a href="#" className="download-option" style={{opacity: 0.6, cursor: 'not-allowed'}}>
+                <div className="platform-icon" style={{background: '#1B2838'}}>🎮</div>
+                <div className="platform-info">
+                  <div className="platform-name">Steam</div>
+                  <div className="platform-status">Coming Soon</div>
+                </div>
+              </a>
+            </div>
+          </section>
+
+          {/* Developer Info */}
+          <section className="developer-section">
+            <div className="developer-header">
+              <img src="https://customer-assets.emergentagent.com/job_voltis-gaming/artifacts/logo-light.png" alt="Voltis Labs" className="developer-logo" />
+              <div>
+                <div className="developer-name">Voltis Labs Games</div>
+                <div className="developer-title">Game Developer</div>
+              </div>
+            </div>
+            <p className="description-text">
+              Voltis Labs Games specializes in creating innovative gaming experiences that blend traditional mechanics with modern twists. Our games focus on accessibility, engaging gameplay, and community-driven features.
+            </p>
+          </section>
         </div>
-
-        {/* Game Hero Section */}
-        <section className="game-hero">
-          <div className="container">
-            <img 
-              src="https://customer-assets.emergentagent.com/job_gaming-rebrand/artifacts/1p5vhozt_Group%201244831567.jpg" 
-              alt="Penalty Shootout" 
-              className="game-banner-image"
-            />
-            <div className="game-hero-overlay">
-              <h1 className="game-title">Penalty Shootout</h1>
-              <p className="game-subtitle">Intense soccer penalty competition</p>
-              
-              <div className="game-stats">
-                <div className="stat-item">
-                  <span className="stat-value">2</span>
-                  <span className="stat-label">Players</span>
-                </div>
-                <div className="stat-item">
-                  <span className="stat-value">10m</span>
-                  <span className="stat-label">Match Time</span>
-                </div>
-                <div className="stat-item">
-                  <span className="stat-value">4.5★</span>
-                  <span className="stat-label">Rating</span>
-                </div>
-                <div className="stat-item">
-                  <span className="stat-value">30K+</span>
-                  <span className="stat-label">Players</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Game Description */}
-        <section className="game-content-section">
-          <div className="container">
-            <div className="section-header">
-              <h2 className="section-title">Game Overview</h2>
-            </div>
-            
-            <div className="game-description-grid">
-              <div className="game-description-content">
-                <p className="game-text">
-                  <strong>Penalty Shootout</strong> captures the heart-stopping tension of soccer's most dramatic moments. 
-                  Experience the pressure of deciding championship matches where every shot matters and nerves of steel 
-                  are your greatest weapon.
-                </p>
-                <p className="game-text">
-                  Master both sides of the penalty box - place your shots with precision as the striker, or read your 
-                  opponent's intentions as the goalkeeper. With realistic physics and multiple stadiums, each penalty 
-                  feels authentic and intense.
-                </p>
-                <p className="game-text">
-                  Compete in tournaments, climb through divisions, and customize your teams as you work your way to 
-                  becoming the ultimate penalty specialist. Every save and every goal brings you closer to soccer glory.
-                </p>
-              </div>
-              
-              <div className="game-sidebar">
-                <div className="features-card">
-                  <h3 className="features-title">Epic Features</h3>
-                  <ul className="features-list">
-                    <li>Realistic penalty physics and ball trajectory</li>
-                    <li>Play as both shooter and goalkeeper</li>
-                    <li>Multiple stadiums with unique atmospheres</li>
-                    <li>Career mode with team progression</li>
-                    <li>Online tournaments and competitions</li>
-                    <li>Customizable teams and player kits</li>
-                    <li>Dynamic weather and pitch conditions</li>
-                    <li>Achievement system and leaderboards</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Download Section */}
-        <section className="download-section">
-          <div className="container">
-            <div className="download-content">
-              <h2 className="download-title">Coming Soon!</h2>
-              <p className="download-subtitle">Penalty Shootout is in development - join the waitlist for exclusive updates</p>
-              
-              <div className="download-grid">
-                <a href="#" className="download-card">
-                  <span className="download-icon">📱</span>
-                  <div className="download-platform">App Store</div>
-                  <div className="download-status">Coming Soon</div>
-                </a>
-                <a href="#" className="download-card">
-                  <span className="download-icon">🤖</span>
-                  <div className="download-platform">Google Play</div>
-                  <div className="download-status">Coming Soon</div>
-                </a>
-                <a href="#" className="download-card">
-                  <span className="download-icon">🎮</span>
-                  <div className="download-platform">Steam</div>
-                  <div className="download-status">Wishlist Now</div>
-                </a>
-                <a href="#" className="download-card">
-                  <span className="download-icon">💻</span>
-                  <div className="download-platform">Windows</div>
-                  <div className="download-status">Alpha Testing</div>
-                </a>
-              </div>
-            </div>
-          </div>
-        </section>
       </main>
       <Footer />
     </div>
