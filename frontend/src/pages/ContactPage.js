@@ -8,6 +8,8 @@ const ContactPage = () => {
   const [showCookieConsent, setShowCookieConsent] = useState(true);
   const [selectedOption, setSelectedOption] = useState('');
   const [showForm, setShowForm] = useState(false);
+  const [showGameSelection, setShowGameSelection] = useState(false);
+  const [selectedGame, setSelectedGame] = useState('');
   const [formData, setFormData] = useState({
     name: '',
     email: '',
