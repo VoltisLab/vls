@@ -60,23 +60,58 @@ const AboutPage = () => {
       <Header />
       <main className="main-content">
         <div className="container">
-          {/* Hero Section */}
+          {/* Dynamic Hero Section with Moving Thumbnails */}
           <section className="about-hero">
-            <div className="about-hero-content">
-              <div className="hero-badge">
-                <Award size={20} />
-                <span>Game Development Studio</span>
+            <div className="hero-background">
+              {/* Moving Thumbnails Layer 1 */}
+              <div className="moving-thumbnails layer-1">
+                <div className="thumbnail-track">
+                  <img src="https://customer-assets.emergentagent.com/job_voltis-gaming/artifacts/9pj2qbjo_Frame%202.jpg" alt="Spinnersonic" className="game-thumbnail" />
+                  <img src="https://customer-assets.emergentagent.com/job_2254775f-056c-475f-8e45-02c39741e786/artifacts/am9wazee_hkvbsxdfxd.png" alt="Triangle Chess" className="game-thumbnail" />
+                  <img src="https://customer-assets.emergentagent.com/job_2254775f-056c-475f-8e45-02c39741e786/artifacts/hxtwpsyl_Background.png" alt="Spellcheck" className="game-thumbnail" />
+                  <img src="https://customer-assets.emergentagent.com/job_2254775f-056c-475f-8e45-02c39741e786/artifacts/0v9v8a91_Group%201244831544.png" alt="Grindhouse" className="game-thumbnail" />
+                  <img src="https://customer-assets.emergentagent.com/job_gaming-rebrand/artifacts/1p5vhozt_Group%201244831567.jpg" alt="Coming Soon" className="game-thumbnail" />
+                  {/* Duplicate for seamless loop */}
+                  <img src="https://customer-assets.emergentagent.com/job_voltis-gaming/artifacts/9pj2qbjo_Frame%202.jpg" alt="Spinnersonic" className="game-thumbnail" />
+                  <img src="https://customer-assets.emergentagent.com/job_2254775f-056c-475f-8e45-02c39741e786/artifacts/am9wazee_hkvbsxdfxd.png" alt="Triangle Chess" className="game-thumbnail" />
+                  <img src="https://customer-assets.emergentagent.com/job_2254775f-056c-475f-8e45-02c39741e786/artifacts/hxtwpsyl_Background.png" alt="Spellcheck" className="game-thumbnail" />
+                </div>
               </div>
-              <h1 className="about-title">Voltis Labs Games</h1>
-              <p className="about-subtitle">
-                Pushing the boundaries of play, creativity, and interactive storytelling
-              </p>
-              <div className="hero-description">
-                <p>
-                  We craft unique, addictive, and visually striking experiences that merge fun with imagination. 
-                  From high-speed racers to experimental titles, our mission is simple: make games that feel 
-                  good to play and hard to put down.
-                </p>
+              
+              {/* Moving Thumbnails Layer 2 (Opposite Direction) */}
+              <div className="moving-thumbnails layer-2">
+                <div className="thumbnail-track reverse">
+                  <img src="https://customer-assets.emergentagent.com/job_gaming-rebrand/artifacts/1p5vhozt_Group%201244831567.jpg" alt="Coming Soon" className="game-thumbnail" />
+                  <img src="https://customer-assets.emergentagent.com/job_2254775f-056c-475f-8e45-02c39741e786/artifacts/0v9v8a91_Group%201244831544.png" alt="Grindhouse" className="game-thumbnail" />
+                  <img src="https://customer-assets.emergentagent.com/job_voltis-gaming/artifacts/9pj2qbjo_Frame%202.jpg" alt="Spinnersonic" className="game-thumbnail" />
+                  <img src="https://customer-assets.emergentagent.com/job_2254775f-056c-475f-8e45-02c39741e786/artifacts/am9wazee_hkvbsxdfxd.png" alt="Triangle Chess" className="game-thumbnail" />
+                  <img src="https://customer-assets.emergentagent.com/job_2254775f-056c-475f-8e45-02c39741e786/artifacts/hxtwpsyl_Background.png" alt="Spellcheck" className="game-thumbnail" />
+                  {/* Duplicate for seamless loop */}
+                  <img src="https://customer-assets.emergentagent.com/job_gaming-rebrand/artifacts/1p5vhozt_Group%201244831567.jpg" alt="Coming Soon" className="game-thumbnail" />
+                  <img src="https://customer-assets.emergentagent.com/job_2254775f-056c-475f-8e45-02c39741e786/artifacts/0v9v8a91_Group%201244831544.png" alt="Grindhouse" className="game-thumbnail" />
+                  <img src="https://customer-assets.emergentagent.com/job_voltis-gaming/artifacts/9pj2qbjo_Frame%202.jpg" alt="Spinnersonic" className="game-thumbnail" />
+                </div>
+              </div>
+              
+              {/* Hero Content Overlay */}
+              <div className="hero-overlay">
+                <div className="about-hero-content">
+                  <div className="hero-badge">
+                    <Award size={20} />
+                    <span>Game Development Studio</span>
+                  </div>
+                  <h1 className="about-title">Voltis Labs Games</h1>
+                  <p className="about-subtitle">
+                    Pushing the boundaries of play, creativity, and interactive storytelling
+                  </p>
+                  <div className="hero-description">
+                    <p>
+                      We craft unique, addictive, and visually striking experiences that merge fun with imagination. 
+                      From high-speed racers to experimental titles, our mission is simple: make games that feel 
+                      good to play and hard to put down.
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </section>
