@@ -41,11 +41,11 @@ const GamesPage = () => {
       "Triangle Chess": "50K+", 
       "Spellcheck": "40K+",
       "Grindhouse": "25K+",
-      "Creaks": "Coming Soon",
-      "Doomlane": "Coming Soon",
-      "Tacticx": "Coming Soon",
-      "8 Ball Pool": "Coming Soon",
-      "Penalty Shootout": "Coming Soon"
+      "Creaks": "Soon",
+      "Doomlane": "Soon",
+      "Tacticx": "Soon",
+      "8 Ball Pool": "Soon",
+      "Penalty Shootout": "Soon"
     };
     return downloads[title] || "New";
   };
