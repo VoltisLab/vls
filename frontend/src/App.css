@@ -983,6 +983,86 @@ body {
   margin: 0;
 }
 
+/* Cookie Consent Styles */
+.cookie-consent {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: var(--bg-secondary);
+  border-top: 1px solid var(--border-color);
+  padding: 20px;
+  z-index: 1000;
+  box-shadow: 0 -5px 20px var(--shadow-color);
+}
+
+.cookie-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.cookie-title {
+  color: var(--text-primary);
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0 0 5px 0;
+}
+
+.cookie-text {
+  color: var(--text-secondary);
+  margin: 0;
+  font-size: 14px;
+}
+
+.cookie-buttons {
+  display: flex;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+.accept-button,
+.reject-button {
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.accept-button {
+  background: var(--accent-primary);
+  color: var(--bg-primary);
+  border: none;
+}
+
+.reject-button {
+  background: transparent;
+  color: var(--text-primary);
+  border: 1px solid var(--border-color);
+}
+
+.accept-button:hover,
+.reject-button:hover {
+  opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+  .cookie-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .cookie-buttons {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
   .game-page .game-title {
