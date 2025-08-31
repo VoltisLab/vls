@@ -1488,7 +1488,7 @@ body {
 
 .amanita-contact-subtitle {
   font-size: 20px;
-  color: #cccccc;
+  color: var(--text-secondary);
   margin-bottom: 15px;
   font-weight: 300;
 }
