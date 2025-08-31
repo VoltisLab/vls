@@ -18,6 +18,7 @@ import TacticxPage from "./pages/games/TacticxPage";
 import GrindhousePage from "./pages/games/GrindhousePage";
 import EightBallPoolPage from "./pages/games/EightBallPoolPage";
 import PenaltyShootoutPage from "./pages/games/PenaltyShootoutPage";
+import PrivacyPage from "./pages/PrivacyPage";
 
 function App() {
   return (
