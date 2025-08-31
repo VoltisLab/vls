@@ -105,35 +105,35 @@ export const allGames = [
   {
     title: "Creaks",
     description: "Mind-bending puzzle adventure with mysterious creatures",
-    image: "https://customer-assets.emergentagent.com/job_gaming-rebrand/artifacts/1p5vhozt_Group%201244831567.jpg",
+    image: "https://images.unsplash.com/photo-1550684376-efcbd6e3f031?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzB8MHwxfHNlYXJjaHw0fHxibGFjayUyMGJhY2tncm91bmR8ZW58MHx8fGJsYWNrfDE3NTY2MzM3NTF8MA&ixlib=rb-4.1.0&q=85",
     link: "/games/creaks",
     category: "Puzzle"
   },
   {
     title: "Doomlane",
     description: "Fast-paced survival racing",
-    image: "https://customer-assets.emergentagent.com/job_gaming-rebrand/artifacts/1p5vhozt_Group%201244831567.jpg", 
+    image: "https://images.unsplash.com/photo-1550684376-efcbd6e3f031?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzB8MHwxfHNlYXJjaHw0fHxibGFjayUyMGJhY2tncm91bmR8ZW58MHx8fGJsYWNrfDE3NTY2MzM3NTF8MA&ixlib=rb-4.1.0&q=85", 
     link: "/games/doomlane",
     category: "Racing"
   },
   {
     title: "Tacticx",
     description: "Strategic multiplayer tactics game",
-    image: "https://customer-assets.emergentagent.com/job_gaming-rebrand/artifacts/1p5vhozt_Group%201244831567.jpg",
+    image: "https://images.unsplash.com/photo-1550684376-efcbd6e3f031?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzB8MHwxfHNlYXJjaHw0fHxibGFjayUyMGJhY2tncm91bmR8ZW58MHx8fGJsYWNrfDE3NTY2MzM3NTF8MA&ixlib=rb-4.1.0&q=85",
     link: "/games/tacticx",
     category: "Strategy"
   },
   {
     title: "8 Ball Pool",
     description: "Classic billiards with modern twists",
-    image: "https://customer-assets.emergentagent.com/job_gaming-rebrand/artifacts/1p5vhozt_Group%201244831567.jpg",
+    image: "https://images.unsplash.com/photo-1550684376-efcbd6e3f031?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzB8MHwxfHNlYXJjaHw0fHxibGFjayUyMGJhY2tncm91bmR8ZW58MHx8fGJsYWNrfDE3NTY2MzM3NTF8MA&ixlib=rb-4.1.0&q=85",
     link: "/games/8-ball-pool",
     category: "Sports" 
   },
   {
     title: "Penalty Shootout",
     description: "Intense soccer penalty competition",
-    image: "https://customer-assets.emergentagent.com/job_gaming-rebrand/artifacts/1p5vhozt_Group%201244831567.jpg",
+    image: "https://images.unsplash.com/photo-1550684376-efcbd6e3f031?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzB8MHwxfHNlYXJjaHw0fHxibGFjayUyMGJhY2tncm91bmR8ZW58MHx8fGJsYWNrfDE3NTY2MzM3NTF8MA&ixlib=rb-4.1.0&q=85",
     link: "/games/penalty-shootout",
     category: "Sports"
   }
