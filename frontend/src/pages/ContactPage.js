@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import CookieConsent from "../components/CookieConsent";
+import { allGames } from "../data/mockGames";
 
 const ContactPage = () => {
   const [showCookieConsent, setShowCookieConsent] = useState(true);
