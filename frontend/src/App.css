@@ -898,6 +898,48 @@ body {
   text-align: center;
 }
 
+/* Privacy Page Styles */
+.privacy-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.privacy-title {
+  color: var(--text-primary);
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.privacy-last-updated {
+  color: var(--text-secondary);
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.privacy-content {
+  color: var(--text-primary);
+}
+
+.privacy-section {
+  margin-bottom: 30px;
+}
+
+.privacy-section h2 {
+  color: var(--text-primary);
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.privacy-section p {
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
   .game-page .game-title {
