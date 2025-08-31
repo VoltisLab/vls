@@ -98,7 +98,7 @@ export const allGames = [
   {
     title: "Grindhouse",
     description: "Experimental action adventure",
-    image: "https://customer-assets.emergentagent.com/job_2254775f-056c-475f-8e45-02c39741e786/artifacts/0v9v8a91_Group%201244831544.png",
+    image: "https://customer-assets.emergentagent.com/job_gaming-rebrand/artifacts/1p5vhozt_Group%201244831567.jpg",
     link: "/games/grindhouse",
     category: "Action"
   },
