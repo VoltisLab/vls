@@ -353,7 +353,7 @@ const MerchPage = () => {
     {
       title: "Wireless Charging Pad",
       description: "Fast wireless charger with LED",
-      price: "$39.99",
+      price: "£39.99",
       image: "https://customer-assets.emergentagent.com/job_2254775f-056c-475f-8e45-02c39741e786/artifacts/am9wazee_hkvbsxdfxd.png",
       category: "Tech"
     },
