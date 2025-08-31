@@ -376,6 +376,47 @@ const MerchPage = () => {
     setCurrentSlide((prev) => (prev - 1 + featuredItems.length) % featuredItems.length);
   };
 
+  const addToCart = (item) => {
+    setCart(prev => {
+      const existingItem = prev.find(cartItem => cartItem.title === item.title);
+      if (existingItem) {
+        return prev.map(cartItem => 
+          cartItem.title === item.title 
+            ? { ...cartItem, quantity: cartItem.quantity + 1 }
+            : cartItem
+        );
+      }
+      return [...prev, { ...item, quantity: 1 }];
+    });
+  };
+
+  const removeFromCart = (itemTitle) => {
+    setCart(prev => prev.filter(item => item.title !== itemTitle));
+  };
+
+  const updateQuantity = (itemTitle, newQuantity) => {
+    if (newQuantity === 0) {
+      removeFromCart(itemTitle);
+      return;
+    }
+    setCart(prev => prev.map(item => 
+      item.title === itemTitle 
+        ? { ...item, quantity: newQuantity }
+        : item
+    ));
+  };
+
+  const getTotalPrice = () => {
+    return cart.reduce((total, item) => {
+      const price = parseFloat(item.price.replace('£', ''));
+      return total + (price * item.quantity);
+    }, 0).toFixed(2);
+  };
+
+  const getTotalItems = () => {
+    return cart.reduce((total, item) => total + item.quantity, 0);
+  };
+
   return (
     <div className="merch-page">
       <Header />
