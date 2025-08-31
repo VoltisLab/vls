@@ -43,7 +43,10 @@ const GameSlider = ({ games }) => {
       <div className="slider-container">
         <div 
           className="slider-track"
-          style={{ transform: `translateX(-${currentSlide * 50}%)` }}
+          style={{ 
+            transform: `translateX(-${currentSlide * 100}%)`,
+            '--slides-count': games.length 
+          }}
         >
           {games.map((game, index) => (
             <div 
