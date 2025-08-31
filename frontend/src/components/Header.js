@@ -19,7 +19,12 @@ const Header = () => {
           <img 
             src="https://customer-assets.emergentagent.com/job_gaming-rebrand/artifacts/n7rtb7og_Group%201244831488.png" 
             alt="Voltis Labs Games" 
-            className="logo-image"
+            className="logo-image logo-dark"
+          />
+          <img 
+            src="https://customer-assets.emergentagent.com/job_voltis-gaming/artifacts/o99zfbv4_yugkuli%3B.jpg" 
+            alt="Voltis Labs Games" 
+            className="logo-image logo-light"
           />
         </Link>
         
