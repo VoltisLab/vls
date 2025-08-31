@@ -231,7 +231,7 @@ body {
 .game-title {
   font-size: 18px;
   font-weight: 600;
-  color: #ffffff;
+  color: var(--text-primary);
   margin-bottom: 5px;
   line-height: 1.3;
 }
