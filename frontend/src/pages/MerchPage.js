@@ -260,7 +260,7 @@ const MerchPage = () => {
     {
       title: "Crystal Paperweight",
       description: "3D etched crystal paperweight",
-      price: "$44.99",
+      price: "£44.99",
       image: "https://customer-assets.emergentagent.com/job_2254775f-056c-475f-8e45-02c39741e786/artifacts/a8g9ilrg_pexels-ash-craig-122861-376464.jpg",
       category: "Collectibles"
     },
