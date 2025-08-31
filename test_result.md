@@ -111,7 +111,7 @@ frontend:
     file: "/app/frontend/src/pages/MerchPage.js"
     stuck_count: 0
     priority: "high"
-    needs_retesting: true
+    needs_retesting: false
     status_history:
         - working: "NA"
           agent: "main"
@@ -119,6 +119,9 @@ frontend:
         - working: true
           agent: "main"
           comment: "Successfully updated all 49 currency instances from $ to £ in MerchPage.js. All dollar symbols replaced with pound symbols."
+        - working: true
+          agent: "testing"
+          comment: "TESTING COMPLETED SUCCESSFULLY: Verified all currency symbols changed from $ to £. Featured item shows £29.99 correctly. All 48 merchandise items display £ symbols. Found 49 total £ symbols and 0 $ symbols in prices. Specific high-value items verified: Triangle Chess Set £149.99, Gaming Chair £299.99. Currency conversion is fully functional."
 
 metadata:
   created_by: "main_agent"
