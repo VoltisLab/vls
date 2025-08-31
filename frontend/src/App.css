@@ -1275,11 +1275,33 @@ body {
   }
 
   .navigation {
-    gap: 15px;
+    gap: 10px;
   }
 
   .header-container {
     padding: 0 15px;
+    flex-wrap: nowrap;
+  }
+  
+  .logo-image {
+    height: 35px;
+  }
+  
+  .nav-link {
+    font-size: 12px;
+  }
+  
+  .header-actions {
+    gap: 10px;
+  }
+  
+  .social-links {
+    gap: 5px;
+  }
+  
+  .theme-toggle {
+    width: 35px;
+    height: 35px;
   }
 
   .main-content {
