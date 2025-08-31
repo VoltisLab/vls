@@ -1297,6 +1297,10 @@ body {
 
 /* Mobile Footer Layout */
 @media (max-width: 768px) {
+  .footer {
+    padding: 40px 0 40px 0;
+  }
+  
   .footer-links {
     display: flex;
     flex-direction: column;
