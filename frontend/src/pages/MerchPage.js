@@ -283,7 +283,7 @@ const MerchPage = () => {
     {
       title: "Wireless Earbuds",
       description: "Gaming earbuds with low latency",
-      price: "$79.99",
+      price: "£79.99",
       image: "https://customer-assets.emergentagent.com/job_2254775f-056c-475f-8e45-02c39741e786/artifacts/am9wazee_hkvbsxdfxd.png",
       category: "Tech"
     },
