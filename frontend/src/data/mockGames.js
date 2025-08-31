@@ -3,7 +3,7 @@ export const sliderGames = [
   {
     title: "Spinnersonic",
     description: "High-speed racing with fidget spinner mechanics",
-    image: "https://customer-assets.emergentagent.com/job_voltis-gaming/artifacts/9pj2qbjo_Frame%202.jpg",
+    image: "https://customer-assets.emergentagent.com/job_2254775f-056c-475f-8e45-02c39741e786/artifacts/0v9v8a91_Group%201244831544.png",
     link: "/games/spinnersonic"
   },
   {
