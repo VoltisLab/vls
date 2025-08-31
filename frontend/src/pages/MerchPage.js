@@ -139,7 +139,7 @@ const MerchPage = () => {
     {
       title: "Gaming Socks Set",
       description: "4-pack of gaming themed socks",
-      price: "$16.99",
+      price: "£16.99",
       image: "https://customer-assets.emergentagent.com/job_2254775f-056c-475f-8e45-02c39741e786/artifacts/am9wazee_hkvbsxdfxd.png",
       category: "Apparel"
     },
