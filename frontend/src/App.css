@@ -2061,7 +2061,6 @@ body {
 .value-icon {
   width: 60px;
   height: 60px;
-  background: linear-gradient(135deg, #007AFF, #0056b3);
   border-radius: 16px;
   display: flex;
   align-items: center;
