@@ -765,9 +765,9 @@ body {
 }
 
 .category-btn.active {
-  background: #007AFF;
-  border-color: #007AFF;
-  color: white;
+  background: var(--accent-primary);
+  border-color: var(--accent-primary);
+  color: var(--bg-primary);
 }
 
 .view-controls {
