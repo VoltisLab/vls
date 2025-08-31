@@ -232,7 +232,7 @@ const MerchPage = () => {
     {
       title: "Holographic Sticker Pack",
       description: "Premium holographic stickers",
-      price: "$14.99",
+      price: "£14.99",
       image: "https://customer-assets.emergentagent.com/job_2254775f-056c-475f-8e45-02c39741e786/artifacts/d4j87eyh_pexels-robinstickel-70497.jpg",
       category: "Collectibles"
     },
