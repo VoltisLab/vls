@@ -55,12 +55,14 @@ body {
 
 /* Header Styles */
 .header {
-  background-color: #1a1a1a;
-  border-bottom: 1px solid #333;
+  background-color: var(--overlay-bg);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--border-color);
   padding: 0;
   position: sticky;
   top: 0;
   z-index: 100;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
 .header-container {
