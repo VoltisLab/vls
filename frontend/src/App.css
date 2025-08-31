@@ -1392,6 +1392,9 @@ body {
 
   .main-content {
     padding: 20px 15px;
+    width: 100%;
+    max-width: 100vw;
+    overflow-x: hidden;
   }
 
   .merch-grid {
