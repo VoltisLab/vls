@@ -1446,14 +1446,14 @@ body {
   text-align: center;
 }
 
-.amanita-radio-group {
+.contact-options {
   display: flex;
   flex-direction: column;
   gap: 15px;
   margin-bottom: 0;
 }
 
-.amanita-radio-label {
+.contact-option {
   display: flex;
   align-items: center;
   padding: 20px 25px;
@@ -1469,7 +1469,7 @@ body {
   overflow: hidden;
 }
 
-.amanita-radio-label::before {
+.contact-option::before {
   content: '';
   position: absolute;
   top: 0;
@@ -1480,22 +1480,24 @@ body {
   transition: left 0.6s ease;
 }
 
-.amanita-radio-label:hover::before {
+.contact-option:hover::before {
   left: 100%;
 }
 
-.amanita-radio-label:hover {
+.contact-option:hover {
   background: linear-gradient(135deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.04));
   border-color: rgba(255, 255, 255, 0.3);
   transform: translateY(-2px);
   box-shadow: 0 10px 30px rgba(255, 255, 255, 0.1);
 }
 
-.amanita-radio-label input[type="radio"] {
-  display: none;
+.contact-option.selected {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.08));
+  border-color: rgba(255, 255, 255, 0.4);
+  box-shadow: 0 10px 30px rgba(255, 255, 255, 0.15);
 }
 
-.amanita-checkmark {
+.option-circle {
   width: 24px;
   height: 24px;
   border: 2px solid #666666;
@@ -1504,34 +1506,30 @@ body {
   position: relative;
   transition: all 0.3s ease;
   flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.amanita-radio-label:hover .amanita-checkmark {
+.contact-option:hover .option-circle {
   border-color: #ffffff;
 }
 
-.amanita-radio-label input[type="radio"]:checked ~ .amanita-checkmark {
+.contact-option.selected .option-circle {
   background: linear-gradient(135deg, #ffffff, #f0f0f0);
   border-color: #ffffff;
   box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
 }
 
-.amanita-checkmark::after {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.option-dot {
   width: 10px;
   height: 10px;
   border-radius: 50%;
   background: #000000;
-  opacity: 0;
-  transition: opacity 0.3s ease;
 }
 
-.amanita-radio-label input[type="radio"]:checked ~ .amanita-checkmark::after {
-  opacity: 1;
+.option-label {
+  user-select: none;
 }
 
 .amanita-contact-form {
