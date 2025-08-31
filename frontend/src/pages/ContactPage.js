@@ -97,66 +97,19 @@ const ContactPage = () => {
             <div className="contact-selection-section">
               <h2 className="amanita-question">What can we help you with?</h2>
               
-              <div className="amanita-radio-group">
-                <label className="amanita-radio-label">
-                  <input 
-                    type="radio" 
-                    name="support-type" 
-                    value="games"
-                    checked={selectedOption === 'games'}
-                    onChange={handleRadioChange}
-                  />
-                  <span className="amanita-checkmark"></span>
-                  🎮 Customer Support - Games
-                </label>
-                
-                <label className="amanita-radio-label">
-                  <input 
-                    type="radio" 
-                    name="support-type" 
-                    value="merch"
-                    checked={selectedOption === 'merch'}
-                    onChange={handleRadioChange}
-                  />
-                  <span className="amanita-checkmark"></span>
-                  🛍️ Customer Support - Merch
-                </label>
-                
-                <label className="amanita-radio-label">
-                  <input 
-                    type="radio" 
-                    name="support-type" 
-                    value="business"
-                    checked={selectedOption === 'business'}
-                    onChange={handleRadioChange}
-                  />
-                  <span className="amanita-checkmark"></span>
-                  💼 Business & Licensing Enquiry
-                </label>
-                
-                <label className="amanita-radio-label">
-                  <input 
-                    type="radio" 
-                    name="support-type" 
-                    value="press"
-                    checked={selectedOption === 'press'}
-                    onChange={handleRadioChange}
-                  />
-                  <span className="amanita-checkmark"></span>
-                  📰 Press & Marketing Enquiry
-                </label>
-                
-                <label className="amanita-radio-label">
-                  <input 
-                    type="radio" 
-                    name="support-type" 
-                    value="feedback"
-                    checked={selectedOption === 'feedback'}
-                    onChange={handleRadioChange}
-                  />
-                  <span className="amanita-checkmark"></span>
-                  💭 Other Suggestions & Feedback
-                </label>
+              <div className="contact-options">
+                {contactOptions.map((option) => (
+                  <div 
+                    key={option.value}
+                    className={`contact-option ${selectedOption === option.value ? 'selected' : ''}`}
+                    onClick={() => handleOptionClick(option)}
+                  >
+                    <div className="option-circle">
+                      {selectedOption === option.value && <div className="option-dot"></div>}
+                    </div>
+                    <span className="option-label">{option.label}</span>
+                  </div>
+                ))}
               </div>
             </div>
 
