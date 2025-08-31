@@ -15,37 +15,22 @@ const ContactPage = () => {
   });
   const [formStatus, setFormStatus] = useState(''); // 'submitted', 'error', ''
 
-  const handleRadioChange = (e) => {
-    const value = e.target.value;
-    setSelectedOption(value);
+  const contactOptions = [
+    { value: 'games', label: '🎮 Customer Support - Games', subject: 'Customer Support - Games' },
+    { value: 'merch', label: '🛍️ Customer Support - Merch', subject: 'Customer Support - Merch' },
+    { value: 'business', label: '💼 Business & Licensing Enquiry', subject: 'Business & Licensing Enquiry' },
+    { value: 'press', label: '📰 Press & Marketing Enquiry', subject: 'Press & Marketing Enquiry' },
+    { value: 'feedback', label: '💭 Other Suggestions & Feedback', subject: 'Other Suggestions & Feedback' }
+  ];
+
+  const handleOptionClick = (option) => {
+    setSelectedOption(option.value);
     setShowForm(true);
     setFormStatus('');
     
-    // Set default subject based on selection
-    let defaultSubject = '';
-    switch(value) {
-      case 'games':
-        defaultSubject = 'Customer Support - Games';
-        break;
-      case 'merch':
-        defaultSubject = 'Customer Support - Merch';
-        break;
-      case 'business':
-        defaultSubject = 'Business & Licensing Enquiry';
-        break;
-      case 'press':
-        defaultSubject = 'Press & Marketing Enquiry';
-        break;
-      case 'feedback':
-        defaultSubject = 'Other Suggestions & Feedback';
-        break;
-      default:
-        defaultSubject = '';
-    }
-    
     setFormData(prev => ({
       ...prev,
-      subject: defaultSubject
+      subject: option.subject
     }));
   };
 
