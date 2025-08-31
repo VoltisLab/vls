@@ -490,6 +490,62 @@ const MerchPage = () => {
         </div>
       </main>
       <Footer />
+      
+      {/* Shopping Cart Button */}
+      {cart.length > 0 && (
+        <button 
+          className="cart-float-button"
+          onClick={() => setShowCart(true)}
+        >
+          <ShoppingCart size={20} />
+          <span className="cart-count">{getTotalItems()}</span>
+        </button>
+      )}
+
+      {/* Shopping Cart Modal */}
+      {showCart && (
+        <div className="cart-modal-backdrop" onClick={() => setShowCart(false)}>
+          <div className="cart-modal" onClick={(e) => e.stopPropagation()}>
+            <div className="cart-header">
+              <h2>Shopping Cart</h2>
+              <button className="cart-close" onClick={() => setShowCart(false)}>×</button>
+            </div>
+            
+            <div className="cart-items">
+              {cart.map((item, index) => (
+                <div key={index} className="cart-item">
+                  <img src={item.image} alt={item.title} className="cart-item-image" />
+                  <div className="cart-item-info">
+                    <h4>{item.title}</h4>
+                    <p className="cart-item-price">{item.price}</p>
+                  </div>
+                  <div className="cart-item-quantity">
+                    <button onClick={() => updateQuantity(item.title, item.quantity - 1)}>−</button>
+                    <span>{item.quantity}</span>
+                    <button onClick={() => updateQuantity(item.title, item.quantity + 1)}>+</button>
+                  </div>
+                  <button 
+                    className="cart-remove"
+                    onClick={() => removeFromCart(item.title)}
+                  >
+                    Remove
+                  </button>
+                </div>
+              ))}
+            </div>
+            
+            <div className="cart-footer">
+              <div className="cart-total">
+                <strong>Total: £{getTotalPrice()}</strong>
+              </div>
+              <button className="checkout-button">
+                Proceed to Checkout
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
+
       {showCookieConsent && (
         <CookieConsent onAccept={() => setShowCookieConsent(false)} />
       )}
