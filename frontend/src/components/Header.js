@@ -69,6 +69,49 @@ const Header = () => {
           </div>
         </div>
       </div>
+
+      {/* Mobile Menu */}
+      {isMobileMenuOpen && (
+        <div className="mobile-menu">
+          <nav className="mobile-navigation">
+            <Link 
+              to="/" 
+              className={`mobile-nav-link ${isActive("/") ? "active" : ""}`}
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              Home
+            </Link>
+            <Link 
+              to="/about" 
+              className={`mobile-nav-link ${isActive("/about") ? "active" : ""}`}
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              About
+            </Link>
+            <Link 
+              to="/games" 
+              className={`mobile-nav-link ${isActive("/games") ? "active" : ""}`}
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              Games
+            </Link>
+            <Link 
+              to="/merch" 
+              className={`mobile-nav-link ${isActive("/merch") ? "active" : ""}`}
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              Merch
+            </Link>
+            <Link 
+              to="/contact" 
+              className={`mobile-nav-link ${isActive("/contact") ? "active" : ""}`}
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              Contact
+            </Link>
+          </nav>
+        </div>
+      )}
     </header>
   );
 };
