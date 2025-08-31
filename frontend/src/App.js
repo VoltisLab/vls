@@ -44,6 +44,7 @@ function App() {
             <Route path="/games/8-ball-pool" element={<EightBallPoolPage />} />
             <Route path="/games/penalty-shootout" element={<PenaltyShootoutPage />} />
             <Route path="/privacy" element={<PrivacyPage />} />
+            <Route path="/cookies" element={<CookiesPage />} />
           </Routes>
         </BrowserRouter>
       </div>
