@@ -7,13 +7,9 @@ const Footer = () => {
         <div className="footer-links">
           <a href="/privacy" className="footer-link">Privacy Policy</a>
           <span className="separator">·</span>
-          <a href="/video-policy" className="footer-link">Video Policy</a>
-          <span className="separator">·</span>
           <a href="#" className="footer-link">Facebook</a>
           <span className="separator">·</span>
           <a href="https://instagram.com/voltislabsgames" className="footer-link">Instagram</a>
-          <span className="separator">·</span>
-          <a href="#" className="footer-link">Bluesky</a>
           <span className="separator">·</span>
           <a href="#" className="footer-link">Discord</a>
           <span className="separator">·</span>
