@@ -1474,10 +1474,13 @@ body {
 .amanita-contact-title {
   font-size: 48px;
   font-weight: 700;
-  color: #ffffff;
+  color: var(--text-primary);
   margin-bottom: 20px;
   line-height: 1.2;
-  background: linear-gradient(135deg, #ffffff, #cccccc);
+}
+
+[data-theme="dark"] .amanita-contact-title {
+  background: linear-gradient(135deg, var(--text-primary), var(--text-secondary));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
