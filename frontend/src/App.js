@@ -42,6 +42,7 @@ function App() {
             <Route path="/games/grindhouse" element={<GrindhousePage />} />
             <Route path="/games/8-ball-pool" element={<EightBallPoolPage />} />
             <Route path="/games/penalty-shootout" element={<PenaltyShootoutPage />} />
+            <Route path="/privacy" element={<PrivacyPage />} />
           </Routes>
         </BrowserRouter>
       </div>
