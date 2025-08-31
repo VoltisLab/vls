@@ -9,6 +9,8 @@ const Footer = () => {
             <a href="https://voltislabs.com" className="footer-link">Voltis Labs</a>
             <span className="separator">·</span>
             <a href="/privacy" className="footer-link">Privacy Policy</a>
+            <span className="separator">·</span>
+            <a href="/cookies" className="footer-link">Cookies</a>
           </div>
           <div className="footer-link-row">
             <a href="https://instagram.com/voltislabsgames" className="footer-link">Instagram</a>
