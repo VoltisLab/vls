@@ -28,12 +28,29 @@ const ContactPage = () => {
 
   const handleOptionClick = (option) => {
     setSelectedOption(option.value);
-    setShowForm(true);
     setFormStatus('');
+    
+    if (option.value === 'games') {
+      setShowGameSelection(true);
+      setShowForm(false);
+    } else {
+      setShowForm(true);
+      setShowGameSelection(false);
+      setFormData(prev => ({
+        ...prev,
+        subject: option.subject
+      }));
+    }
+  };
+
+  const handleGameSelect = (game) => {
+    setSelectedGame(game.title);
+    setShowGameSelection(false);
+    setShowForm(true);
     
     setFormData(prev => ({
       ...prev,
-      subject: option.subject
+      subject: `Customer Support - Games - ${game.title}`
     }));
   };
 
