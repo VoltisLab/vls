@@ -2706,7 +2706,12 @@ body {
   position: relative;
 }
 
-.store-game-image[src*="photo-1550684376-efcbd6e3f031"] + .game-overlay::after {
+/* Add SOON text overlay for black placeholder images */
+.store-game-image[src*="photo-1550684376-efcbd6e3f031"] {
+  position: relative;
+}
+
+.store-game-image-container:has(.store-game-image[src*="photo-1550684376-efcbd6e3f031"])::after {
   content: "SOON";
   position: absolute;
   top: 50%;
@@ -2716,8 +2721,9 @@ body {
   font-size: 32px;
   font-weight: bold;
   letter-spacing: 3px;
-  z-index: 2;
+  z-index: 10;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  pointer-events: none;
 }
 
 .store-game-image[src*="1p5vhozt_Group%201244831567.jpg"] {
