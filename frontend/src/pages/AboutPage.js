@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Users, Target, Zap, Globe, GameController2, Heart, Award, Rocket } from "lucide-react";
+import { Users, Target, Zap, Globe, Heart, Award, Rocket } from "lucide-react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import CookieConsent from "../components/CookieConsent";
