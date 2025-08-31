@@ -2365,6 +2365,23 @@ body {
 
 /* Mobile Responsive */
 @media (max-width: 768px) {
+  .about-hero {
+    height: 500px;
+  }
+  
+  .moving-thumbnails {
+    height: 80px;
+  }
+  
+  .game-thumbnail {
+    width: 80px;
+    height: 60px;
+  }
+  
+  .hero-overlay {
+    padding: 40px 15px;
+  }
+  
   .about-title {
     font-size: 36px;
   }
