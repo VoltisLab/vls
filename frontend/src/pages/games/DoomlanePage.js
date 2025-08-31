@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowLeft, Users, Clock, Trophy, Zap } from 'lucide-react';
+import { ArrowLeft, Star, Download, Users, Clock, Trophy } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
@@ -9,124 +9,160 @@ const DoomlanePage = () => {
     <div className="game-page">
       <Header />
       <main className="main-content">
-        {/* Back Navigation */}
         <div className="container">
+          {/* Back Navigation */}
           <Link to="/games" className="back-link">
             <ArrowLeft size={20} />
             Back to Games
           </Link>
+
+          {/* App Store Hero Section */}
+          <section className="game-hero">
+            <div className="app-store-hero">
+              <div className="hero-top">
+                <img 
+                  src="https://customer-assets.emergentagent.com/job_gaming-rebrand/artifacts/1p5vhozt_Group%201244831567.jpg" 
+                  alt="Doomlane - Coming Soon" 
+                  className="game-icon"
+                />
+                <div className="hero-info">
+                  <h1 className="game-title">Doomlane</h1>
+                  <p className="game-subtitle">Fast-paced survival racing</p>
+                  
+                  <div className="rating-section">
+                    <div className="rating-score">
+                      <span className="rating-number">TBA</span>
+                      <div className="rating-stars">★★★★★</div>
+                    </div>
+                    <span className="rating-count">(Coming Soon)</span>
+                  </div>
+
+                  <div className="category-age">
+                    <span className="category-badge">Racing</span>
+                    <span className="age-rating">12+</span>
+                  </div>
+                </div>
+                
+                <button className="primary-download" style={{background: '#666', cursor: 'not-allowed'}}>
+                  <Download size={18} style={{marginRight: '8px'}} />
+                  Coming Soon
+                </button>
+              </div>
+
+              {/* Quick Stats */}
+              <div className="quick-stats">
+                <div className="stat-card">
+                  <span className="stat-value">TBA</span>
+                  <span className="stat-label">Release Date</span>
+                </div>
+                <div className="stat-card">
+                  <span className="stat-value">1-8</span>
+                  <span className="stat-label">Players</span>
+                </div>
+                <div className="stat-card">
+                  <span className="stat-value">3 min</span>
+                  <span className="stat-label">Quick Race</span>
+                </div>
+                <div className="stat-card">
+                  <span className="stat-value">TBA</span>
+                  <span className="stat-label">Price</span>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          {/* Screenshots */}
+          <section className="screenshots-section">
+            <h2 className="section-title">Screenshots</h2>
+            <div className="screenshots-container">
+              <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?w=400&h=600&fit=crop" alt="Screenshot 1" className="screenshot" />
+              <img src="https://images.unsplash.com/photo-1551698618-1dfe5d97d256?w=400&h=600&fit=crop" alt="Screenshot 2" className="screenshot" />
+              <img src="https://images.unsplash.com/photo-1509198397868-475647b2a1e5?w=400&h=600&fit=crop" alt="Screenshot 3" className="screenshot" />
+              <img src="https://images.unsplash.com/photo-1526509867162-5b0c0d1b4b33?w=400&h=600&fit=crop" alt="Screenshot 4" className="screenshot" />
+            </div>
+          </section>
+
+          {/* Description */}
+          <section className="description-section">
+            <h2 className="section-title">About Doomlane</h2>
+            <p className="description-text">
+              Doomlane combines high-octane racing with intense survival mechanics. Navigate through apocalyptic landscapes where speed is your salvation and every decision could be your last. Race against time, opponents, and the environment itself.
+            </p>
+            <p className="description-text">
+              Master vehicle customization, resource management, and split-second decision making as you compete in the most dangerous racing circuits ever conceived. Survive the wasteland and emerge victorious.
+            </p>
+            <a href="#" className="read-more">Read More</a>
+          </section>
+
+          {/* Features */}
+          <section className="features-section">
+            <h2 className="section-title">Game Features</h2>
+            <div className="features-grid">
+              <div className="feature-card">
+                <div className="feature-icon">🏎️</div>
+                <h3 className="feature-title">Survival Racing</h3>
+                <p className="feature-description">High-speed racing combined with resource management and environmental hazards.</p>
+              </div>
+              <div className="feature-card">
+                <div className="feature-icon">🔧</div>
+                <h3 className="feature-title">Vehicle Customization</h3>
+                <p className="feature-description">Extensive modification system for armor, weapons, and performance upgrades.</p>
+              </div>
+              <div className="feature-card">
+                <div className="feature-icon">🌍</div>
+                <h3 className="feature-title">Apocalyptic Tracks</h3>
+                <p className="feature-description">Race through diverse post-apocalyptic environments with dynamic weather and hazards.</p>
+              </div>
+              <div className="feature-card">
+                <div className="feature-icon">⚔️</div>
+                <h3 className="feature-title">Combat Racing</h3>
+                <p className="feature-description">Engage in vehicular combat while maintaining racing line and speed.</p>
+              </div>
+            </div>
+          </section>
+
+          {/* Download Options */}
+          <section className="download-section">
+            <h2 className="section-title">Coming Soon To</h2>
+            <div className="download-options">
+              <a href="#" className="download-option" style={{opacity: 0.6, cursor: 'not-allowed'}}>
+                <div className="platform-icon" style={{background: '#007AFF'}}>📱</div>
+                <div className="platform-info">
+                  <div className="platform-name">App Store</div>
+                  <div className="platform-status">Coming Soon</div>
+                </div>
+              </a>
+              <a href="#" className="download-option" style={{opacity: 0.6, cursor: 'not-allowed'}}>
+                <div className="platform-icon" style={{background: '#34A853'}}>🤖</div>
+                <div className="platform-info">
+                  <div className="platform-name">Google Play</div>
+                  <div className="platform-status">Coming Soon</div>
+                </div>
+              </a>
+              <a href="#" className="download-option" style={{opacity: 0.6, cursor: 'not-allowed'}}>
+                <div className="platform-icon" style={{background: '#1B2838'}}>🎮</div>
+                <div className="platform-info">
+                  <div className="platform-name">Steam</div>
+                  <div className="platform-status">Coming Soon</div>
+                </div>
+              </a>
+            </div>
+          </section>
+
+          {/* Developer Info */}
+          <section className="developer-section">
+            <div className="developer-header">
+              <img src="https://customer-assets.emergentagent.com/job_voltis-gaming/artifacts/logo-light.png" alt="Voltis Labs" className="developer-logo" />
+              <div>
+                <div className="developer-name">Voltis Labs Games</div>
+                <div className="developer-title">Game Developer</div>
+              </div>
+            </div>
+            <p className="description-text">
+              Voltis Labs Games specializes in creating innovative gaming experiences that blend traditional mechanics with modern twists. Our games focus on accessibility, engaging gameplay, and community-driven features.
+            </p>
+          </section>
         </div>
-
-        {/* Game Hero Section */}
-        <section className="game-hero">
-          <div className="container">
-            <img 
-              src="https://customer-assets.emergentagent.com/job_gaming-rebrand/artifacts/1p5vhozt_Group%201244831567.jpg" 
-              alt="Doomlane" 
-              className="game-banner-image"
-            />
-            <div className="game-hero-overlay">
-              <h1 className="game-title">Doomlane</h1>
-              <p className="game-subtitle">Fast-paced survival racing</p>
-              
-              <div className="game-stats">
-                <div className="stat-item">
-                  <span className="stat-value">6</span>
-                  <span className="stat-label">Players</span>
-                </div>
-                <div className="stat-item">
-                  <span className="stat-value">8m</span>
-                  <span className="stat-label">Race Time</span>
-                </div>
-                <div className="stat-item">
-                  <span className="stat-value">4.2★</span>
-                  <span className="stat-label">Rating</span>
-                </div>
-                <div className="stat-item">
-                  <span className="stat-value">15K+</span>
-                  <span className="stat-label">Players</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Game Description */}
-        <section className="game-content-section">
-          <div className="container">
-            <div className="section-header">
-              <h2 className="section-title">Game Overview</h2>
-            </div>
-            
-            <div className="game-description-grid">
-              <div className="game-description-content">
-                <p className="game-text">
-                  <strong>Doomlane</strong> throws you into high-octane survival racing where speed kills and 
-                  only the fastest survive. Navigate through apocalyptic landscapes filled with deadly obstacles, 
-                  rival racers, and environmental hazards.
-                </p>
-                <p className="game-text">
-                  Master vehicle combat, power-up management, and split-second decision making as you race through 
-                  collapsing cities, toxic wastelands, and dangerous industrial zones. Every race is a fight for 
-                  survival where crossing the finish line means staying alive.
-                </p>
-                <p className="game-text">
-                  Upgrade your vehicles, unlock devastating weapons, and climb the ranks in this intense 
-                  multiplayer racing experience that combines speed with strategy in a post-apocalyptic world.
-                </p>
-              </div>
-              
-              <div className="game-sidebar">
-                <div className="features-card">
-                  <h3 className="features-title">Epic Features</h3>
-                  <ul className="features-list">
-                    <li>Intense 6-player survival races</li>
-                    <li>Vehicle combat and weapon systems</li>
-                    <li>Post-apocalyptic environments</li>
-                    <li>Extensive vehicle customization</li>
-                    <li>Multiple game modes and challenges</li>
-                    <li>Dynamic weather and hazards</li>
-                    <li>Ranking and tournament system</li>
-                    <li>Cross-platform multiplayer racing</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Download Section */}
-        <section className="download-section">
-          <div className="container">
-            <div className="download-content">
-              <h2 className="download-title">Coming Soon!</h2>
-              <p className="download-subtitle">Doomlane is in development - join the racing revolution waitlist</p>
-              
-              <div className="download-grid">
-                <a href="#" className="download-card">
-                  <span className="download-icon">📱</span>
-                  <div className="download-platform">App Store</div>
-                  <div className="download-status">Coming Soon</div>
-                </a>
-                <a href="#" className="download-card">
-                  <span className="download-icon">🤖</span>
-                  <div className="download-platform">Google Play</div>
-                  <div className="download-status">Coming Soon</div>
-                </a>
-                <a href="#" className="download-card">
-                  <span className="download-icon">🎮</span>
-                  <div className="download-platform">Steam</div>
-                  <div className="download-status">Wishlist Now</div>
-                </a>
-                <a href="#" className="download-card">
-                  <span className="download-icon">💻</span>
-                  <div className="download-platform">Windows</div>
-                  <div className="download-status">Early Access</div>
-                </a>
-              </div>
-            </div>
-          </div>
-        </section>
       </main>
       <Footer />
     </div>
