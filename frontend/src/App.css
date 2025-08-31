@@ -1012,8 +1012,19 @@ body {
   }
   
   .games-store-grid.grid {
-    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
     gap: 16px;
+  }
+  
+  .store-game-image-container {
+    aspect-ratio: 1;
+    width: 100%;
+  }
+  
+  .store-game-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
   
   .category-filters {
@@ -1031,11 +1042,22 @@ body {
   }
   
   .store-game-info {
-    padding: 16px;
+    padding: 12px;
   }
   
   .store-game-title {
-    font-size: 18px;
+    font-size: 16px;
+    margin-bottom: 6px;
+  }
+  
+  .store-game-description {
+    font-size: 13px;
+    margin-bottom: 12px;
+    -webkit-line-clamp: 2;
+  }
+  
+  .store-game-meta {
+    font-size: 11px;
   }
   
   .games-store-grid.list .store-game-card {
