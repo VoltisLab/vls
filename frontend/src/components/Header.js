@@ -29,7 +29,7 @@ const Header = () => {
           />
         </Link>
         
-        <nav className="navigation">
+        <nav className="navigation desktop-nav">
           <Link to="/" className={`nav-link ${isActive("/") ? "active" : ""}`}>
             Home
           </Link>
@@ -46,6 +46,13 @@ const Header = () => {
             Contact
           </Link>
         </nav>
+
+        <button 
+          className="mobile-menu-button"
+          onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+        >
+          {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+        </button>
 
         <div className="header-actions">
           <ThemeToggle />
