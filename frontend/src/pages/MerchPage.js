@@ -346,7 +346,7 @@ const MerchPage = () => {
     {
       title: "Gaming Monitor Stand",
       description: "Adjustable monitor stand with storage",
-      price: "$64.99",
+      price: "£64.99",
       image: "https://customer-assets.emergentagent.com/job_2254775f-056c-475f-8e45-02c39741e786/artifacts/0v9v8a91_Group%201244831544.png",
       category: "Tech"
     },
