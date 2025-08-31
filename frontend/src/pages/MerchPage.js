@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import CookieConsent from "../components/CookieConsent";
+import ScrollToTop from "../components/ScrollToTop";
 import { ExternalLink, ShoppingCart, ChevronLeft, ChevronRight } from "lucide-react";
 
 const MerchPage = () => {
