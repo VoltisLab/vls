@@ -7,6 +7,8 @@ import { ExternalLink, ShoppingCart, ChevronLeft, ChevronRight } from "lucide-re
 const MerchPage = () => {
   const [showCookieConsent, setShowCookieConsent] = useState(true);
   const [currentSlide, setCurrentSlide] = useState(0);
+  const [cart, setCart] = useState([]);
+  const [showCart, setShowCart] = useState(false);
 
   // Featured items for the slider
   const featuredItems = [
