@@ -154,14 +154,14 @@ body {
 }
 
 .social-link {
-  color: #888;
+  color: var(--text-secondary);
   text-decoration: none;
   transition: color 0.3s ease;
   padding: 5px;
 }
 
 .social-link:hover {
-  color: #ffffff;
+  color: var(--text-primary);
 }
 
 /* Main Content */
