@@ -181,7 +181,7 @@ const AboutPage = () => {
                 Discover our collection of innovative games and join our growing community of players worldwide.
               </p>
               <a href="/games" className="cta-button">
-                <GameController2 size={20} />
+                <Zap size={20} />
                 Explore Our Games
               </a>
             </div>
