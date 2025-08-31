@@ -19,6 +19,7 @@ import GrindhousePage from "./pages/games/GrindhousePage";
 import EightBallPoolPage from "./pages/games/EightBallPoolPage";
 import PenaltyShootoutPage from "./pages/games/PenaltyShootoutPage";
 import PrivacyPage from "./pages/PrivacyPage";
+import CookiesPage from "./pages/CookiesPage";
 
 function App() {
   return (
