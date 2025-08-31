@@ -76,25 +76,6 @@ const AboutPage = () => {
       <Header />
       <main className="main-content">
         <div className="container">
-          {/* Simple Hero Section */}
-          <section className="about-hero-simple">
-            <div className="hero-badge">
-              <Award size={20} />
-              <span>Game Development Studio</span>
-            </div>
-            <h1 className="about-title">Voltis Labs Games</h1>
-            <p className="about-subtitle">
-              Pushing the boundaries of play, creativity, and interactive storytelling
-            </p>
-            <div className="hero-description">
-              <p>
-                We craft unique, addictive, and visually striking experiences that merge fun with imagination. 
-                From high-speed racers to experimental titles, our mission is simple: make games that feel 
-                good to play and hard to put down.
-              </p>
-            </div>
-          </section>
-
           {/* Stats Section */}
           <section className="stats-section">
             <div className="stats-grid">
