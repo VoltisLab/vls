@@ -173,7 +173,7 @@ const AboutPage = () => {
 
           {/* Culture Section */}
           <section className="culture-section">
-            <div className="app-store-card">
+            <div className="app-store-card wide-card">
               <div className="card-header">
                 <div className="card-icon">
                   <Rocket size={24} />
@@ -184,11 +184,21 @@ const AboutPage = () => {
                 <p>
                   We thrive on a remote, creative-first studio culture that values innovation, collaboration, 
                   and individual creativity. Our team consists of passionate creators, artists, programmers, 
-                  and designers from around the world.
+                  and designers from around the world, each bringing unique perspectives to our projects.
                 </p>
                 <p>
                   Every team member brings unique perspectives that shape our gaming visions into interactive 
-                  experiences that push boundaries and create lasting memories.
+                  experiences that push boundaries and create lasting memories. We foster an environment where 
+                  experimentation is encouraged, failure is seen as learning, and every voice is heard.
+                </p>
+                <p>
+                  Our distributed team model allows us to tap into global talent while maintaining the close-knit 
+                  collaboration that makes great games possible. We believe that the best ideas can come from 
+                  anywhere, and our tools and processes are designed to support creativity regardless of location.
+                </p>
+                <p>
+                  From daily standups to creative brainstorming sessions, we've built a culture that balances 
+                  productivity with play, professionalism with personality, and ambition with empathy.
                 </p>
               </div>
             </div>
