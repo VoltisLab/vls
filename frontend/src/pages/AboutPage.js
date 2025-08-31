@@ -3,6 +3,7 @@ import { Users, Target, Zap, Globe, Heart, Award, Rocket } from "lucide-react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import CookieConsent from "../components/CookieConsent";
+import ScrollToTop from "../components/ScrollToTop";
 
 const AboutPage = () => {
   const [showCookieConsent, setShowCookieConsent] = useState(true);
