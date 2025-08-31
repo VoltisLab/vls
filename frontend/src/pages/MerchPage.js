@@ -146,7 +146,7 @@ const MerchPage = () => {
     {
       title: "Doomlane Tank Top",
       description: "Athletic tank top",
-      price: "$22.99",
+      price: "£22.99",
       image: "https://customer-assets.emergentagent.com/job_2254775f-056c-475f-8e45-02c39741e786/artifacts/hxtwpsyl_Background.png",
       category: "Apparel"
     },
