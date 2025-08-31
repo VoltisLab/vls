@@ -102,7 +102,7 @@
 # Testing Data - Main Agent and testing sub agent both should log testing data below this section
 #====================================================================================================
 
-user_problem_statement: Change currency to £ (British pounds) in the merchandise section
+user_problem_statement: Change "Coming Soon" to "Soon" on Games page
 
 frontend:
   - task: "Change currency from $ to £ in merchandise prices"
