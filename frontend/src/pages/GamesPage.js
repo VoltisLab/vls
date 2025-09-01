@@ -19,7 +19,8 @@ const GamesPage = () => {
     const matchesSearch = game.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
                          game.description.toLowerCase().includes(searchTerm.toLowerCase());
     const matchesCategory = selectedCategory === "All" || game.category === selectedCategory;
-    return matchesSearch && matchesCategory;
+    const matchesControllerFilter = !controllerSupportOnly || game.controllerSupport;
+    return matchesSearch && matchesCategory && matchesControllerFilter;
   });
 
   const getGameRating = (title) => {
