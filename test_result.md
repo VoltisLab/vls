@@ -190,13 +190,8 @@ metadata:
   run_ui: false
 
 test_plan:
-  current_focus:
-    - "Fix homepage slider images display issues"
-    - "Add controller support feature to Doomlane"
-    - "Add controller support filter to Games page"
-    - "Update game data structure for controller support"
-  stuck_tasks:
-    - "Fix homepage slider images display issues" 
+  current_focus: []
+  stuck_tasks: [] 
   test_all: false
   test_priority: "high_first"
 
