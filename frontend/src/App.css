@@ -2095,7 +2095,7 @@ body {
 .slider-container {
   position: relative;
   width: 100%;
-  height: 520px;
+  height: 400px;
   overflow: hidden;
   border-radius: 12px;
 }
