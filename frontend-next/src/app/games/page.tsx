@@ -154,10 +154,6 @@ export default function GamesPage() {
                     fill
                     className="object-cover transition-transform duration-300 group-hover:scale-110"
                     sizes={viewMode === "grid" ? "(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" : "100vw"}
-                    onError={(e) => {
-                      const target = e.target as HTMLImageElement
-                      target.src = 'https://images.unsplash.com/photo-1697851429014-8b5f5fb76313'
-                    }}
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
                   
