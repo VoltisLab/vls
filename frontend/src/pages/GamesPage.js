@@ -11,6 +11,7 @@ const GamesPage = () => {
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedCategory, setSelectedCategory] = useState("All");
   const [viewMode, setViewMode] = useState("grid");
+  const [controllerSupportOnly, setControllerSupportOnly] = useState(false);
 
   const categories = ["All", "Racing", "Strategy", "Word", "Action", "Puzzle", "Sports"];
 
