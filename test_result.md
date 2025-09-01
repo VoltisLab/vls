@@ -102,7 +102,7 @@
 # Testing Data - Main Agent and testing sub agent both should log testing data below this section
 #====================================================================================================
 
-user_problem_statement: Change "Coming Soon" to "Soon" on Games page
+user_problem_statement: 1. Fix homepage slider images not displaying correctly (cropping/zooming issues) 2. Add controller support feature for Doomlane with filtering on Games page
 
 frontend:
   - task: "Change 'Coming Soon' to 'Soon' on Games page"
