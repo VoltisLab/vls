@@ -119,6 +119,57 @@ frontend:
         - working: true
           agent: "main"
           comment: "Successfully updated all 5 instances of 'Coming Soon' to 'Soon' in the getDownloadCount function for upcoming games: Creaks, Doomlane, Tacticx, 8 Ball Pool, and Penalty Shootout"
+  
+  - task: "Fix homepage slider images display issues"
+    implemented: false
+    working: false
+    file: "/app/frontend/src/App.css"
+    stuck_count: 3
+    priority: "high"  
+    needs_retesting: true
+    status_history:
+        - working: false
+          agent: "user"
+          comment: "User reported slider images are 'zoomed out', 'halves', or 'cutting out' - various object-fit attempts (cover, contain, fill) have not resolved the issue satisfactorily"
+        - working: "NA"
+          agent: "main"  
+          comment: "Task identified - need to find proper solution for displaying full images in slider without cropping or letterboxing"
+
+  - task: "Add controller support feature to Doomlane"
+    implemented: false
+    working: "NA"
+    file: "/app/frontend/src/pages/games/DoomlanePage.js"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: true
+    status_history:
+        - working: "NA"
+          agent: "main"
+          comment: "Task identified - need to add controller support icon and information to Doomlane game page"
+
+  - task: "Add controller support filter to Games page"
+    implemented: false  
+    working: "NA"
+    file: "/app/frontend/src/pages/GamesPage.js"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: true
+    status_history:
+        - working: "NA"
+          agent: "main"
+          comment: "Task identified - need to add controller support filter (checkbox/toggle) with design focus and update filtering logic"
+
+  - task: "Update game data structure for controller support"
+    implemented: false
+    working: "NA" 
+    file: "/app/frontend/src/data/mockGames.js"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: true
+    status_history:
+        - working: "NA"
+          agent: "main"
+          comment: "Task identified - need to add controllerSupport property to game data and mark Doomlane as having controller support"
 
 metadata:
   created_by: "main_agent"
