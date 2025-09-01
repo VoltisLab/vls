@@ -40,6 +40,10 @@ const DoomlanePage = () => {
                   <div className="category-age">
                     <span className="category-badge">Racing</span>
                     <span className="age-rating">12+</span>
+                    <div className="controller-support">
+                      <Gamepad2 size={16} />
+                      <span>Controller Support</span>
+                    </div>
                   </div>
                 </div>
                 
