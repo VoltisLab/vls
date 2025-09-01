@@ -81,6 +81,21 @@ const GamesPage = () => {
               </div>
 
               <div className="filter-controls">
+                <div className="controller-filter">
+                  <label className="controller-toggle">
+                    <input
+                      type="checkbox" 
+                      checked={controllerSupportOnly}
+                      onChange={(e) => setControllerSupportOnly(e.target.checked)}
+                      className="controller-checkbox"
+                    />
+                    <div className="controller-toggle-slider">
+                      <Gamepad2 size={14} />
+                    </div>
+                    <span className="controller-label">Controller Support</span>
+                  </label>
+                </div>
+
                 <div className="category-filters">
                   {categories.map(category => (
                     <button
