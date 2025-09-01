@@ -79,62 +79,71 @@ export const allGames = [
     description: "High-speed racing with fidget spinner mechanics",
     image: "https://customer-assets.emergentagent.com/job_voltis-gaming/artifacts/9pj2qbjo_Frame%202.jpg",
     link: "/games/spinnersonic",
-    category: "Racing"
+    category: "Racing",
+    controllerSupport: false
   },
   {
     title: "Triangle Chess", 
     description: "Revolutionary chess on a triangular board",
     image: "https://customer-assets.emergentagent.com/job_2254775f-056c-475f-8e45-02c39741e786/artifacts/am9wazee_hkvbsxdfxd.png",
     link: "/games/triangle-chess",
-    category: "Strategy"
+    category: "Strategy",  
+    controllerSupport: false
   },
   {
     title: "Spellcheck",
     description: "Word adventure meets puzzle solving", 
     image: "https://customer-assets.emergentagent.com/job_2254775f-056c-475f-8e45-02c39741e786/artifacts/hxtwpsyl_Background.png",
     link: "/games/spellcheck",
-    category: "Word"
+    category: "Word",
+    controllerSupport: false
   },
   {
     title: "Grindhouse",
     description: "Experimental action adventure",
     image: "https://customer-assets.emergentagent.com/job_gaming-rebrand/artifacts/1p5vhozt_Group%201244831567.jpg",
     link: "/games/grindhouse",
-    category: "Action"
+    category: "Action",
+    controllerSupport: false
   },
   {
     title: "Creaks",
     description: "Mind-bending puzzle adventure with mysterious creatures",
     image: "https://customer-assets.emergentagent.com/job_gaming-rebrand/artifacts/1p5vhozt_Group%201244831567.jpg",
     link: "/games/creaks",
-    category: "Puzzle"
+    category: "Puzzle",
+    controllerSupport: false
   },
   {
     title: "Doomlane",
     description: "Fast-paced survival racing",
     image: "https://customer-assets.emergentagent.com/job_gaming-rebrand/artifacts/1p5vhozt_Group%201244831567.jpg", 
     link: "/games/doomlane",
-    category: "Racing"
+    category: "Racing",
+    controllerSupport: true
   },
   {
     title: "Tacticx",
     description: "Strategic multiplayer tactics game",
     image: "https://customer-assets.emergentagent.com/job_gaming-rebrand/artifacts/1p5vhozt_Group%201244831567.jpg",
     link: "/games/tacticx",
-    category: "Strategy"
+    category: "Strategy",
+    controllerSupport: false
   },
   {
     title: "8 Ball Pool",
     description: "Classic billiards with modern twists",
     image: "https://customer-assets.emergentagent.com/job_gaming-rebrand/artifacts/1p5vhozt_Group%201244831567.jpg",
     link: "/games/8-ball-pool",
-    category: "Sports" 
+    category: "Sports",
+    controllerSupport: false
   },
   {
     title: "Penalty Shootout",
     description: "Intense soccer penalty competition",
     image: "https://customer-assets.emergentagent.com/job_gaming-rebrand/artifacts/1p5vhozt_Group%201244831567.jpg",
     link: "/games/penalty-shootout",
-    category: "Sports"
+    category: "Sports",
+    controllerSupport: false
   }
 ];
