@@ -179,8 +179,12 @@ metadata:
 
 test_plan:
   current_focus:
-    - "Change 'Coming Soon' to 'Soon' on Games page"
-  stuck_tasks: []
+    - "Fix homepage slider images display issues"
+    - "Add controller support feature to Doomlane"
+    - "Add controller support filter to Games page"
+    - "Update game data structure for controller support"
+  stuck_tasks:
+    - "Fix homepage slider images display issues" 
   test_all: false
   test_priority: "high_first"
 
