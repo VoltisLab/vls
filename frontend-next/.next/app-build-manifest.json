@@ -41,16 +41,6 @@
       "static/chunks/686-237a123af08f4f6b.js",
       "static/chunks/app/cookies/page-7e85dfcddb221f47.js"
     ],
-    "/games/page": [
-      "static/chunks/webpack-9d964d8cb0d81fe9.js",
-      "static/chunks/fd9d1056-a86d52f6b747304e.js",
-      "static/chunks/117-78e10ce168117260.js",
-      "static/chunks/main-app-e476eaaa740f24db.js",
-      "static/chunks/686-237a123af08f4f6b.js",
-      "static/chunks/972-d97f95368cc15d9f.js",
-      "static/chunks/706-29c294b0c398619d.js",
-      "static/chunks/app/games/page-41dbf0fd285dbcf4.js"
-    ],
     "/games/doomlane/page": [
       "static/chunks/webpack-9d964d8cb0d81fe9.js",
       "static/chunks/fd9d1056-a86d52f6b747304e.js",
@@ -60,6 +50,16 @@
       "static/chunks/972-d97f95368cc15d9f.js",
       "static/chunks/706-29c294b0c398619d.js",
       "static/chunks/app/games/doomlane/page-fb6920a88d7ad772.js"
+    ],
+    "/games/page": [
+      "static/chunks/webpack-9d964d8cb0d81fe9.js",
+      "static/chunks/fd9d1056-a86d52f6b747304e.js",
+      "static/chunks/117-78e10ce168117260.js",
+      "static/chunks/main-app-e476eaaa740f24db.js",
+      "static/chunks/686-237a123af08f4f6b.js",
+      "static/chunks/972-d97f95368cc15d9f.js",
+      "static/chunks/706-29c294b0c398619d.js",
+      "static/chunks/app/games/page-41dbf0fd285dbcf4.js"
     ],
     "/merch/page": [
       "static/chunks/webpack-9d964d8cb0d81fe9.js",

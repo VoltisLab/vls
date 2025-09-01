@@ -3,8 +3,8 @@
   "/about/page": "app/about/page.js",
   "/contact/page": "app/contact/page.js",
   "/cookies/page": "app/cookies/page.js",
-  "/games/page": "app/games/page.js",
   "/games/doomlane/page": "app/games/doomlane/page.js",
+  "/games/page": "app/games/page.js",
   "/merch/page": "app/merch/page.js",
   "/page": "app/page.js",
   "/privacy/page": "app/privacy/page.js"
