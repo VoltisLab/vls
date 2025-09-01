@@ -10,10 +10,10 @@ export default function HomePage() {
       <GameSlider games={sliderGames} />
       
       {/* Featured Games Grid */}
-      <section className="space-y-8">
-        <div className="text-center space-y-2">
-          <h2 className="text-3xl font-bold tracking-tight">Featured Games</h2>
-          <p className="text-muted-foreground text-lg">
+      <section className="space-y-6">
+        <div className="text-center space-y-1">
+          <h2 className="text-2xl font-semibold tracking-tight">Featured Games</h2>
+          <p className="text-muted-foreground text-base">
             Discover our collection of innovative gaming experiences
           </p>
         </div>

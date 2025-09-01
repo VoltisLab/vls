@@ -29,9 +29,9 @@ export default function GamesPage() {
   return (
     <div className="container mx-auto max-w-7xl px-4 py-8">
       {/* Store Header */}
-      <div className="text-center space-y-4 mb-12">
-        <h1 className="text-4xl font-bold tracking-tight">Games</h1>
-        <p className="text-xl text-muted-foreground">
+      <div className="text-center space-y-2 mb-10">
+        <h1 className="text-3xl font-semibold tracking-tight">Games</h1>
+        <p className="text-base text-muted-foreground">
           Discover amazing games from Voltis Labs
         </p>
       </div>
@@ -124,7 +124,7 @@ export default function GamesPage() {
 
       {/* Results Info */}
       <div className="text-center mb-8">
-        <p className="text-muted-foreground">
+        <p className="text-muted-foreground text-sm">
           {filteredGames.length} {filteredGames.length === 1 ? "game" : "games"}
           {searchTerm && ` for "${searchTerm}"`}
           {selectedCategory !== "All" && ` in ${selectedCategory}`}
@@ -173,7 +173,7 @@ export default function GamesPage() {
                 
                 <CardContent className="p-4 space-y-3">
                   <div className="space-y-2">
-                    <h3 className="font-semibold text-lg leading-tight text-card-foreground group-hover:text-primary transition-colors">
+                    <h3 className="font-semibold text-base leading-tight text-card-foreground group-hover:text-primary transition-colors">
                       {game.title}
                     </h3>
                     <p className="text-sm text-muted-foreground line-clamp-2">
@@ -201,8 +201,8 @@ export default function GamesPage() {
       {filteredGames.length === 0 && (
         <div className="text-center space-y-4 py-12">
           <div className="text-6xl">🎮</div>
-          <h3 className="text-2xl font-semibold">No games found</h3>
-          <p className="text-muted-foreground">
+          <h3 className="text-xl font-semibold">No games found</h3>
+          <p className="text-muted-foreground text-sm">
             Try adjusting your search or filters
           </p>
         </div>

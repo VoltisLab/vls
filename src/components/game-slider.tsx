@@ -49,7 +49,7 @@ export function GameSlider({ games }: GameSliderProps) {
 
   return (
     <div className="relative w-full mb-16">
-      <div className="relative w-full h-[400px] overflow-hidden rounded-xl">
+      <div className="relative w-full h-[350px] md:h-[400px] overflow-hidden rounded-xl mx-[-1rem] md:mx-0">
         <div 
           className="flex h-full transition-transform duration-500 ease-in-out"
           style={{ 
@@ -73,11 +73,11 @@ export function GameSlider({ games }: GameSliderProps) {
                 priority={index === 0}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
-              <div className="absolute bottom-0 left-0 right-0 p-8 text-white">
-                <h2 className="text-3xl font-bold mb-2 tracking-tight">
+              <div className="absolute bottom-0 left-0 right-0 p-6 md:p-8 text-white">
+                <h2 className="text-2xl md:text-3xl font-bold mb-2 tracking-tight">
                   {game.title}
                 </h2>
-                <p className="text-lg opacity-90 max-w-2xl">
+                <p className="text-base md:text-lg opacity-90 max-w-2xl">
                   {game.description}
                 </p>
               </div>
