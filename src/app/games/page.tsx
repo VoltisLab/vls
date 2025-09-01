@@ -153,7 +153,7 @@ export default function GamesPage() {
                     alt={game.title}
                     fill
                     className="object-cover transition-transform duration-300 group-hover:scale-110"
-                    sizes={viewMode === "grid" ? "(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" : "100vw"}
+                    sizes={viewMode === "grid" ? "(max-width: 768px) 50vw, (max-width: 1200px) 50vw, 33vw" : "100vw"}
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
                   
