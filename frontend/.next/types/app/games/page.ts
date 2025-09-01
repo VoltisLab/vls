@@ -1,4 +1,4 @@
-// File: /app/frontend-next/src/app/games/page.tsx
+// File: /app/frontend/src/app/games/page.tsx
 import * as entry from '../../../../src/app/games/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

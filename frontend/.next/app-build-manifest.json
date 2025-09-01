@@ -1,25 +1,91 @@
 {
   "pages": {
-    "/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/page.js"
+    "/_not-found/page": [
+      "static/chunks/webpack-9d964d8cb0d81fe9.js",
+      "static/chunks/fd9d1056-a86d52f6b747304e.js",
+      "static/chunks/117-78e10ce168117260.js",
+      "static/chunks/main-app-b5146d1b055dd54e.js",
+      "static/chunks/app/_not-found/page-b9eedd3a3c5548f7.js"
     ],
     "/layout": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/layout.css",
-      "static/chunks/app/layout.js"
+      "static/chunks/webpack-9d964d8cb0d81fe9.js",
+      "static/chunks/fd9d1056-a86d52f6b747304e.js",
+      "static/chunks/117-78e10ce168117260.js",
+      "static/chunks/main-app-b5146d1b055dd54e.js",
+      "static/css/bdc939d6032c8f5f.css",
+      "static/chunks/686-237a123af08f4f6b.js",
+      "static/chunks/972-d97f95368cc15d9f.js",
+      "static/chunks/app/layout-3df7d8476ab0c64f.js"
     ],
-    "/games/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/games/page.js"
+    "/about/page": [
+      "static/chunks/webpack-9d964d8cb0d81fe9.js",
+      "static/chunks/fd9d1056-a86d52f6b747304e.js",
+      "static/chunks/117-78e10ce168117260.js",
+      "static/chunks/main-app-b5146d1b055dd54e.js",
+      "static/chunks/686-237a123af08f4f6b.js",
+      "static/chunks/app/about/page-57b227517768652d.js"
+    ],
+    "/contact/page": [
+      "static/chunks/webpack-9d964d8cb0d81fe9.js",
+      "static/chunks/fd9d1056-a86d52f6b747304e.js",
+      "static/chunks/117-78e10ce168117260.js",
+      "static/chunks/main-app-b5146d1b055dd54e.js",
+      "static/chunks/686-237a123af08f4f6b.js",
+      "static/chunks/app/contact/page-a3ba98574c4fd778.js"
     ],
     "/games/doomlane/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/games/doomlane/page.js"
+      "static/chunks/webpack-9d964d8cb0d81fe9.js",
+      "static/chunks/fd9d1056-a86d52f6b747304e.js",
+      "static/chunks/117-78e10ce168117260.js",
+      "static/chunks/main-app-b5146d1b055dd54e.js",
+      "static/chunks/686-237a123af08f4f6b.js",
+      "static/chunks/972-d97f95368cc15d9f.js",
+      "static/chunks/706-29c294b0c398619d.js",
+      "static/chunks/app/games/doomlane/page-8436ed7a75e348b7.js"
+    ],
+    "/cookies/page": [
+      "static/chunks/webpack-9d964d8cb0d81fe9.js",
+      "static/chunks/fd9d1056-a86d52f6b747304e.js",
+      "static/chunks/117-78e10ce168117260.js",
+      "static/chunks/main-app-b5146d1b055dd54e.js",
+      "static/chunks/686-237a123af08f4f6b.js",
+      "static/chunks/app/cookies/page-57b47e06aea444c2.js"
+    ],
+    "/games/page": [
+      "static/chunks/webpack-9d964d8cb0d81fe9.js",
+      "static/chunks/fd9d1056-a86d52f6b747304e.js",
+      "static/chunks/117-78e10ce168117260.js",
+      "static/chunks/main-app-b5146d1b055dd54e.js",
+      "static/chunks/686-237a123af08f4f6b.js",
+      "static/chunks/972-d97f95368cc15d9f.js",
+      "static/chunks/706-29c294b0c398619d.js",
+      "static/chunks/app/games/page-c891cee16522323d.js"
+    ],
+    "/merch/page": [
+      "static/chunks/webpack-9d964d8cb0d81fe9.js",
+      "static/chunks/fd9d1056-a86d52f6b747304e.js",
+      "static/chunks/117-78e10ce168117260.js",
+      "static/chunks/main-app-b5146d1b055dd54e.js",
+      "static/chunks/686-237a123af08f4f6b.js",
+      "static/chunks/app/merch/page-ac166291ccf8d559.js"
+    ],
+    "/page": [
+      "static/chunks/webpack-9d964d8cb0d81fe9.js",
+      "static/chunks/fd9d1056-a86d52f6b747304e.js",
+      "static/chunks/117-78e10ce168117260.js",
+      "static/chunks/main-app-b5146d1b055dd54e.js",
+      "static/chunks/686-237a123af08f4f6b.js",
+      "static/chunks/972-d97f95368cc15d9f.js",
+      "static/chunks/706-29c294b0c398619d.js",
+      "static/chunks/app/page-97278beaf683cc6a.js"
+    ],
+    "/privacy/page": [
+      "static/chunks/webpack-9d964d8cb0d81fe9.js",
+      "static/chunks/fd9d1056-a86d52f6b747304e.js",
+      "static/chunks/117-78e10ce168117260.js",
+      "static/chunks/main-app-b5146d1b055dd54e.js",
+      "static/chunks/686-237a123af08f4f6b.js",
+      "static/chunks/app/privacy/page-30dd810d553a0d6e.js"
     ]
   }
 }
