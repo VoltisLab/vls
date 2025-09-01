@@ -74,10 +74,10 @@ export function GameSlider({ games }: GameSliderProps) {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
               <div className="absolute bottom-0 left-0 right-0 p-6 md:p-8 text-white">
-                <h2 className="text-2xl md:text-3xl font-bold mb-2 tracking-tight">
+                <h2 className="text-xl md:text-2xl font-semibold mb-1 tracking-tight">
                   {game.title}
                 </h2>
-                <p className="text-base md:text-lg opacity-90 max-w-2xl">
+                <p className="text-sm md:text-base opacity-90 max-w-2xl">
                   {game.description}
                 </p>
               </div>
