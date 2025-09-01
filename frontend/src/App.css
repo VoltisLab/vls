@@ -351,8 +351,21 @@ body {
 
 .category-age {
   display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.controller-support {
+  display: flex;
   align-items: center;
-  gap: 15px;
+  gap: 6px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 20px;
+  padding: 6px 12px;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--text-primary);
 }
 
 .category-badge {
