@@ -49,7 +49,7 @@ export function GameSlider({ games }: GameSliderProps) {
 
   return (
     <div className="relative w-full mb-16">
-      <div className="relative w-full h-[350px] md:h-[400px] overflow-hidden rounded-xl mx-[-1rem] md:mx-0">
+      <div className="relative w-full h-[350px] md:h-[400px] overflow-hidden rounded-xl">
         <div 
           className="flex h-full transition-transform duration-500 ease-in-out"
           style={{ 
