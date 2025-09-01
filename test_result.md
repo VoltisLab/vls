@@ -155,6 +155,9 @@ frontend:
         - working: true
           agent: "main"
           comment: "Successfully added controller support icon with Gamepad2 icon and text in the category-age section. Styled with proper CSS for visual consistency."
+        - working: true
+          agent: "testing"
+          comment: "VERIFIED: Controller support feature working perfectly on Doomlane page. Gamepad icon and 'Controller Support' text visible in category section with proper styling matching page design."
 
   - task: "Add controller support filter to Games page"
     implemented: true  
