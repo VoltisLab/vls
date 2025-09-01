@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Search, Filter, Grid, List, Star, Download } from "lucide-react";
+import { Search, Filter, Grid, List, Star, Download, Gamepad2 } from "lucide-react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import CookieConsent from "../components/CookieConsent";
