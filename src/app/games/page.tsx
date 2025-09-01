@@ -146,7 +146,7 @@ export default function GamesPage() {
               <div className="relative">
                 <div className={cn(
                   "relative overflow-hidden",
-                  viewMode === "grid" ? "aspect-video" : "aspect-[2/1]"
+                  viewMode === "grid" ? "aspect-square sm:aspect-video" : "aspect-[2/1]"
                 )}>
                   <Image
                     src={game.image}
