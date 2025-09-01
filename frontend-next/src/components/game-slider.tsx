@@ -71,10 +71,6 @@ export function GameSlider({ games }: GameSliderProps) {
                 className="object-cover object-center transition-transform duration-300 group-hover:scale-105"
                 sizes="100vw"
                 priority={index === 0}
-                onError={(e) => {
-                  const target = e.target as HTMLImageElement
-                  target.src = 'https://images.unsplash.com/photo-1697851429014-8b5f5fb76313'
-                }}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
               <div className="absolute bottom-0 left-0 right-0 p-8 text-white">
