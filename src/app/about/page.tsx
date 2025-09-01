@@ -3,7 +3,7 @@ import { ScrollToTop } from "@/components/scroll-to-top"
 
 export default function AboutPage() {
   return (
-    <div className="container mx-auto max-w-4xl px-4 py-12">
+    <div className="container mx-auto max-w-4xl px-4 py-8">
       <div className="text-center space-y-2 mb-10">
         <h1 className="text-3xl font-semibold tracking-tight">About Voltis Labs Games</h1>
         <p className="text-base text-muted-foreground">
