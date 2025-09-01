@@ -155,6 +155,11 @@ const GamesPage = () => {
                           <Star size={12} fill="currentColor" />
                           <span>{getGameRating(game.title)}</span>
                         </div>
+                        {game.controllerSupport && (
+                          <div className="controller-badge">
+                            <Gamepad2 size={12} />
+                          </div>
+                        )}
                       </div>
                     </div>
                   </div>
