@@ -6,13 +6,20 @@ export const sliderGames: SliderGame[] = [
     title: "Spinnersonic",
     description: "High-speed racing with fidget spinner mechanics",
     image: "https://customer-assets.emergentagent.com/job_voltis-ui-overhaul/artifacts/ev3pv6ww_Group%201244831544.jpg",
-    link: "/games/spinnersonic"
+    link: "/games/spinnersonic",
+    storeLinks: {
+      googlePlay: "https://play.google.com/store/apps/details?id=com.spinnersonic.voltis&hl=en_GB"
+    }
   },
   {
     title: "Spellcheck",
     description: "Word adventure meets puzzle solving",
     image: "https://customer-assets.emergentagent.com/job_voltis-ui-overhaul/artifacts/pby8nwu7_Picture%20%E2%86%92%20hero_bg_clashofclans_.fae7c799.webp.jpg",
-    link: "/games/spellcheck"
+    link: "/games/spellcheck",
+    storeLinks: {
+      googlePlay: "https://play.google.com/store/apps/details?id=com.spellcheck.app&hl=en_GB",
+      appStore: "https://apps.apple.com/gb/app/spellcheck/id6748904396"
+    }
   }
 ]
 
