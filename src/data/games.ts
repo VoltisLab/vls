@@ -65,7 +65,7 @@ export const featuredGames: Game[] = [
   {
     title: "Doomlane",
     description: "Fast-paced survival racing", 
-    image: "https://customer-assets.emergentagent.com/job_preview-this-site/artifacts/n582xjg4_Background.jpg",
+    image: "https://customer-assets.emergentagent.com/job_preview-this-site/artifacts/sd609822_Background%20%281%29.jpg",
     link: "/games/doomlane"
   },
   {
