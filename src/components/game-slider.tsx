@@ -77,9 +77,37 @@ export function GameSlider({ games }: GameSliderProps) {
                 <h2 className="text-xl md:text-2xl font-semibold mb-1 tracking-tight">
                   {game.title}
                 </h2>
-                <p className="text-sm md:text-base opacity-90 max-w-2xl">
+                <p className="text-sm md:text-base opacity-90 max-w-2xl mb-3">
                   {game.description}
                 </p>
+                
+                {/* Store Links */}
+                {game.storeLinks && (
+                  <div className="flex gap-2 mt-3">
+                    {game.storeLinks.googlePlay && (
+                      <a 
+                        href={game.storeLinks.googlePlay} 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center px-3 py-1.5 bg-black/50 hover:bg-black/70 text-white text-xs rounded-md transition-colors border border-white/20"
+                        onClick={(e) => e.stopPropagation()}
+                      >
+                        📱 Google Play
+                      </a>
+                    )}
+                    {game.storeLinks.appStore && (
+                      <a 
+                        href={game.storeLinks.appStore} 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center px-3 py-1.5 bg-black/50 hover:bg-black/70 text-white text-xs rounded-md transition-colors border border-white/20"
+                        onClick={(e) => e.stopPropagation()}
+                      >
+                        🍎 App Store
+                      </a>
+                    )}
+                  </div>
+                )}
               </div>
             </Link>
           ))}
