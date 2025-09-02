@@ -16,6 +16,10 @@ export interface SliderGame {
   description: string
   image: string
   link: string
+  storeLinks?: {
+    googlePlay?: string
+    appStore?: string
+  }
 }
 
 export interface GameRating {
