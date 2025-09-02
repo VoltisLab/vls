@@ -5,6 +5,10 @@ export interface Game {
   link: string
   category?: string
   controllerSupport?: boolean
+  storeLinks?: {
+    googlePlay?: string
+    appStore?: string
+  }
 }
 
 export interface SliderGame {
