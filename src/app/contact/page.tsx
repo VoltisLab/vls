@@ -1,14 +1,18 @@
 "use client"
 
 import { useState } from "react"
-import { Mail, Phone, MapPin, Send } from "lucide-react"
+import { Mail, Phone, MapPin, Send, ArrowLeft } from "lucide-react"
+import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { ScrollToTop } from "@/components/scroll-to-top"
+import { allGames } from "@/data/games"
 
 export default function ContactPage() {
   const [selectedInquiry, setSelectedInquiry] = useState("")
+  const [selectedGame, setSelectedGame] = useState("")
+  const [showGameSelection, setShowGameSelection] = useState(false)
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -29,8 +33,22 @@ export default function ContactPage() {
 
   const handleInquirySelect = (inquiryType: string) => {
     setSelectedInquiry(inquiryType)
+    if (inquiryType === "customer-games") {
+      setShowGameSelection(true)
+    } else {
+      setShowForm(true)
+      setFormData({ ...formData, subject: inquiryTypes.find(t => t.value === inquiryType)?.label || "" })
+    }
+  }
+
+  const handleGameSelect = (gameTitle: string) => {
+    setSelectedGame(gameTitle)
+    setShowGameSelection(false)
     setShowForm(true)
-    setFormData({ ...formData, subject: inquiryTypes.find(t => t.value === inquiryType)?.label || "" })
+    setFormData({ 
+      ...formData, 
+      subject: `Customer Support - Games: ${gameTitle}` 
+    })
   }
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -47,10 +65,27 @@ export default function ContactPage() {
     // Reset form
     setFormData({ name: "", email: "", subject: "", message: "" })
     setSelectedInquiry("")
+    setSelectedGame("")
     setShowForm(false)
+    setShowGameSelection(false)
     setIsSubmitting(false)
     
     alert("Thank you for your message! We'll get back to you soon.")
+  }
+
+  const goBack = () => {
+    if (showForm) {
+      if (selectedInquiry === "customer-games") {
+        setShowForm(false)
+        setShowGameSelection(true)
+      } else {
+        setShowForm(false)
+        setSelectedInquiry("")
+      }
+    } else if (showGameSelection) {
+      setShowGameSelection(false)
+      setSelectedInquiry("")
+    }
   }
 
   return (
@@ -85,13 +120,13 @@ export default function ContactPage() {
           <CardContent className="pt-6">
             <MapPin className="h-8 w-8 mx-auto mb-4 text-primary" />
             <h3 className="font-semibold mb-2">Location</h3>
-            <p className="text-sm text-muted-foreground">San Francisco, CA</p>
+            <p className="text-sm text-muted-foreground">London, UK</p>
           </CardContent>
         </Card>
       </div>
 
       {/* Inquiry Selection */}
-      {!showForm && (
+      {!showForm && !showGameSelection && (
         <Card className="mb-8">
           <CardHeader>
             <CardTitle className="text-xl text-center">What can we help you with?</CardTitle>
@@ -114,22 +149,87 @@ export default function ContactPage() {
         </Card>
       )}
 
+      {/* Game Selection */}
+      {showGameSelection && (
+        <Card className="mb-8">
+          <CardHeader>
+            <div className="flex items-center space-x-3">
+              <Button
+                variant="ghost"
+                size="sm"
+                onClick={goBack}
+                className="p-2"
+              >
+                <ArrowLeft className="h-4 w-4" />
+              </Button>
+              <div>
+                <CardTitle className="text-xl">Select a Game</CardTitle>
+                <p className="text-sm text-muted-foreground mt-1">
+                  Which game do you need support with?
+                </p>
+              </div>
+            </div>
+          </CardHeader>
+          <CardContent>
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+              {allGames.map((game) => (
+                <Button
+                  key={game.title}
+                  variant="outline"
+                  className="h-auto p-0 overflow-hidden hover:shadow-md transition-all duration-200 hover:scale-105"
+                  onClick={() => handleGameSelect(game.title)}
+                >
+                  <div className="w-full">
+                    <div className="relative aspect-video w-full">
+                      <Image
+                        src={game.image}
+                        alt={game.title}
+                        fill
+                        className="object-cover"
+                        sizes="(max-width: 768px) 50vw, (max-width: 1200px) 33vw, 25vw"
+                      />
+                    </div>
+                    <div className="p-3 text-center">
+                      <h3 className="text-sm font-medium text-foreground leading-tight">
+                        {game.title}
+                      </h3>
+                      {game.category && (
+                        <p className="text-xs text-muted-foreground mt-1">
+                          {game.category}
+                        </p>
+                      )}
+                    </div>
+                  </div>
+                </Button>
+              ))}
+            </div>
+          </CardContent>
+        </Card>
+      )}
+
       {/* Contact Form */}
       {showForm && (
         <Card>
           <CardHeader>
-            <CardTitle className="text-xl">Send us a message</CardTitle>
-            <p className="text-sm text-muted-foreground">
-              Selected: {inquiryTypes.find(t => t.value === selectedInquiry)?.label}
-            </p>
-            <Button
-              variant="ghost"
-              size="sm"
-              onClick={() => setShowForm(false)}
-              className="self-start"
-            >
-              ← Change inquiry type
-            </Button>
+            <div className="flex items-center space-x-3">
+              <Button
+                variant="ghost"
+                size="sm"
+                onClick={goBack}
+                className="p-2"
+              >
+                <ArrowLeft className="h-4 w-4" />
+              </Button>
+              <div>
+                <CardTitle className="text-xl">Send us a message</CardTitle>
+                <p className="text-sm text-muted-foreground mt-1">
+                  {selectedGame 
+                    ? `Game Support: ${selectedGame}`
+                    : `Selected: ${inquiryTypes.find(t => t.value === selectedInquiry)?.label}`
+                  }
+                </p>
+              </div>
+            </div>
           </CardHeader>
           <CardContent>
             <form onSubmit={handleSubmit} className="space-y-6">
@@ -188,7 +288,10 @@ export default function ContactPage() {
                   onChange={handleInputChange}
                   required
                   rows={6}
-                  placeholder="Tell us more about your inquiry..."
+                  placeholder={selectedGame 
+                    ? `Tell us about the issue you're experiencing with ${selectedGame}...`
+                    : "Tell us more about your inquiry..."
+                  }
                   className="w-full px-3 py-2 border border-border rounded-md bg-background text-foreground placeholder-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring focus:border-transparent resize-none"
                 />
               </div>
