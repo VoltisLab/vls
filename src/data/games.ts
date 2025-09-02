@@ -96,7 +96,10 @@ export const allGames: Game[] = [
     image: "https://customer-assets.emergentagent.com/job_voltis-gaming/artifacts/9pj2qbjo_Frame%202.jpg",
     link: "/games/spinnersonic",
     category: "Racing",
-    controllerSupport: false
+    controllerSupport: false,
+    storeLinks: {
+      googlePlay: "https://play.google.com/store/apps/details?id=com.spinnersonic.voltis&hl=en_GB"
+    }
   },
   {
     title: "Triangle Chess", 
@@ -112,7 +115,11 @@ export const allGames: Game[] = [
     image: "https://customer-assets.emergentagent.com/job_2254775f-056c-475f-8e45-02c39741e786/artifacts/hxtwpsyl_Background.png",
     link: "/games/spellcheck",
     category: "Word",
-    controllerSupport: false
+    controllerSupport: false,
+    storeLinks: {
+      googlePlay: "https://play.google.com/store/apps/details?id=com.spellcheck.app&hl=en_GB",
+      appStore: "https://apps.apple.com/gb/app/spellcheck/id6748904396"
+    }
   },
   {
     title: "Grindhouse",
