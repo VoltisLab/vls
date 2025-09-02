@@ -26,7 +26,7 @@ export default function DoomlanePage() {
             <div className="flex-shrink-0">
               <div className="relative w-32 h-32 rounded-2xl overflow-hidden border border-border">
                 <Image
-                  src="https://customer-assets.emergentagent.com/job_preview-this-site/artifacts/n582xjg4_Background.jpg"
+                  src="https://customer-assets.emergentagent.com/job_preview-this-site/artifacts/sd609822_Background%20%281%29.jpg"
                   alt="Doomlane - Coming Soon"
                   fill
                   className="object-cover"
