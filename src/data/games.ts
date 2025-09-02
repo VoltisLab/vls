@@ -90,6 +90,7 @@ export const featuredGames: Game[] = [
 
 // All games for games page
 export const allGames: Game[] = [
+  // Released games first (with store links or proper thumbnails)
   {
     title: "Spinnersonic",
     description: "High-speed racing with fidget spinner mechanics",
@@ -122,6 +123,23 @@ export const allGames: Game[] = [
     }
   },
   {
+    title: "Doomlane",
+    description: "Fast-paced survival racing",
+    image: "https://customer-assets.emergentagent.com/job_preview-this-site/artifacts/sd609822_Background%20%281%29.jpg", 
+    link: "/games/doomlane",
+    category: "Racing",
+    controllerSupport: true
+  },
+  {
+    title: "Tacticx",
+    description: "Strategic multiplayer tactics game",
+    image: "https://customer-assets.emergentagent.com/job_preview-this-site/artifacts/154k2b0z_Frame%20108.jpg",
+    link: "/games/tacticx",
+    category: "Strategy",
+    controllerSupport: false
+  },
+  // Coming soon games last (with generic thumbnails)
+  {
     title: "Grindhouse",
     description: "Experimental action adventure",
     image: "https://customer-assets.emergentagent.com/job_gaming-rebrand/artifacts/1p5vhozt_Group%201244831567.jpg",
@@ -135,22 +153,6 @@ export const allGames: Game[] = [
     image: "https://customer-assets.emergentagent.com/job_gaming-rebrand/artifacts/1p5vhozt_Group%201244831567.jpg",
     link: "/games/creaks",
     category: "Puzzle",
-    controllerSupport: false
-  },
-  {
-    title: "Doomlane",
-    description: "Fast-paced survival racing",
-    image: "https://customer-assets.emergentagent.com/job_preview-this-site/artifacts/n582xjg4_Background.jpg", 
-    link: "/games/doomlane",
-    category: "Racing",
-    controllerSupport: true
-  },
-  {
-    title: "Tacticx",
-    description: "Strategic multiplayer tactics game",
-    image: "https://customer-assets.emergentagent.com/job_gaming-rebrand/artifacts/1p5vhozt_Group%201244831567.jpg",
-    link: "/games/tacticx",
-    category: "Strategy",
     controllerSupport: false
   },
   {
