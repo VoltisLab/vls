@@ -11,7 +11,7 @@ export const sliderGames: SliderGame[] = [
   {
     title: "Spellcheck",
     description: "Word adventure meets puzzle solving",
-    image: "https://customer-assets.emergentagent.com/job_voltis-ui-overhaul/artifacts/pby8nwu7_Picture%20%E2%86%92%20hero_bg_clashofclans_.fae7c799.webp.jpg",
+    image: "https://customer-assets.emergentagent.com/job_2254775f-056c-475f-8e45-02c39741e786/artifacts/hxtwpsyl_Background.png",
     link: "/games/spellcheck"
   }
 ]
