@@ -9,10 +9,10 @@ export const sliderGames: SliderGame[] = [
     link: "/games/spinnersonic"
   },
   {
-    title: "Triangle Chess",
-    description: "Revolutionary chess on a triangular board",
-    image: "https://customer-assets.emergentagent.com/job_2254775f-056c-475f-8e45-02c39741e786/artifacts/am9wazee_hkvbsxdfxd.png",
-    link: "/games/triangle-chess"
+    title: "Grindhouse",
+    description: "Experimental action adventure",
+    image: "https://customer-assets.emergentagent.com/job_gaming-rebrand/artifacts/1p5vhozt_Group%201244831567.jpg",
+    link: "/games/grindhouse"
   }
 ]
 
