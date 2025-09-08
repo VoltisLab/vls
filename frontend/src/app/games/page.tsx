@@ -162,7 +162,7 @@ export default function GamesPage() {
                   viewMode === "grid" ? "aspect-video" : "aspect-[2/1]"
                 )}>
                   <Image
-                    src={game.image}
+                    src={isMobile && game.mobileImage ? game.mobileImage : game.image}
                     alt={game.title}
                     fill
                     className="object-cover transition-transform duration-300 group-hover:scale-110"
