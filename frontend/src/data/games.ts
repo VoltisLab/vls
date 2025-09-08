@@ -80,6 +80,7 @@ export const allGames: Game[] = [
     title: "Spinnersonic",
     description: "High-speed racing with fidget spinner mechanics",
     image: "https://customer-assets.emergentagent.com/job_voltis-gaming/artifacts/9pj2qbjo_Frame%202.jpg",
+    mobileImage: "https://customer-assets.emergentagent.com/job_web-peek/artifacts/t772pvc3_Spinnersonic%20Mobile%20Slider.png",
     link: "/games/spinnersonic",
     category: "Racing",
     controllerSupport: false
