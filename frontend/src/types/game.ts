@@ -2,6 +2,7 @@ export interface Game {
   title: string
   description: string
   image: string
+  mobileImage?: string
   link: string
   category?: string
   controllerSupport?: boolean
