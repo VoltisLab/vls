@@ -92,9 +92,4 @@
   .mobile-game-card .aspect-video {
     aspect-ratio: 1 / 1;
   }
-  
-  /* Ensure 2-column layout is maintained on mobile */
-  .games-grid {
-    grid-template-columns: repeat(2, 1fr) !important;
-  }
 }
