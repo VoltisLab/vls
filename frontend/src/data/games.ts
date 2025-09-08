@@ -120,7 +120,8 @@ export const allGames: Game[] = [
   {
     title: "Doomlane",
     description: "Fast-paced survival racing",
-    image: "https://customer-assets.emergentagent.com/job_gaming-rebrand/artifacts/1p5vhozt_Group%201244831567.jpg", 
+    image: "https://customer-assets.emergentagent.com/job_gaming-rebrand/artifacts/1p5vhozt_Group%201244831567.jpg",
+    mobileImage: "https://customer-assets.emergentagent.com/job_web-peek/artifacts/m7j9nx05_DoomlaneMobileSlider%20%281%29.png",
     link: "/games/doomlane",
     category: "Racing",
     controllerSupport: true
