@@ -86,3 +86,10 @@
 ::-webkit-scrollbar-thumb:hover {
   @apply bg-muted-foreground;
 }
+
+/* Mobile game cards optimization */
+@media (max-width: 767px) {
+  .mobile-game-card .aspect-video {
+    aspect-ratio: 1 / 1;
+  }
+}
