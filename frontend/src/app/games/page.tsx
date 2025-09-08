@@ -149,7 +149,7 @@ export default function GamesPage() {
         className={cn(
           "gap-6 mb-12",
           viewMode === "grid"
-            ? "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3"
+            ? "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 games-grid"
             : "flex flex-col space-y-4"
         )}
       >
