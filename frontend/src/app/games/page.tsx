@@ -155,7 +155,10 @@ export default function GamesPage() {
       >
         {filteredGames.map((game, index) => (
           <Link key={index} href={game.link} className="group">
-            <Card className="overflow-hidden transition-all duration-300 hover:shadow-lg hover:scale-105 bg-card border-border">
+            <Card className={cn(
+              "overflow-hidden transition-all duration-300 hover:shadow-lg hover:scale-105 bg-card border-border",
+              isMobile && "mobile-game-card"
+            )}>
               <div className="relative">
                 <div className={cn(
                   "relative overflow-hidden",
