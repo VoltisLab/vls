@@ -7,12 +7,6 @@ export const sliderGames: SliderGame[] = [
     description: "High-speed racing with fidget spinner mechanics",
     image: "https://customer-assets.emergentagent.com/job_voltis-ui-overhaul/artifacts/ev3pv6ww_Group%201244831544.jpg",
     link: "/games/spinnersonic"
-  },
-  {
-    title: "Grindhouse",
-    description: "Experimental action adventure",
-    image: "https://customer-assets.emergentagent.com/job_gaming-rebrand/artifacts/1p5vhozt_Group%201244831567.jpg",
-    link: "/games/grindhouse"
   }
 ]
 
