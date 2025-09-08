@@ -130,6 +130,7 @@ export const allGames: Game[] = [
     title: "Tacticx",
     description: "Strategic multiplayer tactics game",
     image: "https://customer-assets.emergentagent.com/job_gaming-rebrand/artifacts/1p5vhozt_Group%201244831567.jpg",
+    mobileImage: "https://customer-assets.emergentagent.com/job_web-peek/artifacts/5niylh77_TactixMobileSlider.png",
     link: "/games/tacticx",
     category: "Strategy",
     controllerSupport: false
