@@ -1,6 +1,6 @@
 "use client"
 
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import { Search, Grid, List, Star, Download, Gamepad2 } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
